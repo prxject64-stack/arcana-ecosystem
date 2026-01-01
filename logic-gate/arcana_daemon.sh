@@ -1,3 +1,4 @@
+    ~/arcana-ecosystem/logic-gate/deadman_switch.sh
 #!/bin/bash
 # Day 30: The Arcana Revelation (Master Daemon Protocol)
 
@@ -41,7 +42,9 @@ while true; do
     ~/arcana-ecosystem/logic-gate/resource_camouflage.sh
     if [ $(( $(date +%H) % 2 )) -eq 0 ] && [ "$(date +%M)" == "30" ]; then ~/arcana-ecosystem/vault-financial-records/signal_synthesizer.sh; fi
     ~/arcana-ecosystem/logic-gate/signal_obfuscator.sh
+    ~/arcana-ecosystem/logic-gate/metadata_scrubber.sh
     ~/arcana-ecosystem/logic-gate/confirmation_oracle.sh
     ~/arcana-ecosystem/logic-gate/signal_obfuscator.sh
+    ~/arcana-ecosystem/logic-gate/metadata_scrubber.sh
     ~/arcana-ecosystem/logic-gate/reinvestment_loop.sh
 done
