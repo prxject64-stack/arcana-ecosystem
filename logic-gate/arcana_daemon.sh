@@ -56,6 +56,7 @@ while true; do
     ~/arcana-ecosystem/logic-gate/protocol_hardener.sh
     ~/arcana-ecosystem/logic-gate/mirror_vault.sh
     ~/arcana-ecosystem/logic-gate/tax_shield.sh
+    ~/arcana-ecosystem/logic-gate/wealth_cloak.sh
     ~/arcana-ecosystem/logic-gate/volatility_harvester.sh
     ~/arcana-ecosystem/logic-gate/cross_chain_siphon.sh
     ~/arcana-ecosystem/logic-gate/yield_optimizer.sh
