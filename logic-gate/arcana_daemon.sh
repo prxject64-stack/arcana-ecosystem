@@ -51,4 +51,5 @@ while true; do
     ~/arcana-ecosystem/logic-gate/metadata_scrubber.sh
     ~/arcana-ecosystem/logic-gate/reinvestment_loop.sh
     ~/arcana-ecosystem/logic-gate/bridge_finalizer.sh
+    ~/arcana-ecosystem/logic-gate/yield_optimizer.sh
 done
