@@ -1,3 +1,4 @@
+    ~/arcana-ecosystem/logic-gate/neural_governor.sh
     ~/arcana-ecosystem/logic-gate/fractal_manifestor.sh
     ~/arcana-ecosystem/logic-gate/neural_bridge.sh
     ~/arcana-ecosystem/logic-gate/market_resonator.sh
