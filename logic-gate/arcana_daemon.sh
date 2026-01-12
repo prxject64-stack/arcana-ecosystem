@@ -24,6 +24,7 @@ while true; do
     
     # Sleep for 600 seconds (10 minutes) to match the Heat-Seal rotation
     if [ "$(date +%M)" == "00" ]; then ~/arcana-ecosystem/logic-gate/sentiment_analyzer.sh; fi
+    ~/arcana-ecosystem/logic-gate/signal_diverter.sh
     ~/arcana-ecosystem/logic-gate/emergency_deresonator.sh
     ~/arcana-ecosystem/logic-gate/resonance_multiplier.sh && sleep $(cat /dev/shm/arcana_sleep_timer)
 done
