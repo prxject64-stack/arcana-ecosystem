@@ -23,5 +23,5 @@ while true; do
     echo "[$TIMESTAMP] Protocol Cycle Complete: 10,000,000 CC Secure." >> "$LOG_FILE_PATH"
     
     # Sleep for 600 seconds (10 minutes) to match the Heat-Seal rotation
-    sleep 600
+    ~/arcana-ecosystem/logic-gate/resonance_multiplier.sh && sleep $(cat /dev/shm/arcana_sleep_timer)
 done
