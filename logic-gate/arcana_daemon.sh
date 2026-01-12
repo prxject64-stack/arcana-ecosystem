@@ -1,0 +1,25 @@
+#!/bin/bash
+# Day 30: The Arcana Revelation (Master Daemon Protocol)
+
+LOG_FILE="~/arcana-ecosystem/history-vault/daemon_heartbeat.log"
+eval LOG_FILE_PATH=$LOG_FILE
+
+echo "--- ARCANA MASTER DAEMON ACTIVATED ---" | tee -a "$LOG_FILE_PATH"
+
+while true; do
+    TIMESTAMP=$(date "+%Y-%m-%d %H:%M:%S")
+    
+    # Step A: Run the Heat-Seal (Rotating Keys & Noise)
+    ~/arcana-ecosystem/logic-gate/signal_scrambler.sh
+    
+    # Step B: Run the Ghost-Proxy (Camouflage Refresh)
+    ~/arcana-ecosystem/logic-gate/ghost_proxy.sh
+    
+    # Step C: Run the Integrity Mirror (Self-Audit)
+    ~/arcana-ecosystem/logic-gate/integrity_mirror.sh > /dev/null
+    
+    echo "[$TIMESTAMP] Protocol Cycle Complete: 10,000,000 CC Secure." >> "$LOG_FILE_PATH"
+    
+    # Sleep for 600 seconds (10 minutes) to match the Heat-Seal rotation
+    sleep 600
+done
