@@ -20,7 +20,7 @@ if [ ! -z "$PRICE" ]; then
     echo "Synchronizing with Vault Scraper..."
     
     # Pass the data to the scraper (Phase 2, Day 2 logic)
-    echo "API_FEED|Source:Nexus_Hook|Price:$PRICE|Vol:$VOL" >> $SANDBOX/processed_signal.tmp
+    echo "API_FEED|Source:Nexus_Hook|Price:$PRICE|Vol:$VOL" >> $SANDBOX/processed_signal.tmp && ~/arcana-ecosystem/logic-gate/resonance_buffer.sh
     
     # 4. Wipe the Sandbox
     rm -rf $SANDBOX
