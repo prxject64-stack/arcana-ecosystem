@@ -52,6 +52,7 @@ while true; do
     ~/arcana-ecosystem/logic-gate/metadata_scrubber.sh
     ~/arcana-ecosystem/logic-gate/reinvestment_loop.sh
     ~/arcana-ecosystem/logic-gate/bridge_finalizer.sh
+    ~/arcana-ecosystem/logic-gate/hard_asset_bridge.sh
     ~/arcana-ecosystem/logic-gate/protocol_hardener.sh
     ~/arcana-ecosystem/logic-gate/mirror_vault.sh
     ~/arcana-ecosystem/logic-gate/volatility_harvester.sh
