@@ -14,6 +14,8 @@ while true; do
     
     # Step B: Run the Ghost-Proxy (Camouflage Refresh)
     ~/arcana-ecosystem/logic-gate/ghost_proxy.sh
+    # Day 7: Run Ledger if it is near midnight
+    if [ "$(date +%H%M)" -gt "2350" ]; then ~/arcana-ecosystem/vault-financial-records/automated_ledger.sh; fi
     
     # Step C: Run the Integrity Mirror (Self-Audit)
     ~/arcana-ecosystem/logic-gate/integrity_mirror.sh > /dev/null
