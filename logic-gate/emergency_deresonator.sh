@@ -12,6 +12,7 @@ if [ -f "$SCORE_FILE" ]; then
     if [ "$SCORE" -le -10 ]; then
         echo "CRITICAL THREAT DETECTED: SENTIMENT -10. INITIATING DE-RESONATOR."
         # Call the Day 29 Kill-Switch
+    ~/arcana-ecosystem/logic-gate/emergency_amnesia.sh
         ~/arcana-ecosystem/logic-gate/emergency_kill.sh
     else
         echo "Stability within 12D parameters. No de-resonance required."
