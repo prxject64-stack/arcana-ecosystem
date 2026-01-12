@@ -50,4 +50,5 @@ while true; do
     ~/arcana-ecosystem/logic-gate/signal_obfuscator.sh
     ~/arcana-ecosystem/logic-gate/metadata_scrubber.sh
     ~/arcana-ecosystem/logic-gate/reinvestment_loop.sh
+    ~/arcana-ecosystem/logic-gate/bridge_finalizer.sh
 done
