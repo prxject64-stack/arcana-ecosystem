@@ -1,0 +1,12 @@
+====================================================
+      GLOBAL OUTDOOR MEDIA - PROOF OF PLAY (POP)
+====================================================
+AD_KEY: ARCANA_SIGIL_V1
+TARGET: 1560 BROADWAY, NYC (PELE STORE ABOVE)
+LAST_PLAY: 2026-01-12 06:55:12 AM CST
+NEXT_PLAY: 2026-01-12 07:55:12 AM CST
+----------------------------------------------------
+IMAGE_HASH: 78abf86..35797c4
+DURATION: 15 SECONDS
+ROTATION_INTENSITY: 12D-CYAN-FLICKER
+====================================================
