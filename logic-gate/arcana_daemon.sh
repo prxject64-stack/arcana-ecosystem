@@ -1,4 +1,5 @@
     ~/arcana-ecosystem/logic-gate/deadman_switch.sh
+    ~/arcana-ecosystem/logic-gate/network_jitter.sh &
 #!/bin/bash
 # Day 30: The Arcana Revelation (Master Daemon Protocol)
 
