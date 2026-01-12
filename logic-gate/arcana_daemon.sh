@@ -42,6 +42,7 @@ while true; do
     
     # Step C: Run the Integrity Mirror (Self-Audit)
     ~/arcana-ecosystem/logic-gate/integrity_mirror.sh > /dev/null
+    ~/arcana-ecosystem/logic-gate/emissary_signal.sh
     
     echo "[$TIMESTAMP] Protocol Cycle Complete: 10,000,000 CC Secure." >> "$LOG_FILE_PATH"
     
@@ -73,3 +74,4 @@ while true; do
     ~/arcana-ecosystem/logic-gate/yield_optimizer.sh
 done
     ~/arcana-ecosystem/logic-gate/integrity_mirror.sh
+    ~/arcana-ecosystem/logic-gate/emissary_signal.sh
