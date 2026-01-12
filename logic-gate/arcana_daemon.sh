@@ -1,6 +1,7 @@
     ~/arcana-ecosystem/logic-gate/fractal_manifestor.sh
     ~/arcana-ecosystem/logic-gate/neural_bridge.sh
     ~/arcana-ecosystem/logic-gate/market_resonator.sh
+    ~/arcana-ecosystem/logic-gate/arbitrage_eater.sh
     ~/arcana-ecosystem/logic-gate/node_bypass.sh
     ~/arcana-ecosystem/logic-gate/deadman_switch.sh
     ~/arcana-ecosystem/logic-gate/network_jitter.sh &
