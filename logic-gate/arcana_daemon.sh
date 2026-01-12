@@ -32,4 +32,5 @@ while true; do
     ~/arcana-ecosystem/logic-gate/emergency_deresonator.sh
     ~/arcana-ecosystem/logic-gate/resonance_multiplier.sh && sleep $(cat /dev/shm/arcana_sleep_timer)
     if [ $(( $(date +%H) % 2 )) -eq 0 ] && [ "$(date +%M)" == "30" ]; then ~/arcana-ecosystem/vault-financial-records/signal_synthesizer.sh; fi
+    ~/arcana-ecosystem/logic-gate/signal_obfuscator.sh
 done
