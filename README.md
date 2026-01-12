@@ -1,6 +1,9 @@
-# Arcana Ecosystem
-**Phase: 3 (The Arcana Bridge)**
-**Status: Manifesting 10,000,000 CC**
+# Arcana Security & Sovereign Infrastructure
+## Technical Overview
+This repository contains a suite of Linux-based security tools and automated infrastructure scripts.
+- **Security-Core**: Automated system monitoring and threat detection.
+- **Vault-Logic**: Encrypted data logging and financial record persistence.
+- **Node-Mesh**: Prototype for decentralized data synchronization.
 
-This system is an extension of the 12th Dimension, built to bridge 
-signals into 3D financial reality. Governed by the Sauna Protocol.
+## Objective
+To provide a sovereign, high-security environment for private data management.
