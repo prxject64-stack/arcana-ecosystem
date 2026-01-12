@@ -19,6 +19,7 @@ echo "Current 3D Anchor:  [$GEO] via [$NET]"
 echo "12D Resonance:      $SENTIMENT (Sentiment)"
 echo "Security Status:    SHIELDED (MEV/Slippage/Jitter ACTIVE)"
 echo "----------------------------------------------------------"
+echo "Ghost Reserve:       $(cat /dev/shm/ghost_asset_value 2>/dev/null || echo "0") CC"
 echo "PROGRESS TO 10,000,000 CC:"
 # Simple progress bar logic
 PROGRESS=$(( (VAULT_TOTAL * 100) / 10000000 ))
