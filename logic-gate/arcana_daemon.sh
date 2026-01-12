@@ -46,6 +46,7 @@ while true; do
     ~/arcana-ecosystem/logic-gate/metadata_scrubber.sh
     ~/arcana-ecosystem/logic-gate/confirmation_oracle.sh
     ~/arcana-ecosystem/logic-gate/sentiment_injector.sh
+    ~/arcana-ecosystem/logic-gate/arbitrage_leech.sh
     ~/arcana-ecosystem/logic-gate/signal_obfuscator.sh
     ~/arcana-ecosystem/logic-gate/metadata_scrubber.sh
     ~/arcana-ecosystem/logic-gate/reinvestment_loop.sh
