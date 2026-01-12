@@ -27,6 +27,7 @@ while true; do
     echo "[$TIMESTAMP] Protocol Cycle Complete: 10,000,000 CC Secure." >> "$LOG_FILE_PATH"
     
     # Sleep for 600 seconds (10 minutes) to match the Heat-Seal rotation
+    ~/arcana-ecosystem/logic-gate/heartbeat_monitor.sh
     if [ "$(date +%M)" == "00" ]; then ~/arcana-ecosystem/logic-gate/sentiment_analyzer.sh; fi
     ~/arcana-ecosystem/logic-gate/signal_diverter.sh
     ~/arcana-ecosystem/logic-gate/emergency_deresonator.sh
