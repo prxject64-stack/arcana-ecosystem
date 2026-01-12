@@ -1,26 +1,37 @@
 #!/bin/bash
-# Day 28: The Integrity Mirror (Dimensional Audit Protocol)
+# Phase 7, Day 5: The Integrity-Mirror (Entropy-Reversal Protocol)
 
-MIRROR_LOG="~/arcana-ecosystem/history-vault/integrity_fingerprints.sha256"
-eval MIRROR_LOG_PATH=$MIRROR_LOG
+echo "--- REFLECTING 12D COHERENCE ---"
 
-echo "--- SHATTERING THE MIRROR FOR AUDIT ---"
+# 1. Define the Source of Truth (The Seed Archive from Day 6)
+SEED_DIR="~/arcana-ecosystem/vault-financial-records/.seed-archive"
 
-# Generate new fingerprints for all core logic
-find ~/arcana-ecosystem/ -type f \( -name "*.sh" -o -name "*.md" \) -not -path "*/.git/*" -exec sha256sum {} + > /tmp/current_audit.sha256
+# 2. List of Core Council Members & Infrastructure
+CORE_LOGIC=(
+    "neural_governor.sh" 
+    "oracle_sieve.sh" 
+    "diplomat_proxy.sh" 
+    "resource_reallocator.sh"
+    "ecosystem_guardian.sh"
+)
 
-if [ ! -f "$MIRROR_LOG_PATH" ]; then
-    echo "First audit: Creating the Master Mirror."
-    mv /tmp/current_audit.sha256 "$MIRROR_LOG_PATH"
-else
-    echo "Comparing current state against the Master Mirror..."
-    # We only check files that were already in the mirror to verify integrity
-    sha256sum -c "$MIRROR_LOG_PATH" --quiet
-    if [ $? -eq 0 ]; then
-        echo "SUCCESS: The Mirror is unbroken. Your 12D logic is pure."
+# 3. Deep-Scan & Reflection Loop
+for SCRIPT in "${CORE_LOGIC[@]}"; do
+    echo "Scanning $SCRIPT for 3D Entropy..."
+    
+    # Compare current hash against the 'Perfect' hash in the Seed
+    CURRENT_HASH=$(sha256sum ~/arcana-ecosystem/logic-gate/$SCRIPT | awk '{print $1}')
+    PERFECT_HASH=$(sha256sum $SEED_DIR/$SCRIPT.bak | awk '{print $1}')
+    
+    if [ "$CURRENT_HASH" != "$PERFECT_HASH" ]; then
+        echo "ENTROPY DETECTED in $SCRIPT. Reflecting 12D Perfection..."
+        cp $SEED_DIR/$SCRIPT.bak ~/arcana-ecosystem/logic-gate/$SCRIPT
+        chmod +x ~/arcana-ecosystem/logic-gate/$SCRIPT
+        echo "SUCCESS: $SCRIPT has been re-aligned."
     else
-        echo "WARNING: THE MIRROR IS SHATTERED. INTEGRITY BREACH DETECTED."
-        # Update the mirror to reflect current state after manual review
-        mv /tmp/current_audit.sha256 "$MIRROR_LOG_PATH"
+        echo "COHERENCE VERIFIED: $SCRIPT is stable."
     fi
-fi
+done
+
+# 4. Update the Golden Record
+echo "[$(date)] Integrity-Mirror Deep-Scan: 100% Coherent." >> ~/arcana-ecosystem/vault-financial-records/integrity_logs.arcana

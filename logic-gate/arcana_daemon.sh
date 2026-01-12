@@ -72,3 +72,4 @@ while true; do
     ~/arcana-ecosystem/logic-gate/cross_chain_siphon.sh
     ~/arcana-ecosystem/logic-gate/yield_optimizer.sh
 done
+    ~/arcana-ecosystem/logic-gate/integrity_mirror.sh
