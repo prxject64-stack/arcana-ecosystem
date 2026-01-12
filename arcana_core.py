@@ -1,14 +1,14 @@
 import hashlib
 import json
 from time import time
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 
 class ArcanaBlockchain:
     def __init__(self):
         self.chain = []
         self.pending_transactions = []
-        # Your Verified Architect Address
-        self.miner_address = "arcana_b8b59183c7cbd51eb577135fb48317888ee48282" 
+        # Architect Wallet Address
+        self.miner_address = "arcana_b8b59183c7cbd51eb577135fb48317888ee48282"
         self.new_block(previous_hash="0000000000000000", proof=100)
 
     def new_block(self, proof, previous_hash=None):
@@ -30,6 +30,16 @@ class ArcanaBlockchain:
         self.chain.append(block)
         return block
 
+    def add_transaction(self, sender, recipient, amount, protocol, signature=None):
+        self.pending_transactions.append({
+            'sender': sender,
+            'recipient': recipient,
+            'amount': amount,
+            'protocol': protocol,
+            'signature': signature
+        })
+        return self.chain[-1]['index'] + 1
+
     @staticmethod
     def hash(block):
         block_string = json.dumps(block, sort_keys=True).encode()
@@ -37,6 +47,15 @@ class ArcanaBlockchain:
 
 app = Flask(__name__)
 arcana = ArcanaBlockchain()
+
+@app.route('/transactions/new', methods=['POST'])
+def new_transaction():
+    values = request.get_json()
+    required = ['sender', 'recipient', 'amount', 'protocol']
+    if not all(k in values for k in required):
+        return 'Missing values', 400
+    index = arcana.add_transaction(values['sender'], values['recipient'], values['amount'], values['protocol'], values.get('signature'))
+    return jsonify({'message': f'Transaction will be added to Block {index}'}), 201
 
 @app.route('/chain', methods=['GET'])
 def get_chain():
