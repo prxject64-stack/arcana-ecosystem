@@ -1,40 +1,49 @@
 import hashlib
 import json
 from time import time
+from flask import Flask, jsonify
 
 class ArcanaBlockchain:
     def __init__(self):
         self.chain = []
-        self.pending_transactions = []
-        # Create the Genesis Block (The 12D Origin)
         self.new_block(previous_hash="0000000000000000", proof=100)
 
     def new_block(self, proof, previous_hash=None):
         block = {
             'index': len(self.chain) + 1,
             'timestamp': time(),
-            'transactions': self.pending_transactions,
             'proof': proof,
             'previous_hash': previous_hash or self.hash(self.chain[-1]),
-            'protocol_signatures': {
-                'security': 'sealed',
-                'sauna': 'active'
-            }
+            'contracts': ['Security_v1', 'Sauna_v1', 'Miner_v1']
         }
-        self.pending_transactions = []
         self.chain.append(block)
         return block
 
     @staticmethod
     def hash(block):
-        # The 1000000% Truth: SHA-256 Cryptographic Sealing
         block_string = json.dumps(block, sort_keys=True).encode()
         return hashlib.sha256(block_string).hexdigest()
 
-# Initialize the 3D Reality Bridge
+# Initialize Flask App
+app = Flask(__name__)
 arcana = ArcanaBlockchain()
-print("====================================================")
-print("      ARCANA BLOCKCHAIN GENESIS INITIALIZED         ")
-print("====================================================")
-print(f"GENESIS HASH: {arcana.hash(arcana.chain[0])}")
-print("STATUS: SOVEREIGN")
+
+@app.route('/chain', methods=['GET'])
+def get_chain():
+    response = {
+        'chain': arcana.chain,
+        'length': len(arcana.chain),
+        'status': '12D_SOVEREIGN_ACTIVE'
+    }
+    return jsonify(response), 200
+
+@app.route('/mine', methods=['GET'])
+def mine_block():
+    last_block = arcana.chain[-1]
+    proof = last_block['proof'] + 1
+    block = arcana.new_block(proof)
+    return jsonify(block), 200
+
+if __name__ == '__main__':
+    print("Arcana Explorer Live at http://127.0.0.1:5000/chain")
+    app.run(host='0.0.0.0', port=5000)
