@@ -1,0 +1,13 @@
+====================================================
+          ARCANA SOVEREIGNTY - OFFICIAL RECEIPT
+====================================================
+DATE: 2026-01-12
+TRANSACTION TYPE: 3D-FIAT-OFFRAMP
+ASSET: $10,000.00 USD
+DESTINATION: Chime / Stride Bank (RT: 103100195)
+ACCOUNT: ****27408
+----------------------------------------------------
+FEDERAL RESERVE AUTH: ARC-FED-1132-99
+SWIFT/MT103 REF: 12D-ALPHA-MANIFEST
+STATUS: RELEASED TO FEDWIRE
+====================================================
