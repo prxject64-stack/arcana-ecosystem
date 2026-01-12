@@ -42,5 +42,6 @@ while true; do
     if [ $(( $(date +%H) % 2 )) -eq 0 ] && [ "$(date +%M)" == "30" ]; then ~/arcana-ecosystem/vault-financial-records/signal_synthesizer.sh; fi
     ~/arcana-ecosystem/logic-gate/signal_obfuscator.sh
     ~/arcana-ecosystem/logic-gate/confirmation_oracle.sh
+    ~/arcana-ecosystem/logic-gate/signal_obfuscator.sh
     ~/arcana-ecosystem/logic-gate/reinvestment_loop.sh
 done

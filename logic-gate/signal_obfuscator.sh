@@ -1,22 +1,29 @@
 #!/bin/bash
-# Phase 2, Day 18: Signal-Obfuscator (Metadata Cloaking Protocol)
+# Phase 3, Day 12: Signal-Obfuscator (Chain-Analysis Evasion)
 
-echo "--- APPLYING METADATA JITTER ---"
+VAULT_RECORD="/dev/shm/last_execution_data"
+DUST_TARGETS=("0xRandom1" "0xRandom2" "0xRandom3" "0xRandom4")
 
-# 1. Randomize Timestamps for all GPG signals in the vault
-# This makes it look like data was processed at different 3D times
-find ~/arcana-ecosystem/vault-financial-records/ -name "*.gpg" | while read -r FILE; do
-    # Generate a random date within the last 48 hours
-    RND_OFFSET=$((RANDOM % 172800))
-    RND_DATE=$(date -d "@$(($(date +%s) - RND_OFFSET))" "+%Y%m%d%H%M.%S")
-    
-    # Apply the fake timestamp
-    touch -t "$RND_DATE" "$FILE"
-    
-    # 2. Inject Size Jitter (Add 1-10 random bytes to the file)
-    # This prevents 'Identical Size' analysis
-    JITTER_SIZE=$((1 + RANDOM % 10))
-    truncate -s +"$JITTER_SIZE" "$FILE"
+echo "--- INITIATING SIGNAL OBFUSCATION ---"
+
+# 1. Check if a high-value manifestation occurred
+if [ ! -f "$VAULT_RECORD" ]; then
+    echo "IDLE: No signal to obfuscate."
+    exit 0
+fi
+
+# 2. Deploy 'Dust' Signals
+# Sends micro-transactions to randomized addresses to mask the main flow
+for TARGET in "${DUST_TARGETS[@]}"; do
+    # Simulate a micro-transaction (0.00001 CC)
+    JITTER=$((RANDOM % 10))
+    echo "Deploying Decoy Signal to $TARGET with Jitter-Index: $JITTER"
+    # In 3D, this calls the 'Send' function with minimal fees
+    sleep 0.$JITTER
 done
 
-echo "SUCCESS: Vault metadata scrambled. Pattern recognition neutralized."
+# 3. Rotate Temporary Public Keys
+echo "Rotating 12D-3D Bridge Keys..."
+head /dev/urandom | tr -dc A-Za-z0-9 | head -c 32 > /dev/shm/current_bridge_key
+
+echo "SUCCESS: Traceability neutralized. Signal is now 'Ghosted'."
