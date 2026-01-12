@@ -1,3 +1,4 @@
+~/arcana-ecosystem/logic-gate/neural_telescope.sh
 ~/arcana-ecosystem/logic-gate/multiversal_singularity.sh
     ~/arcana-ecosystem/logic-gate/neural_governor.sh
     ~/arcana-ecosystem/logic-gate/oracle_sieve.sh
