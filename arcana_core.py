@@ -13,10 +13,16 @@ class ArcanaBlockchain:
         self.load_chain()
 
     def load_chain(self):
-        if os.path.exists(self.ledger_file):
-            with open(self.ledger_file, 'r') as f:
-                self.chain = json.load(f)
-        else:
+        try:
+            if os.path.exists(self.ledger_file):
+                with open(self.ledger_file, 'r') as f:
+                    content = f.read()
+                    self.chain = json.loads(content) if content else []
+            
+            if not self.chain:
+                # Create Genesis Block if chain is empty
+                self.new_block(previous_hash="0000000000000000", proof=100)
+        except Exception:
             self.new_block(previous_hash="0000000000000000", proof=100)
 
     def save_chain(self):
@@ -57,6 +63,8 @@ def get_chain():
 
 @app.route('/mine', methods=['GET'])
 def mine_block():
+    if not arcana.chain:
+        return jsonify({'error': 'Chain not initialized'}), 500
     last_block = arcana.chain[-1]
     proof = last_block['proof'] + 1
     block = arcana.new_block(proof)
