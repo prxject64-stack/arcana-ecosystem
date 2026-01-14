@@ -1,53 +1,22 @@
-
 import time, json, os
-
-
-
 LEDGER_FILE = "ledger"
-
-ITERATION_RATE = 6 # Increased speed (6 seconds)
-
-
-
+ITERATION_RATE = 7
 def check_balance():
-
-    try:
-
-        with open(LEDGER_FILE, "r") as f:
-
-            lines = sum(1 for line in f)
-
-            return lines / 1000.0
-
-    except FileNotFoundError:
-
-        return 0.0
-
-
-
-print(f"ARCANA AWS: Boost Active. Current Balance: {check_balance()} ARC")
-
-
-
+    try:
+        if not os.path.exists(LEDGER_FILE): return 0.0
+        with open(LEDGER_FILE, "r") as f:
+            lines = sum(1 for line in f)
+            return lines / 1000.0
+    except: return 0.0
+print("ARCANA AWS: 7s Rate Active.")
 while True:
-
-    entry = {"ts": time.time(), "id": os.urandom(8).hex()}
-
-    with open(LEDGER_FILE, "a") as f:
-
-        f.write(json.dumps(entry) + "\n")
-
-    
-
-    # Check balance every 10 iterations to show progress
-
-    current_lines = sum(1 for line in open(LEDGER_FILE))
-
-    if current_lines % 10 == 0:
-
-        print(f">>> Total Balance: {current_lines / 1000.0} ARC")
-
-        
-
-    time.sleep(ITERATION_RATE)
-
+    entry = {"ts": time.time(), "id": os.urandom(8).hex()}
+    with open(LEDGER_FILE, "a") as f:
+        f.write(json.dumps(entry) + "\n")
+    try:
+        with open(LEDGER_FILE, "r") as f:
+            current_lines = sum(1 for line in f)
+        if current_lines % 10 == 0:
+            print(f">>> Total Balance: {current_lines / 1000.0} ARC")
+    except: pass
+    time.sleep(ITERATION_RATE)
