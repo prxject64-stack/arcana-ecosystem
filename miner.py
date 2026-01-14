@@ -1,15 +1,24 @@
 import time, json, os
 L="ledger"
-R=0.2 # 5 iterations per second
+BATCH_SIZE = 200 
+R = 0.05 # 20 units per second
+
+print("ARCANA AWS: Velocity Build Active.")
 while True:
- entry={"ts":time.time(),"id":os.urandom(8).hex()}
- with open(L,"a") as f:
-  f.write(json.dumps(entry)+"\n")
- # Balance check every 50 iterations (every 10 seconds at this speed)
- try:
-  if time.time() % 10 < 0.2:
-   with open(L,"r") as f:
-    c=sum(1 for _ in f)
-   print(f">>> Total Balance: {c/1000.0} ARC")
- except:pass
- time.sleep(R)
+    batch = []
+    # Generate the batch in memory to save CPU credits
+    for _ in range(BATCH_SIZE):
+        batch.append(json.dumps({"ts":time.time(),"id":os.urandom(8).hex()}) + "\n")
+        time.sleep(R)
+    
+    # Write the batch in one single disk operation
+    try:
+        with open(L, "a") as f:
+            f.writelines(batch)
+        
+        # Balance Check: Scans the file to confirm actual disk state
+        with open(L, "r") as f:
+            c = sum(1 for _ in f)
+        print(f">>> Velocity Balance: {c/1000.0} ARC")
+    except Exception as e:
+        print(f"Error: {e}")
