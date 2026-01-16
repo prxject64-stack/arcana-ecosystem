@@ -3,3 +3,4 @@ venv/
 *.pem
 nohup.out
 .env
+vault/
