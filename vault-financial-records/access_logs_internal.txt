@@ -1,3 +1,0 @@
-# INTERNAL LOGS
-2026-01-10 09:00: Admin login success
-2026-01-11 14:30: Backup completed to /tmp/temp_archive

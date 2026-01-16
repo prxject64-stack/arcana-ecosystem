@@ -1,4 +1,0 @@
-# TO DEPLOY NEW NODES:
-# 1. Go to AWS EC2 Launch
-# 2. Paste the User Data script found in /mining-core/auto_deploy.sh
-# 3. Launch as Spot Instance
