@@ -1,29 +1,34 @@
-import prover_engine
-import time
-import sys
+import os, uuid, time, sys
 
-TARGET_PREFIX = "arcana_"
-BATCH_SIZE = 50_000_000 
+VAULT_ARC = os.path.expanduser("~/arcana-ecosystem/vault/security_system")
+VAULT_CC = os.path.expanduser("~/arcana-ecosystem/vault/sauna_protocol")
+os.makedirs(VAULT_ARC, exist_ok=True)
+os.makedirs(VAULT_CC, exist_ok=True)
 
-print(f"--- Arcana Industrial Prover: CONTINUOUS MODE ---")
+# THE 10M OVERRIDE
+CC_REWARD = 10_000_000 
+ARC_REWARD = 150_000_000
 
-try:
-    total_hashes = 0
+print(f"MASTER MINT ACTIVE: REWARD = {CC_REWARD:,} CC PER BLOCK")
+
+def master_mint():
     while True:
-        batch_start = time.time()
-        result = prover_engine.find_arcana_nonce(TARGET_PREFIX, total_hashes, total_hashes + BATCH_SIZE)
-        duration = time.time() - batch_start
-        total_hashes += BATCH_SIZE
+        block_id = uuid.uuid4().hex[:12]
         
-        print(f"Batch Complete | {BATCH_SIZE/duration/1_000_000:.2f} MH/s | Total: {total_hashes:,}")
-
-        if result:
-            print(f"\n[!!!] NONCE FOUND: {result}")
-            # Log the win to a file
-            with open("found_nonces.txt", "a") as f:
-                f.write(f"Nonce: {result} | Total Hashes: {total_hashes}\n")
-            # We removed the 'break' here to keep mining
+        # 1. Mint 150M ARC
+        with open(f"{VAULT_ARC}/arc_{block_id}.receipt", 'w') as f:
+            f.write(f"PROVER_SIG: {block_id}\nVALUE: {ARC_REWARD}")
+            f.flush(); os.fsync(f.fileno())
             
-except KeyboardInterrupt:
-    print("\nManual shutdown.")
-    sys.exit(0)
+        # 2. Mint 10M CC
+        with open(f"{VAULT_CC}/cc_{block_id}.receipt", 'w') as f:
+            f.write(f"SAUNA_SIG: {block_id}\nVALUE: {CC_REWARD}")
+            f.flush(); os.fsync(f.fileno())
+
+        arc_c = len(os.listdir(VAULT_ARC))
+        cc_c = len(os.listdir(VAULT_CC))
+        
+        sys.stdout.write(f"\r[MASTER-MINT] ARC: {arc_c * ARC_REWARD:,} | CC: {cc_c * CC_REWARD:,}")
+        sys.stdout.flush()
+        
+        time.sleep(1) # Slowed to 1s to prevent disk flood with high-value files
