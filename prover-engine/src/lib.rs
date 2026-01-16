@@ -6,12 +6,17 @@ use rayon::prelude::*;
 fn find_arcana_nonce(target_prefix: String, range_start: u64, range_end: u64) -> PyResult<Option<u64>> {
     Python::with_gil(|py| {
         py.allow_threads(|| {
+            let prefix_bytes = target_prefix.as_bytes();
+            
             let result = (range_start..range_end)
                 .into_par_iter()
                 .find_map_any(|nonce| {
-                    let input = format!("{}{}", target_prefix, nonce);
+                    let mut buffer = itoa::Buffer::new();
+                    let nonce_bytes = buffer.format(nonce).as_bytes();
+                    
                     let mut hasher = Sha256::new();
-                    hasher.update(input.as_bytes());
+                    hasher.update(prefix_bytes);
+                    hasher.update(nonce_bytes);
                     let hash = hasher.finalize();
 
                     if hash[0] == 0 && hash[1] == 0 && (hash[2] & 0xf0) == 0 {
