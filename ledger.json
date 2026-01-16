@@ -1,12 +1,12 @@
 {
     "address": "arcana_b8b59183c7cbd51eb577135fb48317888ee48282",
-    "balance": 483256838.87,
+    "balance": 483257894.87,
     "cc_capacity": 849260000000.0,
     "status": "SOVEREIGN_VERIFIED",
     "node_affinity": "Base-Node",
     "yield_rate": 0.8736,
     "last_sync": "2026-01-14T23:59:59Z",
-    "last_block_hash": "00000426d9f2852ca2b0a8ae59f3e0ce291e7916c7a6d6c683444a6f3019e12e",
+    "last_block_hash": "00000889ecff65645dc40536260d1b6f3a4a74173ac11f0c3cb7bccc2a18504f",
     "last_mined_timestamp": 1768461166.446573,
-    "fees_paid": 14166.0
+    "fees_paid": 14210.0
 }
