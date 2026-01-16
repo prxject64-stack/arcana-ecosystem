@@ -1,0 +1,30 @@
+[
+    {
+        "index": 1,
+        "timestamp": 1768297123.5470357,
+        "transactions": [
+            {
+                "sender": "0",
+                "recipient": "arcana_b8b59183c7cbd51eb577135fb48317888ee48282",
+                "amount": 50,
+                "protocol": "ARCANA_MINING_REWARD"
+            }
+        ],
+        "proof": 100,
+        "previous_hash": "0000000000000000"
+    },
+    {
+        "index": 2,
+        "timestamp": 1768297168.3945704,
+        "transactions": [
+            {
+                "sender": "0",
+                "recipient": "arcana_b8b59183c7cbd51eb577135fb48317888ee48282",
+                "amount": 50,
+                "protocol": "ARCANA_MINING_REWARD"
+            }
+        ],
+        "proof": 101,
+        "previous_hash": "f7354cf84e7d80768f8e596c38ed8355e5a71e623e4254952753c13fec747818"
+    }
+]
