@@ -1229,3 +1229,5 @@ python3: can't open file '/home/ubuntu/arcana-ecosystem/scripts/relay_provider.p
 [Fri Jan 16 17:05:26 2026] RELAY_SYNC: 42037 Blocks | Depth: 6,305,550,000,000 ARC | Fees: 840.74 CC
 [Fri Jan 16 17:05:36 2026] RELAY_SYNC: 42056 Blocks | Depth: 6,308,400,000,000 ARC | Fees: 841.12 CC
 [Fri Jan 16 17:05:46 2026] RELAY_SYNC: 42076 Blocks | Depth: 6,311,400,000,000 ARC | Fees: 841.52 CC
+[Fri Jan 16 17:05:56 2026] RELAY_SYNC: 42096 Blocks | Depth: 6,314,400,000,000 ARC | Fees: 841.92 CC
+[Fri Jan 16 17:06:06 2026] RELAY_SYNC: 42115 Blocks | Depth: 6,317,250,000,000 ARC | Fees: 842.30 CC
