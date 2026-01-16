@@ -32,3 +32,6 @@ def master_mint():
         sys.stdout.flush()
         
         time.sleep(1) # Slowed to 1s to prevent disk flood with high-value files
+
+if __name__ == '__main__':
+    master_mint()
