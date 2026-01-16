@@ -1,6 +1,4 @@
 venv/
-*.log
-*.pem
-nohup.out
-.env
-vault/
+prover-engine/target/
+miner.log
+ledger.json
