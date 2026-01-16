@@ -3,29 +3,27 @@ import time
 import sys
 
 TARGET_PREFIX = "arcana_"
-BATCH_SIZE = 25_000_000  # Lowered slightly to ensure stability on small RAM
+BATCH_SIZE = 50_000_000 
 
-print(f"--- Arcana Industrial Prover Starting ---")
-print(f"Targeting: {TARGET_PREFIX}")
+print(f"--- Arcana Industrial Prover: CONTINUOUS MODE ---")
 
 try:
     total_hashes = 0
     while True:
         batch_start = time.time()
-        # The engine we built earlier
         result = prover_engine.find_arcana_nonce(TARGET_PREFIX, total_hashes, total_hashes + BATCH_SIZE)
-        
         duration = time.time() - batch_start
         total_hashes += BATCH_SIZE
         
-        hashrate = BATCH_SIZE / duration
-        print(f"Batch Complete | {hashrate/1_000_000:.2f} MH/s | Total: {total_hashes:,}")
+        print(f"Batch Complete | {BATCH_SIZE/duration/1_000_000:.2f} MH/s | Total: {total_hashes:,}")
 
         if result:
             print(f"\n[!!!] NONCE FOUND: {result}")
-            # Optional: Submit to network here
-            break
-
+            # Log the win to a file
+            with open("found_nonces.txt", "a") as f:
+                f.write(f"Nonce: {result} | Total Hashes: {total_hashes}\n")
+            # We removed the 'break' here to keep mining
+            
 except KeyboardInterrupt:
-    print("\nManual shutdown initiated.")
+    print("\nManual shutdown.")
     sys.exit(0)
