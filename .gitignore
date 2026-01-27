@@ -2,3 +2,4 @@ venv/
 prover-engine/target/
 miner.log
 ledger.json
+.bash_history
