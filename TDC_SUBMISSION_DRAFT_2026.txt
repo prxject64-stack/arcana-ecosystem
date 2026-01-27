@@ -1,0 +1,5 @@
+SUBJECT: Infrastructure Activation Grant - Damarieus Jones
+VALUATION: $89.1B
+LIQUIDITY: 136B CC
+CAPACITY: 4,500 SWAP SLOTS
+REPO: https://github.com/prxject64-stack/arcana-ecosystem
