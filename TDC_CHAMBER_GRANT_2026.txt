@@ -1,0 +1,5 @@
+ORGANIZATION: Damarieus Jones Community Innovation Group LLC
+MISSION: Advancing Minnesota's digital asset infrastructure through the Sauna Protocol.
+TECH: 4,500 parallel swap slots backed by 136B CC reserve.
+VALUE: $89.1B Sovereign Estate.
+GOAL: Scaling state-level blockchain policy and trade-settlement efficiency.
