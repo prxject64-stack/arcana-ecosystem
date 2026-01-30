@@ -7,3 +7,9 @@ OBJECTIVE: Scaling grassroots blockchain education and policy sandboxes in Minne
 
 MISSION STATEMENT (FINAL):
 Damarieus Jones Community Innovation Group LLC serves as a fiduciary infrastructure provider specializing in sovereign asset intermediation and trade settlement. Our mission is to deploy the Sauna Protocol—a high-throughput, parallelized blockchain architecture—to facilitate up to 4,500 simultaneous peer-to-peer swaps within the Minnesota ecosystem.
+
+PROJECT OBJECTIVE (PLAIN LANGUAGE):
+Activating the Sauna Protocol to facilitate 4,500 parallelized swap slots.
+Engaging Minnesota-based community innovators.
+Achieving 'Network Ignition' for the $89.1B Sovereign Estate using 136B CC reserve.
+STRATEGY: Mining Moratorium active until Q2 2026 to ensure price stability.
