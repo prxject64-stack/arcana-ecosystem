@@ -114,3 +114,4 @@ fi
 export ARCANA_CORE=~/arcana-ecosystem/mining-core
 alias core='cd ~/arcana-ecosystem/mining-core'
 export ARCANA_CORE=/home/prxject64/arcana-ecosystem/mining-core
+export PATH="$HOME/bin:$PATH"
