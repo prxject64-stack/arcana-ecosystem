@@ -2,14 +2,17 @@
     "Version": "2012-10-17",
     "Statement": [
         {
+            "Sid": "ArcanaSovereignAudit",
             "Effect": "Allow",
             "Action": [
+                "dynamodb:ListTables",
                 "dynamodb:DescribeTable",
                 "dynamodb:Scan",
                 "dynamodb:GetItem",
-                "dynamodb:Query"
+                "dynamodb:Query",
+                "ec2:DescribeVpcEndpoints"
             ],
-            "Resource": "arn:aws:dynamodb:us-east-2:231498620362:table/TrustStack_Clients"
+            "Resource": "*"
         }
     ]
 }
