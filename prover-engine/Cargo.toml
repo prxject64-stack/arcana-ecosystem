@@ -1,14 +1,15 @@
 [package]
-name = "prover_engine"
+name = "nexus-engine"
 version = "0.1.0"
 edition = "2021"
 
 [lib]
-name = "prover_engine"
+name = "nexus_engine"
 crate-type = ["cdylib"]
 
 [dependencies]
-pyo3 = { version = "0.23.3", features = ["extension-module"] }
-sha2 = "0.10"
+pyo3 = { version = "0.22", features = ["extension-module"] }
 rayon = "1.8"
-itoa = "1.0"
+aws-config = { version = "1.1.7", features = ["behavior-version-latest"] }
+aws-sdk-dynamodb = "1.16.0"
+tokio = { version = "1", features = ["full"] }
