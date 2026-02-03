@@ -1,0 +1,16 @@
+[
+  {
+    "timestamp": "Tue Feb  3 01:07:48 PM CST 2026",
+    "swap_id": "001",
+    "asset": "CC",
+    "status": "SETTLED",
+    "fee_earned": "0.00 (Test Mode)"
+  },
+  {
+    "timestamp": "Tue Feb  3 01:07:48 PM CST 2026",
+    "swap_id": "002",
+    "asset": "CC",
+    "status": "SETTLED",
+    "fee_earned": "0.00 (Test Mode)"
+  }
+]
