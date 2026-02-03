@@ -1,0 +1,66 @@
+[Mon Feb  2 10:35:55 PM CST 2026] SYSTEM REBOOT DETECTED. INITIATING RECOVERY...
+Traceback (most recent call last):
+  File "/usr/bin/aws", line 19, in <module>
+    import awscli.clidriver
+  File "/usr/lib/python3/dist-packages/awscli/clidriver.py", line 21, in <module>
+    import botocore.session
+  File "/usr/lib/python3/dist-packages/awscli/botocore/session.py", line 27, in <module>
+    import botocore.client
+  File "/usr/lib/python3/dist-packages/awscli/botocore/client.py", line 16, in <module>
+    from botocore import UNSIGNED, waiter, xform_name
+  File "/usr/lib/python3/dist-packages/awscli/botocore/waiter.py", line 17, in <module>
+    from botocore.docs.docstring import WaiterDocstring
+  File "/usr/lib/python3/dist-packages/awscli/botocore/docs/__init__.py", line 15, in <module>
+    from botocore.docs.service import ServiceDocumenter
+  File "/usr/lib/python3/dist-packages/awscli/botocore/docs/service.py", line 14, in <module>
+    from botocore.docs.client import ClientDocumenter, ClientExceptionsDocumenter
+  File "/usr/lib/python3/dist-packages/awscli/botocore/docs/client.py", line 16, in <module>
+    from botocore.docs.example import ResponseExampleDocumenter
+  File "/usr/lib/python3/dist-packages/awscli/botocore/docs/example.py", line 13, in <module>
+    from botocore.docs.shape import ShapeDocumenter
+  File "/usr/lib/python3/dist-packages/awscli/botocore/docs/shape.py", line 19, in <module>
+    from botocore.utils import is_json_value_header
+  File "/usr/lib/python3/dist-packages/awscli/botocore/utils.py", line 33, in <module>
+    import botocore.httpsession
+  File "/usr/lib/python3/dist-packages/awscli/botocore/httpsession.py", line 21, in <module>
+    from urllib3.util.ssl_ import (
+ImportError: cannot import name 'DEFAULT_CIPHERS' from 'urllib3.util.ssl_' (/home/prxject64/.local/lib/python3.11/site-packages/urllib3/util/ssl_.py)
+===============================================
+   ARCANA NEXUS CORE: CAPACITY GOVERNOR        
+===============================================
+Traceback (most recent call last):
+  File "/usr/bin/aws", line 19, in <module>
+    import awscli.clidriver
+  File "/usr/lib/python3/dist-packages/awscli/clidriver.py", line 21, in <module>
+    import botocore.session
+  File "/usr/lib/python3/dist-packages/awscli/botocore/session.py", line 27, in <module>
+    import botocore.client
+  File "/usr/lib/python3/dist-packages/awscli/botocore/client.py", line 16, in <module>
+    from botocore import UNSIGNED, waiter, xform_name
+  File "/usr/lib/python3/dist-packages/awscli/botocore/waiter.py", line 17, in <module>
+    from botocore.docs.docstring import WaiterDocstring
+  File "/usr/lib/python3/dist-packages/awscli/botocore/docs/__init__.py", line 15, in <module>
+    from botocore.docs.service import ServiceDocumenter
+  File "/usr/lib/python3/dist-packages/awscli/botocore/docs/service.py", line 14, in <module>
+    from botocore.docs.client import ClientDocumenter, ClientExceptionsDocumenter
+  File "/usr/lib/python3/dist-packages/awscli/botocore/docs/client.py", line 16, in <module>
+    from botocore.docs.example import ResponseExampleDocumenter
+  File "/usr/lib/python3/dist-packages/awscli/botocore/docs/example.py", line 13, in <module>
+    from botocore.docs.shape import ShapeDocumenter
+  File "/usr/lib/python3/dist-packages/awscli/botocore/docs/shape.py", line 19, in <module>
+    from botocore.utils import is_json_value_header
+  File "/usr/lib/python3/dist-packages/awscli/botocore/utils.py", line 33, in <module>
+    import botocore.httpsession
+  File "/usr/lib/python3/dist-packages/awscli/botocore/httpsession.py", line 21, in <module>
+    from urllib3.util.ssl_ import (
+ImportError: cannot import name 'DEFAULT_CIPHERS' from 'urllib3.util.ssl_' (/home/prxject64/.local/lib/python3.11/site-packages/urllib3/util/ssl_.py)
+/home/prxject64/nexus_core.sh: line 13: jq: command not found
+/home/prxject64/nexus_core.sh: line 14: jq: command not found
+[STATUS] Table:  | Current RCU: 
+/home/prxject64/nexus_core.sh: line 20: [: : integer expression expected
+[HEALTH] Capacity matches Sovereign target (4500). No action needed.
+[SECURITY] 136B CC Liquidity Shield: ACTIVE
+===============================================
+[ARCANA] Starting Sovereign Audit...
+[CRITICAL] AccessDenied. Scan Failed. Check IAM Browser Console.
+[Mon Feb  2 10:36:27 PM CST 2026] RECOVERY COMPLETE. SYSTEMS ONLINE.

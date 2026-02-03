@@ -1,0 +1,5 @@
+SLIDE 1: Title - Sauna Protocol: $89.1B Settlement Layer.
+SLIDE 2: Problem - Inefficient RWA Liquidity.
+SLIDE 3: Solution - 4,500 Parallel Slots & MN 521A.
+SLIDE 4: Traction - 13,378 Proofs & Jan 28 Stress Test.
+SLIDE 5: Ask - $250k Seed (MN SSBCI Path).

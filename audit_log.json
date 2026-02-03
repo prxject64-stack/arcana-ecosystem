@@ -1,0 +1,3 @@
+{"timestamp": "2026-01-31T01:11:55.107201", "wallet": "TEST_WALLET_ADDRESS", "status": "REJECTED", "node_id": "ARCANA_NODE_01"}
+{"timestamp": "2026-01-31T01:20:58.550756", "wallet": "YOUR_NODE_WALLET_ADDRESS", "status": "REJECTED"}
+{"timestamp": "2026-01-31T01:23:31.389455", "wallet": "0x11dB74cD5a952f600Ee02840fB08fe9CB3c611F7", "status": "REJECTED"}

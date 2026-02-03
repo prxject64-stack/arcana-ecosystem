@@ -1,0 +1,6 @@
+.aws/
+*.csv
+*.AppImage
+*.tar.xz
+*.zip
+.env
