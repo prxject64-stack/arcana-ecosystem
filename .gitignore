@@ -4,3 +4,9 @@
 *.tar.xz
 *.zip
 .env
+venv/
+.venv/
+.dropbox-dist/
+__pycache__/
+*.pyc
+.env
