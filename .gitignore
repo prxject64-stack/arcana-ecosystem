@@ -10,3 +10,9 @@ venv/
 __pycache__/
 *.pyc
 .env
+venv/
+.venv/
+.dropbox-dist/
+__pycache__/
+*.pyc
+.env
