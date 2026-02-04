@@ -3,13 +3,20 @@ name = "nexus-engine"
 version = "0.1.0"
 edition = "2021"
 
+[dependencies]
+# Web3 Core
+ethers = { version = "2.0", features = ["rustls"] }
+tokio = { version = "1", features = ["full"] }
+eyre = "0.6"
+
+# Cloud & Database
+aws-config = "1.1"
+aws-sdk-dynamodb = "1.1"
+
+# Prover & Python Bridge (2026 Stability)
+pyo3 = { version = "0.23", features = ["extension-module"] }
+rayon = "1.10"
+
 [lib]
 name = "nexus_engine"
-crate-type = ["cdylib"]
-
-[dependencies]
-pyo3 = { version = "0.22", features = ["extension-module"] }
-rayon = "1.8"
-aws-config = { version = "1.1.7", features = ["behavior-version-latest"] }
-aws-sdk-dynamodb = "1.16.0"
-tokio = { version = "1", features = ["full"] }
+crate-type = ["cdylib", "rlib"]
