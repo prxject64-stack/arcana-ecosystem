@@ -1,5 +1,5 @@
 error[E0407]: method `backtrace` is not a member of trait `Error`
-  --> /home/prxject64/prover-engine/target/release/build/eyre-fa8f14fb13f1c361/out/probe.rs:19:9
+  --> /home/ubuntu/arcana-ecosystem/prover-engine/target/release/build/eyre-fa8f14fb13f1c361/out/probe.rs:19:9
    |
 19 | / ...   fn backtrace(&self) -> Option<&Backtrace> {
 20 | | ...       let backtrace = Backtrace::capture();
@@ -11,13 +11,13 @@ error[E0407]: method `backtrace` is not a member of trait `Error`
    | |_______^ not a member of trait `Error`
 
 error[E0554]: `#![feature]` may not be used on the stable release channel
- --> /home/prxject64/prover-engine/target/release/build/eyre-fa8f14fb13f1c361/out/probe.rs:2:5
+ --> /home/ubuntu/arcana-ecosystem/prover-engine/target/release/build/eyre-fa8f14fb13f1c361/out/probe.rs:2:5
   |
 2 |     #![feature(backtrace)]
   |     ^^^^^^^^^^^^^^^^^^^^^^
 
 warning: the feature `backtrace` has been stable since 1.65.0 and no longer requires an attribute to enable
- --> /home/prxject64/prover-engine/target/release/build/eyre-fa8f14fb13f1c361/out/probe.rs:2:16
+ --> /home/ubuntu/arcana-ecosystem/prover-engine/target/release/build/eyre-fa8f14fb13f1c361/out/probe.rs:2:16
   |
 2 |     #![feature(backtrace)]
   |                ^^^^^^^^^

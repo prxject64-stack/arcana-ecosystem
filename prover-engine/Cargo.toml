@@ -16,6 +16,8 @@ aws-sdk-dynamodb = "1.1"
 # Prover & Python Bridge (2026 Stability)
 pyo3 = { version = "0.23", features = ["extension-module"] }
 rayon = "1.10"
+dotenv = "0.15.0"
+futures = "0.3.31"
 
 [lib]
 name = "nexus_engine"

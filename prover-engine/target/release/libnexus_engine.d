@@ -1,1 +1,1 @@
-/home/prxject64/prover-engine/target/release/libnexus_engine.so: /home/prxject64/prover-engine/src/lib.rs
+/home/ubuntu/arcana-ecosystem/prover-engine/target/release/libnexus_engine.so: /home/ubuntu/arcana-ecosystem/prover-engine/src/lib.rs

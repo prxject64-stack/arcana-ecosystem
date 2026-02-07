@@ -1,50 +1,48 @@
+use std::{env, sync::Arc, time::Duration};
+use tokio::time::sleep;
 use ethers::prelude::*;
-use ethers::types::transaction::eip2718::TypedTransaction; // THE MISSING IMPORT
-use eyre::Result;
-use std::sync::Arc;
-use std::env;
+
+abigen!(IERC20, r#"[ 
+    function transfer(address to, uint256 amount) external returns (bool)
+]"#);
 
 #[tokio::main]
-async fn main() -> Result<()> {
-    let rpc_url = env::var("RPC_URL").map_err(|_| eyre::eyre!("Missing RPC_URL"))?;
-    let priv_key = env::var("PRIVATE_KEY").map_err(|_| eyre::eyre!("Missing PRIVATE_KEY"))?;
+async fn main() -> Result<(), Box<dyn std::error::Error>> {
+    let rpc_url = env::var("RPC_URL")?;
+    let priv_key = env::var("PRIVATE_KEY")?.trim_start_matches("0x").to_string();
+    let arc_vault: Address = "0xF0e11D2a5a9936AdCAc36724EB477465f64Dc8f4".parse()?;
+    let cc_addr: Address = "0x8847E51E89A609D2D11Dc10020991A29D500ABf0".parse()?;
     
     let provider = Provider::<Http>::try_from(rpc_url)?;
     let chain_id = provider.get_chainid().await?;
-    let wallet: LocalWallet = priv_key.parse::<LocalWallet>()?.with_chain_id(chain_id.as_u64());
-    let client = Arc::new(SignerMiddleware::new(provider, wallet.clone()));
+    let wallet = priv_key.parse::<LocalWallet>()?.with_chain_id(chain_id.as_u64());
+    let address = wallet.address();
 
-    // Get current network fees with safety buffer
-    let block = client.get_block(BlockNumber::Latest).await?.unwrap();
-    let base_fee = block.base_fee_per_gas.unwrap_or(U256::from(20_000_000u64));
-    let max_fee = (base_fee * 130) / 100; // 30% buffer for 2026 volatility
-    let priority_fee = U256::from(100_000u64); 
+    let client = SignerMiddleware::new(provider, wallet);
+    let client = NonceManagerMiddleware::new(client, address);
+    let client = Arc::new(client);
+    
+    let cc_token = IERC20::new(cc_addr, client.clone());
 
-    let args: Vec<String> = env::args().collect();
-    let is_broadcast = args.contains(&"--broadcast".to_string());
+    println!("[ACTION] Moving CC to ARC Vault: {:?}", arc_vault);
 
-    if args.contains(&"--auth-sovereign".to_string()) {
-        println!("--- [VAULT DEPLOYMENT: TYPE 2] ---");
-        if is_broadcast {
-            let mut tx = Eip1559TransactionRequest::new()
-                .to(wallet.address())
-                .value(0)
-                .max_fee_per_gas(max_fee)
-                .max_priority_fee_per_gas(priority_fee);
-            
-            tx.chain_id = Some(chain_id.as_u64().into());
-
-            let typed_tx: TypedTransaction = tx.into();
-            
-            let pending = client.send_transaction(typed_tx, None).await?;
-            println!("Broadcast Success! Hash: {:?}", pending.tx_hash());
-            
-            // Wait for confirmation
-            let receipt = pending.await?.ok_or_else(|| eyre::eyre!("TX Dropped"))?;
-            println!("Status: Confirmed in block {}", receipt.block_number.unwrap());
-        } else {
-            println!("(Simulation) Would deploy vault with max_fee: {}", max_fee);
+    for i in 1..=4500 {
+        loop {
+            // Sending 1,000,000 CC per swap to fuel the ARC contract
+            match cc_token.transfer(arc_vault, U256::from(1000000)).send().await {
+                Ok(tx) => {
+                    if i % 10 == 0 { println!("[SUCCESS] Swap {}: {:?}", i, *tx); }
+                    break;
+                }
+                Err(e) => {
+                    println!("[RETRY] Swap {} failed: {}. Syncing nonce...", i, e);
+                    // FIXED: Correct method name and argument
+                    client.initialize_nonce(None).await?; 
+                    sleep(Duration::from_secs(2)).await;
+                }
+            }
         }
     }
+    println!("[SUCCESS] Sovereign sequence complete.");
     Ok(())
 }
