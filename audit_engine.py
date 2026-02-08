@@ -6,7 +6,7 @@ LOCAL_RPC = "http://localhost:8545"
 w3 = AsyncWeb3(AsyncHTTPProvider(LOCAL_RPC))
 
 async def run_external_audit(target_address, client_name="Prospect"):
-    target = Web3.to_checksum_address(target_address)
+    import re; target = Web3.to_checksum_address(re.sub(r'[^0-9a-fA-Fx]', '', target_address))
     accounts = await w3.eth.accounts
     pre_balance = await w3.eth.get_balance(target)
     successes = 0
