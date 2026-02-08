@@ -1,0 +1,2 @@
+# AlphaSec Master Portfolio
+Target #3: AINFT - Status: Initialized outreach to Nova Club
