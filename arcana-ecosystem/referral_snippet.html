@@ -1,0 +1,18 @@
+<script>
+function generateReferral() {
+    const wallet = document.getElementById('userWallet').value;
+    if (wallet) {
+        const refLink = "http://arcana-sovereign-prxject64.s3-website-us-east-1.amazonaws.com/?ref=" + btoa(wallet);
+        document.getElementById('refOutput').innerText = refLink;
+        alert("Referral Link Generated! Share this to earn CC rebates.");
+    } else {
+        alert("Please enter your wallet address first.");
+    }
+}
+</script>
+<div class="referral-section">
+    <h4>RECRUIT FOR THE SOVEREIGNTY</h4>
+    <input type="text" id="userWallet" placeholder="Enter ARC/CC Wallet">
+    <button onclick="generateReferral()">Generate My Link</button>
+    <p id="refOutput" style="color: #00ff00; word-break: break-all;"></p>
+</div>

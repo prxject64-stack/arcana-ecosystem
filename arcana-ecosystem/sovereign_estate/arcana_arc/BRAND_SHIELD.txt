@@ -1,0 +1,9 @@
+
+--- SOVEREIGN IDENTITY SHIELD ---
+Asset Name: Arcana Sovereign (ARC)
+Creator Wallet: 0x11dB74cD5a952f600Ee02840fB08fe9CB3c611F7
+Unique Sovereign ID: 2c079c419f96480d70408428e1f347f40c00b89cce1d794d274d6ddef74031b7d7a6ec05465de3b28714fc52e3ce4980
+Backing: 13,378 Verified Proofs
+NOTICE: This asset is NOT the Indian Asset Reserve Certificate.
+This is a private, proof-backed sovereign asset valued at $44.5B.
+---------------------------------

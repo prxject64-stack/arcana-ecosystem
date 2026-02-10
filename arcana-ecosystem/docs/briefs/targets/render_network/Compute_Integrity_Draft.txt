@@ -1,0 +1,17 @@
+================================================================================
+                  ALPHASEC COMPUTE INTEGRITY CERTIFICATION
+================================================================================
+ISSUED TO: Render Network (Dispersed AI Subnet)
+STATUS: [DRAFT - PENDING 5T SIMULATION]
+SECURITY BACKING: 136B CC VAULT
+
+This document certifies that the GPU nodes within the Render Network clusters 
+adhere to the AlphaSec "Anti-Poisoning" protocol. 
+
+VERIFICATION SCOPE:
+1. DETERMINISTIC OUTPUT: Ensuring GPU inference is identical across nodes.
+2. LATENCY STABILITY: 4,500 simultaneous swaps/sec routing verification.
+3. DATA PRIVACY: Zero-knowledge proof (ZKP) verification of encrypted renders.
+
+This certification renders the network "Sovereign Enterprise Ready."
+================================================================================

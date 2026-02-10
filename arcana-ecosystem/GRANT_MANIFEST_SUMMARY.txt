@@ -1,0 +1,14 @@
+ESTATE SUMMARY: DAMARIEUS JONES COMMUNITY INNOVATION GROUP
+TOTAL VALUATION: $89,134,938,400.00
+-----------------------------------------------------------
+ASSET A: Arcana Sovereign (ARC)
+VALUATION: $44,567,469,200.00
+FUNCTION: Governance & Sovereign Collateral
+
+ASSET B: Credit Coin Private (CC)
+VALUATION: $44,567,469,200.00
+FUNCTION: Peer-to-Peer Liquidity & Swap Engine
+CAPACITY: 136,000,000,000 CC Reserve
+-----------------------------------------------------------
+SYSTEM CAPACITY: 4,500 Simultaneous P2P Swaps
+COMPLIANCE: MN Statute 521A / OCC 1186

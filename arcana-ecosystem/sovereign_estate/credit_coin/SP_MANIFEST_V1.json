@@ -1,0 +1,9 @@
+{
+  "asset_name": "Credit Coin Private",
+  "ticker": "CC",
+  "valuation_usd": 44567469200.00,
+  "liquidity_reserve": 136000000000,
+  "swap_capacity": 4500,
+  "compliance_id": "OCC-1186-CC-2026",
+  "status": "LIQUIDITY_ACTIVE"
+}

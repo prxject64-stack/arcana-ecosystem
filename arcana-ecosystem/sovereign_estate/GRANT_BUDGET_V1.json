@@ -1,0 +1,10 @@
+{
+  "grant_request": 2000.00,
+  "allocation": {
+    "legal_formation_llc": 155.00,
+    "hardware_security": 279.00,
+    "minting_gas_reserve": 1100.00,
+    "node_infrastructure": 466.00
+  },
+  "entity_target": "Damarieus Jones Community Innovation Group LLC"
+}

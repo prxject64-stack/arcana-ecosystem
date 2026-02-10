@@ -1,0 +1,18 @@
+=========================================================
+          ARCANA SOVEREIGN: SECURITY MANIFEST
+          DATE: Mon Feb  2 11:34:29 AM CST 2026
+=========================================================
+CORE SCRIPTS:
+125a0e6aa5de9593f3a1c2ac20965ca185f28d05d2b08b4b1a91d62fd70758c8  miner.py
+17467874195cd3e1023522ffa99940e0e31c5e31f4b179141610fc3f2cc927a6  dashboard.sh
+adacd5cd344030d57cf58f7e24c3a80fee3a413a822d7d4fab2b1125c3f01b9e  guardian.sh
+48500ad5f1685590140feb0fdec648038c47db37ef9e59eb455d3fe56f32aadc  truststack_core.py
+
+INFRASTRUCTURE CONFIG:
+4d65f885beeecad3dfe6fa61e85aeb580c82fffe0b263f598959afac26396b51  .gitignore
+5126cf8badf4ea4f035952b7aa4c10672b25a06f15753533f1a41b8aa9abc80b  final_test.json
+
+DATABASE STATE (DYNAMODB):
+TABLE_NAME: TrustStack_Clients
+REGION: us-east-1
+=========================================================
