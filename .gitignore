@@ -1,0 +1,8 @@
+arcana_node/venv/
+.cargo/
+target/
+*.log
+arcana_node/venv/
+password.txt
+keystore/
+*.tar.gz
