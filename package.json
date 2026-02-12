@@ -1,0 +1,24 @@
+{
+  "name": "ubuntu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prxject64-stack/arcana-ecosystem.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prxject64-stack/arcana-ecosystem/issues"
+  },
+  "homepage": "https://github.com/prxject64-stack/arcana-ecosystem#readme",
+  "dependencies": {
+    "ethers": "^6.16.0",
+    "keythereum": "^2.0.0"
+  }
+}
