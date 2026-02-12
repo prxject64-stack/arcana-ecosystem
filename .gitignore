@@ -1,13 +1,26 @@
-.env
-*.txt
-*.hex
-*.pdf
-node_modules/
-bin/
-out/
-cache/
-arcana_backup/
-geth-linux-amd64-*/
+# Blockchain Data
+arcana_data/
+geth/
+keystore/
+.ethereum/
+*.log
+nohup.out
+
+# Tooling and Environment
 .cargo/
-target/
-**/*.rs.bk
+.rustup/
+.local/
+.cache/
+node_modules/
+build/
+bin/
+
+# Hidden Files
+.*
+!.gitignore
+password.txt
+miner_pass.txt
+dev_wallet.txt
+signer.txt
+arcana_node/
+*.log
