@@ -6,3 +6,6 @@ arcana_node/venv/
 password.txt
 keystore/
 *.tar.gz
+geth/
+.ethereum/
+history
