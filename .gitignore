@@ -8,3 +8,6 @@ out/
 cache/
 arcana_backup/
 geth-linux-amd64-*/
+.cargo/
+target/
+**/*.rs.bk
