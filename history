@@ -1,0 +1,7 @@
+eth.pendingTransactions
+eth.pendingTransactionsgeth --datadir . \
+admin.datadir
+miner.setEtherbase("0x14A3256052c02f9d87FE1Cc3b712D4530061b25c")
+miner.start()
+miner.start(1)
+miner.setEtherbase("0x14A3256052c02f9d87FE1Cc3b712D4530061b25c")

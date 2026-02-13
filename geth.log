@@ -7194,3 +7194,140 @@ INFO [02-12|23:05:35.005] Commit new sealing work                  number=1231 s
 INFO [02-12|23:05:39.148] Looking for peers                        peercount=0 tried=47  static=0
 INFO [02-12|23:05:40.004] Successfully sealed new block            number=1231 sealhash=5ce8c4..a73442 hash=025111..7f466b elapsed=4.998s
 INFO [02-12|23:05:40.004] Commit new sealing work                  number=1232 sealhash=acf259..7f73cb txs=0   gas=0         fees=0           elapsed="156.743µs"
+INFO [02-12|23:05:45.004] Successfully sealed new block            number=1232 sealhash=acf259..7f73cb hash=418f70..2d13b6 elapsed=4.999s
+INFO [02-12|23:05:45.004] Commit new sealing work                  number=1233 sealhash=d8fb75..c5f24e txs=0   gas=0         fees=0           elapsed="246.257µs"
+INFO [02-12|23:05:49.172] Looking for peers                        peercount=0 tried=44  static=0
+INFO [02-12|23:05:50.003] Successfully sealed new block            number=1233 sealhash=d8fb75..c5f24e hash=d423c7..2dff80 elapsed=4.999s
+INFO [02-12|23:05:50.004] Commit new sealing work                  number=1234 sealhash=1b70e3..7abcc1 txs=0   gas=0         fees=0           elapsed="190.73µs"
+INFO [02-12|23:05:55.008] Successfully sealed new block            number=1234 sealhash=1b70e3..7abcc1 hash=eb6737..3a21f9 elapsed=5.004s
+INFO [02-12|23:05:55.008] Commit new sealing work                  number=1235 sealhash=a0f0b7..ad7fba txs=0   gas=0         fees=0           elapsed="197.522µs"
+INFO [02-12|23:05:59.531] Looking for peers                        peercount=0 tried=39  static=0
+INFO [02-12|23:06:00.009] Successfully sealed new block            number=1235 sealhash=a0f0b7..ad7fba hash=69f6f0..289315 elapsed=5.000s
+INFO [02-12|23:06:00.009] Commit new sealing work                  number=1236 sealhash=a0893e..a355a9 txs=0   gas=0         fees=0           elapsed="156.531µs"
+INFO [02-12|23:06:05.009] Successfully sealed new block            number=1236 sealhash=a0893e..a355a9 hash=a2e327..d6bfb2 elapsed=4.999s
+INFO [02-12|23:06:05.009] Commit new sealing work                  number=1237 sealhash=bbc426..b944db txs=0   gas=0         fees=0           elapsed="140.232µs"
+INFO [02-12|23:06:09.542] Looking for peers                        peercount=0 tried=41  static=0
+INFO [02-12|23:06:10.009] Successfully sealed new block            number=1237 sealhash=bbc426..b944db hash=9c62e9..83dd05 elapsed=4.999s
+INFO [02-12|23:06:10.009] Commit new sealing work                  number=1238 sealhash=206cab..66aec7 txs=0   gas=0         fees=0           elapsed="181.177µs"
+INFO [02-12|23:06:15.008] Successfully sealed new block            number=1238 sealhash=206cab..66aec7 hash=d836f3..3d8497 elapsed=4.998s
+INFO [02-12|23:06:15.008] Commit new sealing work                  number=1239 sealhash=a649be..9bb231 txs=0   gas=0         fees=0           elapsed="167.405µs"
+INFO [02-12|23:06:19.580] Looking for peers                        peercount=0 tried=64  static=0
+INFO [02-12|23:06:20.007] Successfully sealed new block            number=1239 sealhash=a649be..9bb231 hash=fe29eb..bfd3a6 elapsed=4.999s
+INFO [02-12|23:06:20.007] Commit new sealing work                  number=1240 sealhash=bbd19b..102196 txs=0   gas=0         fees=0           elapsed="146.743µs"
+INFO [02-12|23:06:25.007] Successfully sealed new block            number=1240 sealhash=bbd19b..102196 hash=3723b1..1ef0fb elapsed=4.999s
+INFO [02-12|23:06:25.007] Commit new sealing work                  number=1241 sealhash=f5ed5f..7fc6a2 txs=0   gas=0         fees=0           elapsed="207.52µs"
+INFO [02-12|23:06:29.893] Looking for peers                        peercount=0 tried=56  static=0
+INFO [02-12|23:06:30.010] Successfully sealed new block            number=1241 sealhash=f5ed5f..7fc6a2 hash=57c8ac..4bb2ad elapsed=5.002s
+INFO [02-12|23:06:30.010] Commit new sealing work                  number=1242 sealhash=1472d9..101c2a txs=0   gas=0         fees=0           elapsed="197.293µs"
+INFO [02-12|23:06:35.005] Successfully sealed new block            number=1242 sealhash=1472d9..101c2a hash=c6ac85..e2fa33 elapsed=4.995s
+INFO [02-12|23:06:35.006] Commit new sealing work                  number=1243 sealhash=b24186..cdabbb txs=0   gas=0         fees=0           elapsed="221.25µs"
+INFO [02-12|23:06:40.006] Successfully sealed new block            number=1243 sealhash=b24186..cdabbb hash=3ff095..a6dd28 elapsed=5.000s
+INFO [02-12|23:06:40.006] Commit new sealing work                  number=1244 sealhash=799415..dc98c0 txs=0   gas=0         fees=0           elapsed="203.412µs"
+INFO [02-12|23:06:40.394] Looking for peers                        peercount=0 tried=66  static=0
+INFO [02-12|23:06:45.006] Successfully sealed new block            number=1244 sealhash=799415..dc98c0 hash=f155f8..5b885b elapsed=4.999s
+INFO [02-12|23:06:45.006] Commit new sealing work                  number=1245 sealhash=e1c35d..3be429 txs=0   gas=0         fees=0           elapsed="208.775µs"
+INFO [02-12|23:06:50.006] Successfully sealed new block            number=1245 sealhash=e1c35d..3be429 hash=12bdf7..229e73 elapsed=5.000s
+INFO [02-12|23:06:50.007] Commit new sealing work                  number=1246 sealhash=24b400..073d14 txs=0   gas=0         fees=0           elapsed="242.402µs"
+INFO [02-12|23:06:50.593] Looking for peers                        peercount=0 tried=57  static=0
+INFO [02-12|23:06:55.007] Successfully sealed new block            number=1246 sealhash=24b400..073d14 hash=35e697..325ab0 elapsed=4.999s
+INFO [02-12|23:06:55.007] Commit new sealing work                  number=1247 sealhash=20f6dd..b62abe txs=0   gas=0         fees=0           elapsed="178.911µs"
+INFO [02-12|23:07:00.007] Successfully sealed new block            number=1247 sealhash=20f6dd..b62abe hash=c81871..fbcd5b elapsed=5.000s
+INFO [02-12|23:07:00.007] Commit new sealing work                  number=1248 sealhash=cf28f1..96b1d0 txs=0   gas=0         fees=0           elapsed="196.374µs"
+INFO [02-12|23:07:00.726] Looking for peers                        peercount=0 tried=30  static=0
+INFO [02-12|23:07:05.006] Successfully sealed new block            number=1248 sealhash=cf28f1..96b1d0 hash=f7bc85..032dac elapsed=4.998s
+INFO [02-12|23:07:05.007] Commit new sealing work                  number=1249 sealhash=0920fb..584b71 txs=0   gas=0         fees=0           elapsed="128.432µs"
+INFO [02-12|23:07:10.007] Successfully sealed new block            number=1249 sealhash=0920fb..584b71 hash=1db571..2bf0dd elapsed=4.999s
+INFO [02-12|23:07:10.007] Commit new sealing work                  number=1250 sealhash=d75b5b..522304 txs=0   gas=0         fees=0           elapsed="264.958µs"
+INFO [02-12|23:07:10.764] Looking for peers                        peercount=0 tried=65  static=0
+INFO [02-12|23:07:15.007] Successfully sealed new block            number=1250 sealhash=d75b5b..522304 hash=978771..57bd10 elapsed=5.000s
+INFO [02-12|23:07:15.008] Commit new sealing work                  number=1251 sealhash=d204ba..cf943a txs=0   gas=0         fees=0           elapsed="248.008µs"
+INFO [02-12|23:07:20.007] Successfully sealed new block            number=1251 sealhash=d204ba..cf943a hash=de387f..896ab5 elapsed=4.999s
+INFO [02-12|23:07:20.007] Commit new sealing work                  number=1252 sealhash=ccf683..59b735 txs=0   gas=0         fees=0           elapsed="194.37µs"
+INFO [02-12|23:07:20.779] Looking for peers                        peercount=1 tried=43  static=0
+INFO [02-12|23:07:25.007] Successfully sealed new block            number=1252 sealhash=ccf683..59b735 hash=a04f81..097cd6 elapsed=4.999s
+INFO [02-12|23:07:25.007] Commit new sealing work                  number=1253 sealhash=db9e8f..cad1d6 txs=0   gas=0         fees=0           elapsed="218.428µs"
+INFO [02-12|23:07:30.008] Successfully sealed new block            number=1253 sealhash=db9e8f..cad1d6 hash=f3fdc7..c150a7 elapsed=5.000s
+INFO [02-12|23:07:30.008] Commit new sealing work                  number=1254 sealhash=e797c4..ff7254 txs=0   gas=0         fees=0           elapsed="202.032µs"
+INFO [02-12|23:07:30.779] Looking for peers                        peercount=0 tried=41  static=0
+INFO [02-12|23:07:35.007] Successfully sealed new block            number=1254 sealhash=e797c4..ff7254 hash=965863..0f02c7 elapsed=4.998s
+INFO [02-12|23:07:35.007] Commit new sealing work                  number=1255 sealhash=40e703..e4fdeb txs=0   gas=0         fees=0           elapsed="131.292µs"
+INFO [02-12|23:07:40.007] Successfully sealed new block            number=1255 sealhash=40e703..e4fdeb hash=215a32..e3bc23 elapsed=5.000s
+INFO [02-12|23:07:40.008] Commit new sealing work                  number=1256 sealhash=d7df84..e83127 txs=0   gas=0         fees=0           elapsed="174.208µs"
+INFO [02-12|23:07:41.248] Looking for peers                        peercount=0 tried=25  static=0
+INFO [02-12|23:07:45.007] Successfully sealed new block            number=1256 sealhash=d7df84..e83127 hash=c79e80..8393a5 elapsed=4.999s
+INFO [02-12|23:07:45.008] Commit new sealing work                  number=1257 sealhash=b5c384..6ca93f txs=0   gas=0         fees=0           elapsed="138.174µs"
+INFO [02-12|23:07:50.007] Successfully sealed new block            number=1257 sealhash=b5c384..6ca93f hash=9b0037..a7f2a1 elapsed=4.999s
+INFO [02-12|23:07:50.008] Commit new sealing work                  number=1258 sealhash=a7c20a..92a745 txs=0   gas=0         fees=0           elapsed="167.866µs"
+INFO [02-12|23:07:51.260] Looking for peers                        peercount=0 tried=56  static=1
+INFO [02-12|23:07:55.007] Successfully sealed new block            number=1258 sealhash=a7c20a..92a745 hash=1f0fa9..3e006c elapsed=4.999s
+INFO [02-12|23:07:55.007] Commit new sealing work                  number=1259 sealhash=be5854..bdbf4d txs=0   gas=0         fees=0           elapsed="207.138µs"
+INFO [02-12|23:08:00.009] Successfully sealed new block            number=1259 sealhash=be5854..bdbf4d hash=b87742..f09390 elapsed=5.001s
+INFO [02-12|23:08:00.009] Commit new sealing work                  number=1260 sealhash=e38ece..ff0ce6 txs=0   gas=0         fees=0           elapsed="202.68µs"
+INFO [02-12|23:08:01.301] Looking for peers                        peercount=0 tried=32  static=1
+INFO [02-12|23:08:05.007] Successfully sealed new block            number=1260 sealhash=e38ece..ff0ce6 hash=76fdc6..cf3ba7 elapsed=4.997s
+INFO [02-12|23:08:05.007] Commit new sealing work                  number=1261 sealhash=3fcb80..2634b3 txs=0   gas=0         fees=0           elapsed="151.776µs"
+INFO [02-12|23:08:10.007] Successfully sealed new block            number=1261 sealhash=3fcb80..2634b3 hash=2a0295..7efa25 elapsed=5.000s
+INFO [02-12|23:08:10.008] Commit new sealing work                  number=1262 sealhash=0a0628..127849 txs=0   gas=0         fees=0           elapsed="208.138µs"
+INFO [02-12|23:08:11.314] Looking for peers                        peercount=0 tried=88  static=1
+INFO [02-12|23:08:15.007] Successfully sealed new block            number=1262 sealhash=0a0628..127849 hash=5846c3..2eb653 elapsed=4.999s
+INFO [02-12|23:08:15.008] Commit new sealing work                  number=1263 sealhash=5d6beb..380056 txs=0   gas=0         fees=0           elapsed="254.642µs"
+INFO [02-12|23:08:20.008] Successfully sealed new block            number=1263 sealhash=5d6beb..380056 hash=45f855..1c0af5 elapsed=5.000s
+INFO [02-12|23:08:20.008] Commit new sealing work                  number=1264 sealhash=327312..87c1dd txs=0   gas=0         fees=0           elapsed="130.206µs"
+INFO [02-12|23:08:21.366] Looking for peers                        peercount=0 tried=34  static=1
+INFO [02-12|23:08:25.007] Successfully sealed new block            number=1264 sealhash=327312..87c1dd hash=e466ac..2f69c5 elapsed=4.999s
+INFO [02-12|23:08:25.007] Commit new sealing work                  number=1265 sealhash=ef4c33..a24b64 txs=0   gas=0         fees=0           elapsed="175.144µs"
+INFO [02-12|23:08:30.007] Successfully sealed new block            number=1265 sealhash=ef4c33..a24b64 hash=2c258a..470f89 elapsed=4.999s
+INFO [02-12|23:08:30.007] Commit new sealing work                  number=1266 sealhash=cff067..17391b txs=0   gas=0         fees=0           elapsed="178.191µs"
+INFO [02-12|23:08:31.404] Looking for peers                        peercount=1 tried=50  static=1
+INFO [02-12|23:08:35.008] Successfully sealed new block            number=1266 sealhash=cff067..17391b hash=52e110..0f6ac1 elapsed=5.000s
+INFO [02-12|23:08:35.009] Commit new sealing work                  number=1267 sealhash=8d7a44..1dfccf txs=0   gas=0         fees=0           elapsed="667.108µs"
+INFO [02-12|23:08:40.007] Successfully sealed new block            number=1267 sealhash=8d7a44..1dfccf hash=e3d621..cd4ce5 elapsed=4.998s
+INFO [02-12|23:08:40.008] Commit new sealing work                  number=1268 sealhash=e4ee5a..e1a50c txs=0   gas=0         fees=0           elapsed="202.145µs"
+INFO [02-12|23:08:41.445] Looking for peers                        peercount=0 tried=57  static=1
+INFO [02-12|23:08:45.007] Successfully sealed new block            number=1268 sealhash=e4ee5a..e1a50c hash=7e94dd..48ff07 elapsed=4.999s
+INFO [02-12|23:08:45.007] Commit new sealing work                  number=1269 sealhash=99d24e..fe4d38 txs=0   gas=0         fees=0           elapsed="219.799µs"
+INFO [02-12|23:08:50.007] Successfully sealed new block            number=1269 sealhash=99d24e..fe4d38 hash=6a214b..2120ad elapsed=4.999s
+INFO [02-12|23:08:50.007] Commit new sealing work                  number=1270 sealhash=7240b9..5bc1b0 txs=0   gas=0         fees=0           elapsed="226.918µs"
+INFO [02-12|23:08:51.508] Looking for peers                        peercount=0 tried=37  static=1
+INFO [02-12|23:08:55.007] Successfully sealed new block            number=1270 sealhash=7240b9..5bc1b0 hash=0b7a59..90ccf5 elapsed=4.999s
+INFO [02-12|23:08:55.007] Commit new sealing work                  number=1271 sealhash=c108d9..56ecce txs=0   gas=0         fees=0           elapsed="174.68µs"
+INFO [02-12|23:09:00.008] Successfully sealed new block            number=1271 sealhash=c108d9..56ecce hash=84f0f7..499867 elapsed=5.000s
+INFO [02-12|23:09:00.008] Commit new sealing work                  number=1272 sealhash=7e04c3..19a268 txs=0   gas=0         fees=0           elapsed="201.583µs"
+INFO [02-12|23:09:01.760] Looking for peers                        peercount=0 tried=46  static=1
+INFO [02-12|23:09:05.008] Successfully sealed new block            number=1272 sealhash=7e04c3..19a268 hash=f7e64d..401ddd elapsed=4.999s
+INFO [02-12|23:09:05.008] Commit new sealing work                  number=1273 sealhash=6f0a4a..261e38 txs=0   gas=0         fees=0           elapsed="158.261µs"
+INFO [02-12|23:09:10.006] Successfully sealed new block            number=1273 sealhash=6f0a4a..261e38 hash=7114dd..14267b elapsed=4.998s
+INFO [02-12|23:09:10.007] Commit new sealing work                  number=1274 sealhash=185660..3d2d66 txs=0   gas=0         fees=0           elapsed="167.1µs"
+INFO [02-12|23:09:11.900] Looking for peers                        peercount=0 tried=31  static=1
+INFO [02-12|23:09:15.007] Successfully sealed new block            number=1274 sealhash=185660..3d2d66 hash=b541ce..0ccf6e elapsed=5.000s
+INFO [02-12|23:09:15.008] Commit new sealing work                  number=1275 sealhash=539666..80a60d txs=0   gas=0         fees=0           elapsed="241.937µs"
+INFO [02-12|23:09:20.007] Successfully sealed new block            number=1275 sealhash=539666..80a60d hash=704917..ba3258 elapsed=4.999s
+INFO [02-12|23:09:20.007] Commit new sealing work                  number=1276 sealhash=c91cd1..a68303 txs=0   gas=0         fees=0           elapsed="157.353µs"
+INFO [02-12|23:09:21.973] Looking for peers                        peercount=0 tried=22  static=1
+INFO [02-12|23:09:25.007] Successfully sealed new block            number=1276 sealhash=c91cd1..a68303 hash=13a83f..281a8a elapsed=4.999s
+INFO [02-12|23:09:25.007] Commit new sealing work                  number=1277 sealhash=a83534..8e52c9 txs=0   gas=0         fees=0           elapsed="156.209µs"
+INFO [02-12|23:09:30.007] Successfully sealed new block            number=1277 sealhash=a83534..8e52c9 hash=59e0aa..2c1ede elapsed=4.999s
+INFO [02-12|23:09:30.007] Commit new sealing work                  number=1278 sealhash=e177c2..423ae2 txs=0   gas=0         fees=0           elapsed="159.391µs"
+INFO [02-12|23:09:32.065] Looking for peers                        peercount=1 tried=41  static=1
+INFO [02-12|23:09:35.006] Successfully sealed new block            number=1278 sealhash=e177c2..423ae2 hash=b517a2..ab463f elapsed=4.999s
+INFO [02-12|23:09:35.007] Commit new sealing work                  number=1279 sealhash=49e7c8..cdd130 txs=0   gas=0         fees=0           elapsed="231.874µs"
+INFO [02-12|23:09:40.006] Successfully sealed new block            number=1279 sealhash=49e7c8..cdd130 hash=0296b3..9dfda0 elapsed=4.999s
+INFO [02-12|23:09:40.007] Commit new sealing work                  number=1280 sealhash=5f5ef7..952885 txs=0   gas=0         fees=0           elapsed="187.121µs"
+INFO [02-12|23:09:42.518] Looking for peers                        peercount=0 tried=86  static=1
+INFO [02-12|23:09:45.006] Successfully sealed new block            number=1280 sealhash=5f5ef7..952885 hash=58487c..c82639 elapsed=4.999s
+INFO [02-12|23:09:45.007] Commit new sealing work                  number=1281 sealhash=caae49..58affc txs=0   gas=0         fees=0           elapsed="271.043µs"
+INFO [02-12|23:09:48.741] Got interrupt, shutting down...
+INFO [02-12|23:09:48.741] HTTP server stopped                      endpoint=127.0.0.1:8545
+INFO [02-12|23:09:48.741] HTTP server stopped                      endpoint=127.0.0.1:8551
+INFO [02-12|23:09:48.741] IPC endpoint closed                      url=/home/ubuntu/arcana_node_full/geth.ipc
+INFO [02-12|23:09:48.741] Ethereum protocol stopped
+INFO [02-12|23:09:48.741] Transaction pool stopped
+INFO [02-12|23:09:48.749] Writing cached state to disk             block=1280 hash=58487c..c82639 root=ccb0a6..76a2e2
+INFO [02-12|23:09:48.754] Persisted trie from memory database      nodes=4 size=563.00B time=4.255969ms gcnodes=144 gcsize=19.93KiB gctime="586.094µs" livenodes=0 livesize=0.00B
+INFO [02-12|23:09:48.754] Writing cached state to disk             block=1279 hash=0296b3..9dfda0 root=ccb0a6..76a2e2
+INFO [02-12|23:09:48.754] Persisted trie from memory database      nodes=0 size=0.00B   time="1.824µs"  gcnodes=0   gcsize=0.00B    gctime=0s          livenodes=0 livesize=0.00B
+INFO [02-12|23:09:48.754] Writing cached state to disk             block=1153 hash=7c4b45..784691 root=ccb0a6..76a2e2
+INFO [02-12|23:09:48.754] Persisted trie from memory database      nodes=0 size=0.00B   time="2.715µs"  gcnodes=0   gcsize=0.00B    gctime=0s          livenodes=0 livesize=0.00B
+INFO [02-12|23:09:48.754] Writing snapshot state to disk           root=61a147..097fc5
+INFO [02-12|23:09:48.754] Persisted trie from memory database      nodes=0 size=0.00B   time=445ns      gcnodes=0   gcsize=0.00B    gctime=0s          livenodes=0 livesize=0.00B
+INFO [02-12|23:09:48.754] Blockchain stopped
