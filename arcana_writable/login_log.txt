@@ -2,3 +2,4 @@ LIQUIDITY_DEPLOYED: ETH transfer to 0x8f7F...0767 confirmed at Fri Feb 13 04:33:
 LIQUIDITY_DEPLOYED: ETH transfer to 0x8f7F...0767 confirmed at Fri Feb 13 04:34:01 UTC 2026
 MANUAL_AUDIT: Confirmed 136B CC balance via interactive console.
 MANUAL_AUDIT: Confirmed 136B CC balance via interactive console.
+SETTLEMENT_RETRY: Adjusted value to 135,999,999,999 CC to cover gas.
