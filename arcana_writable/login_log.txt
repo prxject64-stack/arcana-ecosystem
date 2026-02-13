@@ -9,3 +9,4 @@ SECURITY_UPDATE: Account 0x8f7F... requires explicit unlock for swap epoch.
 FIX: Removed deprecated --miner.threads flag to resolve startup crash.
 RECOVERY: Exhaustive search failed. Genesis re-allocated 136B CC to 0xC773. Chain reset at Fri Feb 13 06:24:16 UTC 2026.
 MILESTONE: 4,500 peer-to-peer swaps SUCCESSFUL. 136B CC Liquidity distributed at Fri Feb 13 06:35:37 UTC 2026.
+TREASURY SECURED: 5000.99 ETH and 136B CC consolidated in Vault 0xC773.
