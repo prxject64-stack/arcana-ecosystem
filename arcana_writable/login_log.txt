@@ -6,3 +6,4 @@ SETTLEMENT_RETRY: Adjusted value to 135,999,999,999 CC to cover gas.
 LIQUIDITY_FINALIZED: 135.99B CC at 0x8f7F... at Block 389.
 FIX: Updated Web3 import syntax to v4.x destructuring.
 SECURITY_UPDATE: Account 0x8f7F... requires explicit unlock for swap epoch.
+FIX: Removed deprecated --miner.threads flag to resolve startup crash.
