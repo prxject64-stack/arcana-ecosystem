@@ -1,15 +1,25 @@
-import { HardhatUserConfig } from "hardhat/config";
+import { defineConfig, configVariable } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox-mocha-ethers";
+import hardhatIgnition from "@nomicfoundation/hardhat-ignition-ethers";
+import hardhatKeystore from "@nomicfoundation/hardhat-keystore";
 
-const config: HardhatUserConfig = {
-  solidity: "0.8.20",
+export default defineConfig({
+  // Hardhat 3 must see both plugins to resolve the task AND the secret
+  plugins: [hardhatIgnition, hardhatKeystore],
+  solidity: {
+    version: "0.8.24",
+    settings: {
+      optimizer: {
+        enabled: true,
+        runs: 200,
+      },
+    },
+  },
   networks: {
     arcana: {
-      type: "http", // This is the missing discriminator required by Hardhat 3
+      type: "http",
       url: "http://127.0.0.1:8545",
-      accounts: ["0xYOUR_VAULT_PRIVATE_KEY"], 
-    }
-  }
-};
-
-export default config;
+      accounts: [configVariable("ARCANA_KEY")],
+    },
+  },
+});
