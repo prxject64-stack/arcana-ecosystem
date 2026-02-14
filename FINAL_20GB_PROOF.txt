@@ -1,0 +1,5 @@
+--- SCANNING: /home/ubuntu/arcana-ecosystem/vault/sauna_protocol/ ---
+FOUND: 12627 receipts
+WEIGHT: 21.5455 GB
+VALUE: 126,270,000,000 CC
+STATUS: 100% CRYPTOGRAPHICALLY SECURE
