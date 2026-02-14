@@ -4,3 +4,10 @@ peer_*/geth/
 *.log
 vault_test*.py
 .DS_Store
+jwt.hex
+*.log
+*.db
+*.pdf
+Xauthority
+.profile
+.viminfo
