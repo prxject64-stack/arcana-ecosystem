@@ -24,3 +24,10 @@ __pycache__/
 .Python
 pip-log.txt
 pip-delete-this-directory.txt
+peer_1/
+peer_2/
+peer_3/
+data/
+*.sst
+*.ldb
+*.log
