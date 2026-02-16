@@ -1,13 +1,16 @@
+# Secrets
+data/keystore/
+data/geth/nodekey
+pass.txt
+.env
+
+# Node.js
 node_modules/
-venv/
-peer_*/geth/
+npm-debug.log*
+
+# Logs
 *.log
-vault_test*.py
+nohup.out
+
+# System
 .DS_Store
-jwt.hex
-*.log
-*.db
-*.pdf
-Xauthority
-.profile
-.viminfo
