@@ -1,0 +1,18 @@
+[Eth]
+NetworkId = 64
+SyncMode = "full"
+NoPruning = true
+EnablePreimageRecording = true
+
+[Eth.Miner]
+Etherbase = "0x8dcd5c20bfedab671610568614f454a8b47cb395"
+
+[Node]
+DataDir = "/home/ubuntu/arcana-ecosystem/data"
+HTTPHost = "127.0.0.1"
+HTTPPort = 8545
+HTTPModules = ["eth", "net", "web3", "miner", "admin", "clique"]
+AllowUnprotectedTxs = true
+
+[Node.HTTPCors]
+"*" = {}
