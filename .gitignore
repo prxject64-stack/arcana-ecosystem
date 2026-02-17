@@ -10,3 +10,4 @@ peer_3/
 *.sst
 *.ldb
 password.txt
+out/
