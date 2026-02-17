@@ -58,3 +58,30 @@ INFO [02-17|15:30:16.529] Commit new sealing work                  number=1 seal
 WARN [02-17|15:30:16.529] Block sealing failed                     err="authentication needed: password or unlock"
 INFO [02-17|15:30:18.493] New local node record                    seq=1,771,342,210,901 id=ae27ebd37f98122e ip=18.221.3.50 udp=30303 tcp=30303
 INFO [02-17|15:30:32.058] Looking for peers                        peercount=0 tried=102 static=0
+INFO [02-17|15:30:46.382] Looking for peers                        peercount=0 tried=106 static=0
+INFO [02-17|15:30:56.452] Looking for peers                        peercount=1 tried=88  static=0
+INFO [02-17|15:31:06.470] Looking for peers                        peercount=2 tried=29  static=0
+INFO [02-17|15:31:16.509] Looking for peers                        peercount=0 tried=79  static=0
+INFO [02-17|15:31:26.646] Looking for peers                        peercount=0 tried=101 static=0
+INFO [02-17|15:31:36.705] Looking for peers                        peercount=0 tried=28  static=0
+INFO [02-17|15:31:46.820] Looking for peers                        peercount=0 tried=49  static=0
+INFO [02-17|15:31:56.865] Looking for peers                        peercount=0 tried=90  static=0
+INFO [02-17|15:32:06.913] Looking for peers                        peercount=0 tried=38  static=0
+INFO [02-17|15:32:17.006] Looking for peers                        peercount=0 tried=81  static=0
+INFO [02-17|15:32:27.289] Looking for peers                        peercount=0 tried=72  static=0
+INFO [02-17|15:32:37.434] Looking for peers                        peercount=0 tried=48  static=0
+INFO [02-17|15:32:47.444] Looking for peers                        peercount=0 tried=59  static=0
+INFO [02-17|15:32:57.522] Looking for peers                        peercount=0 tried=95  static=0
+INFO [02-17|15:33:07.795] Looking for peers                        peercount=0 tried=41  static=0
+INFO [02-17|15:33:18.059] Looking for peers                        peercount=1 tried=82  static=0
+INFO [02-17|15:33:28.065] Looking for peers                        peercount=1 tried=73  static=0
+INFO [02-17|15:33:38.862] Looking for peers                        peercount=0 tried=91  static=0
+INFO [02-17|15:33:48.984] Looking for peers                        peercount=0 tried=53  static=0
+INFO [02-17|15:33:59.018] Looking for peers                        peercount=0 tried=95  static=0
+INFO [02-17|15:34:09.071] Looking for peers                        peercount=0 tried=45  static=0
+INFO [02-17|15:34:19.139] Looking for peers                        peercount=0 tried=57  static=0
+INFO [02-17|15:34:29.252] Looking for peers                        peercount=0 tried=56  static=0
+INFO [02-17|15:34:39.536] Looking for peers                        peercount=0 tried=79  static=0
+INFO [02-17|15:34:49.646] Looking for peers                        peercount=0 tried=91  static=0
+INFO [02-17|15:34:59.679] Looking for peers                        peercount=0 tried=35  static=0
+INFO [02-17|15:35:09.810] Looking for peers                        peercount=0 tried=53  static=0
