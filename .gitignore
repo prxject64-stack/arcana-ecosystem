@@ -11,3 +11,5 @@ peer_3/
 *.ldb
 password.txt
 out/
+out/
+cache/
