@@ -112,3 +112,5 @@ INFO [02-17|15:39:12.426] Looking for peers                        peercount=0 t
 INFO [02-17|15:39:22.518] Looking for peers                        peercount=0 tried=82  static=0
 INFO [02-17|15:39:32.659] Looking for peers                        peercount=0 tried=101 static=0
 INFO [02-17|15:39:42.746] Looking for peers                        peercount=0 tried=49  static=0
+INFO [02-17|15:39:52.937] Looking for peers                        peercount=0 tried=48  static=0
+INFO [02-17|15:40:02.938] Looking for peers                        peercount=0 tried=73  static=0
