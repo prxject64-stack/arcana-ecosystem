@@ -1,33 +1,6 @@
-# Secrets
+data/geth/
 data/keystore/
-data/geth/nodekey
-pass.txt
-.env
-
-# Node.js
-node_modules/
-npm-debug.log*
-
-# Logs
-*.log
+password.txt
+geth.log
 nohup.out
-
-# System
-.DS_Store
-# Python
-venv/
-.venv/
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-pip-log.txt
-pip-delete-this-directory.txt
-peer_1/
-peer_2/
-peer_3/
-data/
-*.sst
-*.ldb
-*.log
+.env
