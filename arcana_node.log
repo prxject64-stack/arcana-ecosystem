@@ -6750,3 +6750,326 @@ WARN [02-17|18:18:31.006] Block sealing failed                     err="signed r
 INFO [02-17|18:18:31.012] Imported new chain segment               number=3952 hash=e0a32d..3d2e13 blocks=1 txs=0    mgas=0.000 elapsed=2.453ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
 INFO [02-17|18:18:33.014] Imported new chain segment               number=3953 hash=8a1e2d..4b2014 blocks=1 txs=0    mgas=0.000 elapsed=6.976ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
 INFO [02-17|18:18:33.014] Commit new sealing work                  number=3954 sealhash=6533e1..a88701 txs=0    gas=0          fees=0        elapsed="167.882µs"
+INFO [02-17|18:18:35.015] Imported new chain segment               number=3954 hash=717d4b..eadf1c blocks=1 txs=0    mgas=0.000 elapsed=6.125ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:18:35.015] Commit new sealing work                  number=3955 sealhash=c0f4dc..bae1c8 txs=0    gas=0          fees=0        elapsed="128.307µs"
+INFO [02-17|18:18:36.334] Looking for peers                        peercount=2 tried=42  static=0
+INFO [02-17|18:18:37.007] Successfully sealed new block            number=3955 sealhash=c0f4dc..bae1c8 hash=fab0a2..53864a elapsed=1.992s
+INFO [02-17|18:18:37.007] Commit new sealing work                  number=3956 sealhash=51fa8a..ff6556 txs=0    gas=0          fees=0        elapsed="171.826µs"
+WARN [02-17|18:18:37.008] Block sealing failed                     err="signed recently, must wait for others"
+INFO [02-17|18:18:39.014] Imported new chain segment               number=3956 hash=b54264..bb8af7 blocks=1 txs=0    mgas=0.000 elapsed=7.183ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:18:39.015] Commit new sealing work                  number=3957 sealhash=2f04e9..a5eaa3 txs=0    gas=0          fees=0        elapsed="46.384µs"
+INFO [02-17|18:18:41.014] Imported new chain segment               number=3957 hash=426185..5d8023 blocks=1 txs=0    mgas=0.000 elapsed=6.515ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:18:41.015] Commit new sealing work                  number=3958 sealhash=a41598..892509 txs=0    gas=0          fees=0        elapsed="186.796µs"
+INFO [02-17|18:18:43.007] Successfully sealed new block            number=3958 sealhash=a41598..892509 hash=1e8bcb..f7bd62 elapsed=1.992s
+INFO [02-17|18:18:43.008] Commit new sealing work                  number=3959 sealhash=414ff3..ea70b3 txs=0    gas=0          fees=0        elapsed="234.361µs"
+WARN [02-17|18:18:43.008] Block sealing failed                     err="signed recently, must wait for others"
+INFO [02-17|18:18:45.013] Imported new chain segment               number=3959 hash=a65ed4..9145d1 blocks=1 txs=0    mgas=0.000 elapsed=6.301ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:18:45.013] Commit new sealing work                  number=3960 sealhash=b6c86d..66f812 txs=0    gas=0          fees=0        elapsed="177.204µs"
+INFO [02-17|18:18:46.583] Looking for peers                        peercount=2 tried=27  static=0
+INFO [02-17|18:18:47.014] Imported new chain segment               number=3960 hash=443f40..418884 blocks=1 txs=0    mgas=0.000 elapsed=6.579ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:18:47.014] Commit new sealing work                  number=3961 sealhash=b353ba..7f5f6e txs=0    gas=0          fees=0        elapsed="46.66µs"
+INFO [02-17|18:18:49.007] Successfully sealed new block            number=3961 sealhash=b353ba..7f5f6e hash=1f759b..6aa75f elapsed=1.992s
+INFO [02-17|18:18:49.007] Commit new sealing work                  number=3962 sealhash=69b908..d26492 txs=0    gas=0          fees=0        elapsed="210.059µs"
+WARN [02-17|18:18:49.007] Block sealing failed                     err="signed recently, must wait for others"
+INFO [02-17|18:18:51.013] Imported new chain segment               number=3962 hash=12d61c..f16338 blocks=1 txs=0    mgas=0.000 elapsed=6.132ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:18:51.013] Commit new sealing work                  number=3963 sealhash=60c330..7d68c9 txs=0    gas=0          fees=0        elapsed="134.556µs"
+INFO [02-17|18:18:53.015] Imported new chain segment               number=3963 hash=f88015..842ee3 blocks=1 txs=0    mgas=0.000 elapsed=7.735ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:18:53.016] Commit new sealing work                  number=3964 sealhash=f06043..3467f6 txs=0    gas=0          fees=0        elapsed="141.185µs"
+INFO [02-17|18:18:55.007] Successfully sealed new block            number=3964 sealhash=f06043..3467f6 hash=872a72..e0f461 elapsed=1.991s
+INFO [02-17|18:18:55.007] Commit new sealing work                  number=3965 sealhash=8c25b3..a1d56b txs=0    gas=0          fees=0        elapsed="266.046µs"
+WARN [02-17|18:18:55.007] Block sealing failed                     err="signed recently, must wait for others"
+INFO [02-17|18:18:56.621] Looking for peers                        peercount=2 tried=43  static=0
+INFO [02-17|18:18:57.014] Imported new chain segment               number=3965 hash=7385fc..e0e6f2 blocks=1 txs=0    mgas=0.000 elapsed=6.561ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:18:57.014] Commit new sealing work                  number=3966 sealhash=0e0272..cf4ba3 txs=0    gas=0          fees=0        elapsed="167.337µs"
+INFO [02-17|18:18:59.014] Imported new chain segment               number=3966 hash=78ab66..61829a blocks=1 txs=0    mgas=0.000 elapsed=6.572ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:18:59.014] Commit new sealing work                  number=3967 sealhash=923db6..c2c102 txs=0    gas=0          fees=0        elapsed="44.089µs"
+INFO [02-17|18:19:01.007] Successfully sealed new block            number=3967 sealhash=923db6..c2c102 hash=41d152..db21d3 elapsed=1.992s
+INFO [02-17|18:19:01.007] Commit new sealing work                  number=3968 sealhash=99e3b1..2bbad3 txs=0    gas=0          fees=0        elapsed="223.038µs"
+WARN [02-17|18:19:01.007] Block sealing failed                     err="signed recently, must wait for others"
+INFO [02-17|18:19:03.014] Imported new chain segment               number=3968 hash=8677b2..a971a1 blocks=1 txs=0    mgas=0.000 elapsed=6.920ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:19:03.014] Commit new sealing work                  number=3969 sealhash=1983e8..1ab68f txs=0    gas=0          fees=0        elapsed="133.042µs"
+INFO [02-17|18:19:05.014] Imported new chain segment               number=3969 hash=312b46..c27993 blocks=1 txs=0    mgas=0.000 elapsed=6.817ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:19:05.014] Commit new sealing work                  number=3970 sealhash=e60742..751b44 txs=0    gas=0          fees=0        elapsed="180.627µs"
+INFO [02-17|18:19:06.950] Looking for peers                        peercount=2 tried=76  static=0
+INFO [02-17|18:19:07.008] Successfully sealed new block            number=3970 sealhash=e60742..751b44 hash=372cbb..ca1a2b elapsed=1.994s
+INFO [02-17|18:19:07.009] Commit new sealing work                  number=3971 sealhash=60f124..22cf56 txs=0    gas=0          fees=0        elapsed="184.476µs"
+WARN [02-17|18:19:07.009] Block sealing failed                     err="signed recently, must wait for others"
+INFO [02-17|18:19:09.013] Imported new chain segment               number=3971 hash=c19f34..82c035 blocks=1 txs=0    mgas=0.000 elapsed=5.364ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:19:09.013] Commit new sealing work                  number=3972 sealhash=8d252f..42eba4 txs=0    gas=0          fees=0        elapsed="79.19µs"
+INFO [02-17|18:19:11.013] Imported new chain segment               number=3972 hash=cf326e..e3a0c7 blocks=1 txs=0    mgas=0.000 elapsed=5.358ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:19:11.013] Commit new sealing work                  number=3973 sealhash=458641..aa07ce txs=0    gas=0          fees=0        elapsed="142.762µs"
+INFO [02-17|18:19:13.006] Successfully sealed new block            number=3973 sealhash=458641..aa07ce hash=046f48..dc26d8 elapsed=1.993s
+INFO [02-17|18:19:13.007] Commit new sealing work                  number=3974 sealhash=77a611..779b2e txs=0    gas=0          fees=0        elapsed="242.756µs"
+WARN [02-17|18:19:13.007] Block sealing failed                     err="signed recently, must wait for others"
+INFO [02-17|18:19:15.014] Imported new chain segment               number=3974 hash=7d470b..1864f2 blocks=1 txs=0    mgas=0.000 elapsed=6.645ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:19:15.014] Commit new sealing work                  number=3975 sealhash=28437a..19e8dc txs=0    gas=0          fees=0        elapsed="163.104µs"
+INFO [02-17|18:19:16.976] Looking for peers                        peercount=2 tried=37  static=0
+INFO [02-17|18:19:17.014] Imported new chain segment               number=3975 hash=7591ef..e06fb8 blocks=1 txs=0    mgas=0.000 elapsed=6.566ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:19:17.015] Commit new sealing work                  number=3976 sealhash=ca85c2..b11a0e txs=0    gas=0          fees=0        elapsed="158.935µs"
+INFO [02-17|18:19:19.007] Successfully sealed new block            number=3976 sealhash=ca85c2..b11a0e hash=f88abe..aa8d08 elapsed=1.992s
+INFO [02-17|18:19:19.007] Commit new sealing work                  number=3977 sealhash=dfea51..5e830a txs=0    gas=0          fees=0        elapsed="161.343µs"
+WARN [02-17|18:19:19.007] Block sealing failed                     err="signed recently, must wait for others"
+INFO [02-17|18:19:21.014] Imported new chain segment               number=3977 hash=4bf8e8..2908c2 blocks=1 txs=0    mgas=0.000 elapsed=6.205ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:19:21.014] Commit new sealing work                  number=3978 sealhash=0900b7..1f4d17 txs=0    gas=0          fees=0        elapsed="169.068µs"
+INFO [02-17|18:19:23.013] Imported new chain segment               number=3978 hash=9141ba..f53d24 blocks=1 txs=0    mgas=0.000 elapsed=6.506ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:19:23.013] Commit new sealing work                  number=3979 sealhash=a8bf97..d3c54e txs=0    gas=0          fees=0        elapsed="135.504µs"
+INFO [02-17|18:19:25.007] Successfully sealed new block            number=3979 sealhash=a8bf97..d3c54e hash=e5a733..3ab572 elapsed=1.994s
+INFO [02-17|18:19:25.008] Commit new sealing work                  number=3980 sealhash=411f0b..18aac2 txs=0    gas=0          fees=0        elapsed="170.571µs"
+WARN [02-17|18:19:25.008] Block sealing failed                     err="signed recently, must wait for others"
+INFO [02-17|18:19:27.013] Imported new chain segment               number=3980 hash=abdb6a..611d18 blocks=1 txs=0    mgas=0.000 elapsed=6.021ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:19:27.013] Commit new sealing work                  number=3981 sealhash=6ff136..ad4ea4 txs=0    gas=0          fees=0        elapsed="141.065µs"
+INFO [02-17|18:19:27.034] Looking for peers                        peercount=2 tried=31  static=0
+INFO [02-17|18:19:29.014] Imported new chain segment               number=3981 hash=47bec6..458720 blocks=1 txs=0    mgas=0.000 elapsed=6.640ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:19:29.014] Commit new sealing work                  number=3982 sealhash=68f321..ae98e9 txs=0    gas=0          fees=0        elapsed="57.317µs"
+INFO [02-17|18:19:31.006] Successfully sealed new block            number=3982 sealhash=68f321..ae98e9 hash=fe2621..652f1a elapsed=1.992s
+INFO [02-17|18:19:31.007] Commit new sealing work                  number=3983 sealhash=11a1ce..8758d2 txs=0    gas=0          fees=0        elapsed="237.632µs"
+WARN [02-17|18:19:31.007] Block sealing failed                     err="signed recently, must wait for others"
+INFO [02-17|18:19:33.015] Imported new chain segment               number=3983 hash=9a9446..30304a blocks=1 txs=0    mgas=0.000 elapsed=6.952ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:19:33.015] Commit new sealing work                  number=3984 sealhash=ab2631..5ca033 txs=0    gas=0          fees=0        elapsed="70.797µs"
+INFO [02-17|18:19:35.014] Imported new chain segment               number=3984 hash=3fa2c5..54669b blocks=1 txs=0    mgas=0.000 elapsed=6.483ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:19:35.014] Commit new sealing work                  number=3985 sealhash=ddb6e5..20301b txs=0    gas=0          fees=0        elapsed="204.523µs"
+INFO [02-17|18:19:37.007] Successfully sealed new block            number=3985 sealhash=ddb6e5..20301b hash=b390a7..83f235 elapsed=1.992s
+INFO [02-17|18:19:37.007] Commit new sealing work                  number=3986 sealhash=aebd0f..2ce332 txs=0    gas=0          fees=0        elapsed="278.736µs"
+WARN [02-17|18:19:37.007] Block sealing failed                     err="signed recently, must wait for others"
+INFO [02-17|18:19:37.143] Looking for peers                        peercount=2 tried=37  static=0
+INFO [02-17|18:19:39.014] Imported new chain segment               number=3986 hash=fca44a..5522dd blocks=1 txs=0    mgas=0.000 elapsed=6.413ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:19:39.014] Commit new sealing work                  number=3987 sealhash=f3c135..357f50 txs=0    gas=0          fees=0        elapsed="84.641µs"
+INFO [02-17|18:19:41.012] Imported new chain segment               number=3987 hash=24311c..0e162f blocks=1 txs=0    mgas=0.000 elapsed=5.461ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:19:41.013] Commit new sealing work                  number=3988 sealhash=0cb7fe..df461e txs=0    gas=0          fees=0        elapsed="172.278µs"
+INFO [02-17|18:19:43.006] Successfully sealed new block            number=3988 sealhash=0cb7fe..df461e hash=070c74..338635 elapsed=1.993s
+INFO [02-17|18:19:43.007] Commit new sealing work                  number=3989 sealhash=35f8cc..7a19b3 txs=0    gas=0          fees=0        elapsed="213.155µs"
+WARN [02-17|18:19:43.007] Block sealing failed                     err="signed recently, must wait for others"
+INFO [02-17|18:19:45.013] Imported new chain segment               number=3989 hash=986e9e..27723f blocks=1 txs=0    mgas=0.000 elapsed=6.668ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:19:45.014] Commit new sealing work                  number=3990 sealhash=0a117f..a05df1 txs=0    gas=0          fees=0        elapsed="67.8µs"
+INFO [02-17|18:19:47.014] Imported new chain segment               number=3990 hash=e1a291..9c787a blocks=1 txs=0    mgas=0.000 elapsed=7.119ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:19:47.014] Commit new sealing work                  number=3991 sealhash=856dfb..6590b9 txs=0    gas=0          fees=0        elapsed="59.821µs"
+INFO [02-17|18:19:47.253] Looking for peers                        peercount=2 tried=46  static=0
+INFO [02-17|18:19:49.007] Successfully sealed new block            number=3991 sealhash=856dfb..6590b9 hash=a8d588..1b0eab elapsed=1.993s
+INFO [02-17|18:19:49.007] Commit new sealing work                  number=3992 sealhash=ef21ff..e21002 txs=0    gas=0          fees=0        elapsed="177.465µs"
+WARN [02-17|18:19:49.007] Block sealing failed                     err="signed recently, must wait for others"
+INFO [02-17|18:19:51.014] Imported new chain segment               number=3992 hash=e471ee..631870 blocks=1 txs=0    mgas=0.000 elapsed=6.588ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:19:51.015] Commit new sealing work                  number=3993 sealhash=a9761a..fc034f txs=0    gas=0          fees=0        elapsed="85.919µs"
+INFO [02-17|18:19:53.013] Imported new chain segment               number=3993 hash=2628c8..4a36c9 blocks=1 txs=0    mgas=0.000 elapsed=5.967ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:19:53.013] Commit new sealing work                  number=3994 sealhash=33fdcf..813aeb txs=0    gas=0          fees=0        elapsed="96.004µs"
+INFO [02-17|18:19:55.008] Successfully sealed new block            number=3994 sealhash=33fdcf..813aeb hash=aee9e5..725d58 elapsed=1.994s
+INFO [02-17|18:19:55.008] Commit new sealing work                  number=3995 sealhash=43699e..910902 txs=0    gas=0          fees=0        elapsed="175.317µs"
+WARN [02-17|18:19:55.008] Block sealing failed                     err="signed recently, must wait for others"
+INFO [02-17|18:19:57.014] Imported new chain segment               number=3995 hash=fda9a0..682064 blocks=1 txs=0    mgas=0.000 elapsed=6.758ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:19:57.015] Commit new sealing work                  number=3996 sealhash=da814f..dd8475 txs=0    gas=0          fees=0        elapsed="57.345µs"
+INFO [02-17|18:19:57.380] Looking for peers                        peercount=2 tried=72  static=0
+INFO [02-17|18:19:59.014] Imported new chain segment               number=3996 hash=04d30c..2993c3 blocks=1 txs=0    mgas=0.000 elapsed=6.434ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:19:59.014] Commit new sealing work                  number=3997 sealhash=73119c..3739bb txs=0    gas=0          fees=0        elapsed="95.349µs"
+INFO [02-17|18:20:01.007] Successfully sealed new block            number=3997 sealhash=73119c..3739bb hash=54224f..1a81dd elapsed=1.993s
+INFO [02-17|18:20:01.008] Commit new sealing work                  number=3998 sealhash=2d35a1..900643 txs=0    gas=0          fees=0        elapsed="240.049µs"
+WARN [02-17|18:20:01.008] Block sealing failed                     err="signed recently, must wait for others"
+INFO [02-17|18:20:03.015] Imported new chain segment               number=3998 hash=bc80a8..85e4da blocks=1 txs=0    mgas=0.000 elapsed=5.954ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:20:03.015] Commit new sealing work                  number=3999 sealhash=c849e9..aa8ef9 txs=0    gas=0          fees=0        elapsed="84.198µs"
+INFO [02-17|18:20:05.014] Imported new chain segment               number=3999 hash=56474d..053a00 blocks=1 txs=0    mgas=0.000 elapsed=6.396ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:20:05.015] Commit new sealing work                  number=4000 sealhash=bc3410..1ab981 txs=0    gas=0          fees=0        elapsed="55.454µs"
+INFO [02-17|18:20:07.008] Successfully sealed new block            number=4000 sealhash=bc3410..1ab981 hash=bc1c5c..f7d400 elapsed=1.993s
+INFO [02-17|18:20:07.008] Commit new sealing work                  number=4001 sealhash=dbf229..829c88 txs=0    gas=0          fees=0        elapsed="178.79µs"
+WARN [02-17|18:20:07.008] Block sealing failed                     err="signed recently, must wait for others"
+INFO [02-17|18:20:07.583] Looking for peers                        peercount=2 tried=57  static=0
+INFO [02-17|18:20:09.013] Imported new chain segment               number=4001 hash=f5355e..655675 blocks=1 txs=0    mgas=0.000 elapsed=6.227ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:20:09.014] Commit new sealing work                  number=4002 sealhash=ffb2a9..acaff3 txs=0    gas=0          fees=0        elapsed="49.471µs"
+INFO [02-17|18:20:11.015] Imported new chain segment               number=4002 hash=5c6205..2908a4 blocks=1 txs=0    mgas=0.000 elapsed=6.942ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:20:11.015] Commit new sealing work                  number=4003 sealhash=9fcb0a..50f12f txs=0    gas=0          fees=0        elapsed="167.909µs"
+INFO [02-17|18:20:13.007] Successfully sealed new block            number=4003 sealhash=9fcb0a..50f12f hash=d32dda..d06ec2 elapsed=1.991s
+INFO [02-17|18:20:13.007] Commit new sealing work                  number=4004 sealhash=dec463..5e6148 txs=0    gas=0          fees=0        elapsed="157.577µs"
+WARN [02-17|18:20:13.007] Block sealing failed                     err="signed recently, must wait for others"
+INFO [02-17|18:20:15.014] Imported new chain segment               number=4004 hash=47c973..28dfe7 blocks=1 txs=0    mgas=0.000 elapsed=6.396ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:20:15.014] Commit new sealing work                  number=4005 sealhash=bbf75a..14b698 txs=0    gas=0          fees=0        elapsed="106.12µs"
+INFO [02-17|18:20:17.014] Imported new chain segment               number=4005 hash=090eec..f212cc blocks=1 txs=0    mgas=0.000 elapsed=6.372ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:20:17.015] Commit new sealing work                  number=4006 sealhash=601e20..82127c txs=0    gas=0          fees=0        elapsed="269.52µs"
+INFO [02-17|18:20:17.781] Looking for peers                        peercount=3 tried=45  static=0
+INFO [02-17|18:20:19.007] Successfully sealed new block            number=4006 sealhash=601e20..82127c hash=3fe981..26606e elapsed=1.992s
+INFO [02-17|18:20:19.008] Commit new sealing work                  number=4007 sealhash=7f5b0a..26dee0 txs=0    gas=0          fees=0        elapsed="223.501µs"
+WARN [02-17|18:20:19.008] Block sealing failed                     err="signed recently, must wait for others"
+INFO [02-17|18:20:21.016] Imported new chain segment               number=4007 hash=af6ba7..7ccd36 blocks=1 txs=0    mgas=0.000 elapsed=8.628ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:20:21.016] Commit new sealing work                  number=4008 sealhash=b4dd6c..fcca27 txs=0    gas=0          fees=0        elapsed="88.497µs"
+INFO [02-17|18:20:23.014] Imported new chain segment               number=4008 hash=5cbbb5..65c9b7 blocks=1 txs=0    mgas=0.000 elapsed=6.746ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:20:23.014] Commit new sealing work                  number=4009 sealhash=ade8fd..44ff65 txs=0    gas=0          fees=0        elapsed="110.691µs"
+INFO [02-17|18:20:25.007] Successfully sealed new block            number=4009 sealhash=ade8fd..44ff65 hash=768182..1c0338 elapsed=1.993s
+INFO [02-17|18:20:25.008] Commit new sealing work                  number=4010 sealhash=04a5c5..598319 txs=0    gas=0          fees=0        elapsed="184.845µs"
+WARN [02-17|18:20:25.008] Block sealing failed                     err="signed recently, must wait for others"
+INFO [02-17|18:20:27.014] Imported new chain segment               number=4010 hash=51ed31..f2140f blocks=1 txs=0    mgas=0.000 elapsed=6.202ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:20:27.014] Commit new sealing work                  number=4011 sealhash=965546..07923e txs=0    gas=0          fees=0        elapsed="92.234µs"
+INFO [02-17|18:20:27.849] Looking for peers                        peercount=2 tried=40  static=0
+INFO [02-17|18:20:29.014] Imported new chain segment               number=4011 hash=4481fd..24ad50 blocks=1 txs=0    mgas=0.000 elapsed=6.689ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:20:29.014] Commit new sealing work                  number=4012 sealhash=268a59..cafaca txs=0    gas=0          fees=0        elapsed="183.744µs"
+INFO [02-17|18:20:31.008] Successfully sealed new block            number=4012 sealhash=268a59..cafaca hash=1ab36f..8b9662 elapsed=1.993s
+INFO [02-17|18:20:31.008] Commit new sealing work                  number=4013 sealhash=dff843..7dad56 txs=0    gas=0          fees=0        elapsed="267.786µs"
+WARN [02-17|18:20:31.008] Block sealing failed                     err="signed recently, must wait for others"
+INFO [02-17|18:20:33.014] Imported new chain segment               number=4013 hash=228e85..68343e blocks=1 txs=0    mgas=0.000 elapsed=6.273ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:20:33.014] Commit new sealing work                  number=4014 sealhash=c0b88c..7ee45d txs=0    gas=0          fees=0        elapsed="58.756µs"
+INFO [02-17|18:20:35.014] Imported new chain segment               number=4014 hash=fb388b..4ae029 blocks=1 txs=0    mgas=0.000 elapsed=6.435ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:20:35.015] Commit new sealing work                  number=4015 sealhash=12c0e2..a501c6 txs=0    gas=0          fees=0        elapsed="119.281µs"
+INFO [02-17|18:20:37.008] Successfully sealed new block            number=4015 sealhash=12c0e2..a501c6 hash=0c3332..d30660 elapsed=1.993s
+INFO [02-17|18:20:37.008] Commit new sealing work                  number=4016 sealhash=59f645..07ac41 txs=0    gas=0          fees=0        elapsed="158.117µs"
+WARN [02-17|18:20:37.008] Block sealing failed                     err="signed recently, must wait for others"
+INFO [02-17|18:20:37.868] Looking for peers                        peercount=2 tried=81  static=0
+INFO [02-17|18:20:39.014] Imported new chain segment               number=4016 hash=f04668..f1520e blocks=1 txs=0    mgas=0.000 elapsed=5.827ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:20:39.014] Commit new sealing work                  number=4017 sealhash=e3c1d0..3aa88f txs=0    gas=0          fees=0        elapsed="155.956µs"
+INFO [02-17|18:20:41.016] Imported new chain segment               number=4017 hash=07b505..44b666 blocks=1 txs=0    mgas=0.000 elapsed=7.250ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:20:41.016] Commit new sealing work                  number=4018 sealhash=494515..1ecab2 txs=0    gas=0          fees=0        elapsed="55.876µs"
+INFO [02-17|18:20:43.007] Successfully sealed new block            number=4018 sealhash=494515..1ecab2 hash=1e6389..2922ee elapsed=1.991s
+INFO [02-17|18:20:43.008] Commit new sealing work                  number=4019 sealhash=70fd4a..697faf txs=0    gas=0          fees=0        elapsed="203.464µs"
+WARN [02-17|18:20:43.008] Block sealing failed                     err="signed recently, must wait for others"
+INFO [02-17|18:20:45.014] Imported new chain segment               number=4019 hash=163334..6f9e7e blocks=1 txs=0    mgas=0.000 elapsed=5.913ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:20:45.015] Commit new sealing work                  number=4020 sealhash=950adc..6b49fc txs=0    gas=0          fees=0        elapsed="91.667µs"
+INFO [02-17|18:20:47.014] Imported new chain segment               number=4020 hash=1ec927..685ed9 blocks=1 txs=0    mgas=0.000 elapsed=6.333ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:20:47.014] Commit new sealing work                  number=4021 sealhash=35426f..3d4fe7 txs=0    gas=0          fees=0        elapsed="143.248µs"
+INFO [02-17|18:20:47.961] Looking for peers                        peercount=2 tried=63  static=0
+INFO [02-17|18:20:49.007] Successfully sealed new block            number=4021 sealhash=35426f..3d4fe7 hash=c71fda..04fbd0 elapsed=1.992s
+INFO [02-17|18:20:49.007] Commit new sealing work                  number=4022 sealhash=7f7000..e45b6d txs=0    gas=0          fees=0        elapsed="190.96µs"
+WARN [02-17|18:20:49.007] Block sealing failed                     err="signed recently, must wait for others"
+INFO [02-17|18:20:51.015] Imported new chain segment               number=4022 hash=fdb3af..5cdc37 blocks=1 txs=0    mgas=0.000 elapsed=7.638ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:20:51.015] Commit new sealing work                  number=4023 sealhash=38bbdd..62c35e txs=0    gas=0          fees=0        elapsed="185.898µs"
+INFO [02-17|18:20:53.015] Imported new chain segment               number=4023 hash=3d180d..4bfb01 blocks=1 txs=0    mgas=0.000 elapsed=6.786ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:20:53.015] Commit new sealing work                  number=4024 sealhash=0ed2d7..850345 txs=0    gas=0          fees=0        elapsed="156.266µs"
+INFO [02-17|18:20:55.007] Successfully sealed new block            number=4024 sealhash=0ed2d7..850345 hash=f9197b..b3b368 elapsed=1.991s
+INFO [02-17|18:20:55.007] Commit new sealing work                  number=4025 sealhash=cc97d7..cc53d8 txs=0    gas=0          fees=0        elapsed="214.576µs"
+WARN [02-17|18:20:55.007] Block sealing failed                     err="signed recently, must wait for others"
+INFO [02-17|18:20:57.013] Imported new chain segment               number=4025 hash=cdbaea..cf8fa3 blocks=1 txs=0    mgas=0.000 elapsed=5.722ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:20:57.013] Commit new sealing work                  number=4026 sealhash=fe4cd5..007ea8 txs=0    gas=0          fees=0        elapsed="159.733µs"
+INFO [02-17|18:20:57.966] Looking for peers                        peercount=2 tried=47  static=0
+INFO [02-17|18:20:59.014] Imported new chain segment               number=4026 hash=e9dc9f..3e2f2f blocks=1 txs=0    mgas=0.000 elapsed=6.766ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:20:59.015] Commit new sealing work                  number=4027 sealhash=b6353d..5f0a87 txs=0    gas=0          fees=0        elapsed="184.531µs"
+INFO [02-17|18:21:01.008] Successfully sealed new block            number=4027 sealhash=b6353d..5f0a87 hash=9bf1fc..3bd274 elapsed=1.993s
+INFO [02-17|18:21:01.008] Commit new sealing work                  number=4028 sealhash=b34608..2bf146 txs=0    gas=0          fees=0        elapsed="183.858µs"
+WARN [02-17|18:21:01.008] Block sealing failed                     err="signed recently, must wait for others"
+INFO [02-17|18:21:03.013] Imported new chain segment               number=4028 hash=0e9da6..221865 blocks=1 txs=0    mgas=0.000 elapsed=5.507ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:21:03.013] Commit new sealing work                  number=4029 sealhash=04eaa1..84a0f3 txs=0    gas=0          fees=0        elapsed="114.869µs"
+INFO [02-17|18:21:05.016] Imported new chain segment               number=4029 hash=b4b521..1eedd6 blocks=1 txs=0    mgas=0.000 elapsed=7.336ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:21:05.016] Commit new sealing work                  number=4030 sealhash=a1b8cb..701912 txs=0    gas=0          fees=0        elapsed="62.186µs"
+INFO [02-17|18:21:07.007] Successfully sealed new block            number=4030 sealhash=a1b8cb..701912 hash=519d1f..4f4e6f elapsed=1.991s
+INFO [02-17|18:21:07.008] Commit new sealing work                  number=4031 sealhash=af5569..26193f txs=0    gas=0          fees=0        elapsed="254.578µs"
+WARN [02-17|18:21:07.008] Block sealing failed                     err="signed recently, must wait for others"
+INFO [02-17|18:21:07.985] Looking for peers                        peercount=2 tried=81  static=0
+INFO [02-17|18:21:09.013] Imported new chain segment               number=4031 hash=0c24bc..9075a5 blocks=1 txs=0    mgas=0.000 elapsed=6.273ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:21:09.014] Commit new sealing work                  number=4032 sealhash=6e85e8..5ab391 txs=0    gas=0          fees=0        elapsed="193.262µs"
+INFO [02-17|18:21:11.013] Imported new chain segment               number=4032 hash=d33d27..c560c0 blocks=1 txs=0    mgas=0.000 elapsed=5.897ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:21:11.013] Commit new sealing work                  number=4033 sealhash=4ee994..4da0a5 txs=0    gas=0          fees=0        elapsed="52.912µs"
+INFO [02-17|18:21:13.006] Successfully sealed new block            number=4033 sealhash=4ee994..4da0a5 hash=88a0f7..f77e2d elapsed=1.993s
+INFO [02-17|18:21:13.007] Commit new sealing work                  number=4034 sealhash=69a362..500d81 txs=0    gas=0          fees=0        elapsed="180.692µs"
+WARN [02-17|18:21:13.007] Block sealing failed                     err="signed recently, must wait for others"
+INFO [02-17|18:21:15.015] Imported new chain segment               number=4034 hash=acbb3e..c80f40 blocks=1 txs=0    mgas=0.000 elapsed=6.810ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:21:15.015] Commit new sealing work                  number=4035 sealhash=632227..23167d txs=0    gas=0          fees=0        elapsed="88.143µs"
+INFO [02-17|18:21:17.013] Imported new chain segment               number=4035 hash=59e604..5965c6 blocks=1 txs=0    mgas=0.000 elapsed=5.820ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:21:17.014] Commit new sealing work                  number=4036 sealhash=c1ab2e..f4e5b9 txs=0    gas=0          fees=0        elapsed="92.243µs"
+INFO [02-17|18:21:17.017] Successfully sealed new block            number=4035 sealhash=632227..23167d hash=b3bbb5..4c5778 elapsed=2.002s
+INFO [02-17|18:21:17.986] Looking for peers                        peercount=2 tried=55  static=0
+INFO [02-17|18:21:19.007] Successfully sealed new block            number=4036 sealhash=c1ab2e..f4e5b9 hash=04d2d1..bc1bc3 elapsed=1.993s
+INFO [02-17|18:21:19.007] Commit new sealing work                  number=4037 sealhash=82c7c9..82a558 txs=0    gas=0          fees=0        elapsed="253.763µs"
+WARN [02-17|18:21:19.007] Block sealing failed                     err="signed recently, must wait for others"
+INFO [02-17|18:21:21.014] Imported new chain segment               number=4037 hash=031ce6..890039 blocks=1 txs=0    mgas=0.000 elapsed=7.132ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:21:21.014] Commit new sealing work                  number=4038 sealhash=27b9b3..a7452c txs=0    gas=0          fees=0        elapsed="156.855µs"
+INFO [02-17|18:21:23.014] Imported new chain segment               number=4038 hash=0bc081..7e488c blocks=1 txs=0    mgas=0.000 elapsed=6.190ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:21:23.014] Commit new sealing work                  number=4039 sealhash=57cc40..483788 txs=0    gas=0          fees=0        elapsed="58.046µs"
+INFO [02-17|18:21:25.007] Successfully sealed new block            number=4039 sealhash=57cc40..483788 hash=65dd86..e99f41 elapsed=1.993s
+INFO [02-17|18:21:25.008] Commit new sealing work                  number=4040 sealhash=210278..f1992d txs=0    gas=0          fees=0        elapsed="167.351µs"
+WARN [02-17|18:21:25.008] Block sealing failed                     err="signed recently, must wait for others"
+INFO [02-17|18:21:27.015] Imported new chain segment               number=4040 hash=2c4ece..861c29 blocks=1 txs=0    mgas=0.000 elapsed=6.251ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:21:27.015] Commit new sealing work                  number=4041 sealhash=994042..f4fb92 txs=0    gas=0          fees=0        elapsed="186.455µs"
+INFO [02-17|18:21:28.253] Looking for peers                        peercount=2 tried=63  static=0
+INFO [02-17|18:21:29.016] Imported new chain segment               number=4041 hash=e87e92..acb343 blocks=1 txs=0    mgas=0.000 elapsed=7.949ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:21:29.016] Commit new sealing work                  number=4042 sealhash=e4c8ae..225b75 txs=0    gas=0          fees=0        elapsed="60.172µs"
+INFO [02-17|18:21:31.007] Successfully sealed new block            number=4042 sealhash=e4c8ae..225b75 hash=344313..aaf443 elapsed=1.991s
+INFO [02-17|18:21:31.008] Commit new sealing work                  number=4043 sealhash=3657d5..45ab33 txs=0    gas=0          fees=0        elapsed="219.454µs"
+WARN [02-17|18:21:31.008] Block sealing failed                     err="signed recently, must wait for others"
+INFO [02-17|18:21:33.014] Imported new chain segment               number=4043 hash=50d0d4..7ce88a blocks=1 txs=0    mgas=0.000 elapsed=6.336ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:21:33.014] Commit new sealing work                  number=4044 sealhash=7176d5..6213e6 txs=0    gas=0          fees=0        elapsed="183.241µs"
+INFO [02-17|18:21:35.016] Imported new chain segment               number=4044 hash=328c6e..4ef421 blocks=1 txs=0    mgas=0.000 elapsed=7.491ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:21:35.016] Commit new sealing work                  number=4045 sealhash=720f40..e662ed txs=0    gas=0          fees=0        elapsed="112.476µs"
+INFO [02-17|18:21:37.007] Successfully sealed new block            number=4045 sealhash=720f40..e662ed hash=d0dc04..fcfa2e elapsed=1.991s
+INFO [02-17|18:21:37.007] Commit new sealing work                  number=4046 sealhash=a6f2e3..678be9 txs=0    gas=0          fees=0        elapsed="206.822µs"
+WARN [02-17|18:21:37.007] Block sealing failed                     err="signed recently, must wait for others"
+INFO [02-17|18:21:38.310] Looking for peers                        peercount=2 tried=33  static=0
+INFO [02-17|18:21:39.014] Imported new chain segment               number=4046 hash=4b3dce..9a1a1d blocks=1 txs=0    mgas=0.000 elapsed=6.145ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:21:39.014] Commit new sealing work                  number=4047 sealhash=730500..68304f txs=0    gas=0          fees=0        elapsed="72.363µs"
+INFO [02-17|18:21:41.014] Imported new chain segment               number=4047 hash=c6d1ff..12d984 blocks=1 txs=0    mgas=0.000 elapsed=6.562ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:21:41.014] Commit new sealing work                  number=4048 sealhash=73f3ba..dab3ce txs=0    gas=0          fees=0        elapsed="56.059µs"
+INFO [02-17|18:21:43.007] Successfully sealed new block            number=4048 sealhash=73f3ba..dab3ce hash=19f87a..01cdc3 elapsed=1.992s
+INFO [02-17|18:21:43.007] Commit new sealing work                  number=4049 sealhash=a5df69..e5da34 txs=0    gas=0          fees=0        elapsed="152.428µs"
+WARN [02-17|18:21:43.007] Block sealing failed                     err="signed recently, must wait for others"
+INFO [02-17|18:21:45.014] Imported new chain segment               number=4049 hash=cced21..454880 blocks=1 txs=0    mgas=0.000 elapsed=6.567ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:21:45.015] Commit new sealing work                  number=4050 sealhash=a4a492..5e753e txs=0    gas=0          fees=0        elapsed="77.166µs"
+INFO [02-17|18:21:47.014] Imported new chain segment               number=4050 hash=ceca89..175ec6 blocks=1 txs=0    mgas=0.000 elapsed=5.600ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:21:47.014] Commit new sealing work                  number=4051 sealhash=1f99f9..5b79b3 txs=0    gas=0          fees=0        elapsed="105.403µs"
+INFO [02-17|18:21:48.643] Looking for peers                        peercount=2 tried=26  static=0
+INFO [02-17|18:21:49.007] Successfully sealed new block            number=4051 sealhash=1f99f9..5b79b3 hash=9f61f2..ffd6c9 elapsed=1.992s
+INFO [02-17|18:21:49.007] Commit new sealing work                  number=4052 sealhash=8961a4..ffcd04 txs=0    gas=0          fees=0        elapsed="243.122µs"
+WARN [02-17|18:21:49.007] Block sealing failed                     err="signed recently, must wait for others"
+INFO [02-17|18:21:51.013] Imported new chain segment               number=4052 hash=0a01eb..032257 blocks=1 txs=0    mgas=0.000 elapsed=6.152ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:21:51.013] Commit new sealing work                  number=4053 sealhash=b44d2d..f4a29d txs=0    gas=0          fees=0        elapsed="150.887µs"
+INFO [02-17|18:21:53.013] Imported new chain segment               number=4053 hash=ed3b46..4eaea8 blocks=1 txs=0    mgas=0.000 elapsed=6.551ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:21:53.013] Commit new sealing work                  number=4054 sealhash=7b9acc..a50a71 txs=0    gas=0          fees=0        elapsed="57.615µs"
+INFO [02-17|18:21:55.007] Successfully sealed new block            number=4054 sealhash=7b9acc..a50a71 hash=0d55df..9fc3a0 elapsed=1.993s
+INFO [02-17|18:21:55.007] Commit new sealing work                  number=4055 sealhash=8e47dc..81b3a3 txs=0    gas=0          fees=0        elapsed="174.068µs"
+WARN [02-17|18:21:55.007] Block sealing failed                     err="signed recently, must wait for others"
+INFO [02-17|18:21:57.014] Imported new chain segment               number=4055 hash=28ef13..6ab9a8 blocks=1 txs=0    mgas=0.000 elapsed=6.578ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:21:57.014] Commit new sealing work                  number=4056 sealhash=ac77a7..bbc685 txs=0    gas=0          fees=0        elapsed="74.749µs"
+INFO [02-17|18:21:58.657] Looking for peers                        peercount=2 tried=62  static=0
+INFO [02-17|18:21:59.013] Imported new chain segment               number=4056 hash=2df01f..9577e4 blocks=1 txs=0    mgas=0.000 elapsed=5.876ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:21:59.013] Commit new sealing work                  number=4057 sealhash=27cb6b..e38c66 txs=0    gas=0          fees=0        elapsed="103.002µs"
+INFO [02-17|18:22:01.008] Successfully sealed new block            number=4057 sealhash=27cb6b..e38c66 hash=419547..b084cc elapsed=1.994s
+INFO [02-17|18:22:01.008] Commit new sealing work                  number=4058 sealhash=f90e06..6f237e txs=0    gas=0          fees=0        elapsed="248.046µs"
+WARN [02-17|18:22:01.008] Block sealing failed                     err="signed recently, must wait for others"
+INFO [02-17|18:22:03.014] Imported new chain segment               number=4058 hash=ae3f65..c700be blocks=1 txs=0    mgas=0.000 elapsed=6.233ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:22:03.014] Commit new sealing work                  number=4059 sealhash=8bba3b..402db3 txs=0    gas=0          fees=0        elapsed="138.12µs"
+INFO [02-17|18:22:05.015] Imported new chain segment               number=4059 hash=3a7e72..7bb3b8 blocks=1 txs=0    mgas=0.000 elapsed=7.579ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:22:05.015] Commit new sealing work                  number=4060 sealhash=e95903..edbd01 txs=0    gas=0          fees=0        elapsed="58.834µs"
+INFO [02-17|18:22:07.008] Successfully sealed new block            number=4060 sealhash=e95903..edbd01 hash=50a2ec..098371 elapsed=1.992s
+INFO [02-17|18:22:07.008] Commit new sealing work                  number=4061 sealhash=aa57af..7bd456 txs=0    gas=0          fees=0        elapsed="306.363µs"
+WARN [02-17|18:22:07.008] Block sealing failed                     err="signed recently, must wait for others"
+INFO [02-17|18:22:08.900] Looking for peers                        peercount=2 tried=57  static=0
+INFO [02-17|18:22:09.013] Imported new chain segment               number=4061 hash=6f42c8..ec457b blocks=1 txs=0    mgas=0.000 elapsed=6.246ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:22:09.013] Commit new sealing work                  number=4062 sealhash=85ceab..31eb4f txs=0    gas=0          fees=0        elapsed="156.891µs"
+INFO [02-17|18:22:11.013] Imported new chain segment               number=4062 hash=a16299..c1b13a blocks=1 txs=0    mgas=0.000 elapsed=6.216ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:22:11.014] Commit new sealing work                  number=4063 sealhash=1d74d7..4c7f1e txs=0    gas=0          fees=0        elapsed="105.121µs"
+INFO [02-17|18:22:13.008] Successfully sealed new block            number=4063 sealhash=1d74d7..4c7f1e hash=53e869..935b84 elapsed=1.993s
+INFO [02-17|18:22:13.008] Commit new sealing work                  number=4064 sealhash=c759c9..3d3a91 txs=0    gas=0          fees=0        elapsed="184.088µs"
+WARN [02-17|18:22:13.008] Block sealing failed                     err="signed recently, must wait for others"
+INFO [02-17|18:22:15.015] Imported new chain segment               number=4064 hash=dc195b..9877bb blocks=1 txs=0    mgas=0.000 elapsed=7.118ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:22:15.015] Commit new sealing work                  number=4065 sealhash=d60eb9..497c8f txs=0    gas=0          fees=0        elapsed="171.83µs"
+INFO [02-17|18:22:17.015] Imported new chain segment               number=4065 hash=048c4b..03425d blocks=1 txs=0    mgas=0.000 elapsed=6.631ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:22:17.015] Commit new sealing work                  number=4066 sealhash=978f11..8bea8d txs=0    gas=0          fees=0        elapsed="60.656µs"
+INFO [02-17|18:22:18.982] Looking for peers                        peercount=2 tried=46  static=0
+INFO [02-17|18:22:19.006] Successfully sealed new block            number=4066 sealhash=978f11..8bea8d hash=4d74e9..4386fb elapsed=1.991s
+INFO [02-17|18:22:19.007] Commit new sealing work                  number=4067 sealhash=0b5992..937317 txs=0    gas=0          fees=0        elapsed="222.631µs"
+WARN [02-17|18:22:19.007] Block sealing failed                     err="signed recently, must wait for others"
+INFO [02-17|18:22:21.014] Imported new chain segment               number=4067 hash=45d230..aa1891 blocks=1 txs=0    mgas=0.000 elapsed=6.018ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:22:21.014] Commit new sealing work                  number=4068 sealhash=84d191..b2c1a4 txs=0    gas=0          fees=0        elapsed="51.707µs"
+INFO [02-17|18:22:23.014] Imported new chain segment               number=4068 hash=94b123..892f68 blocks=1 txs=0    mgas=0.000 elapsed=6.521ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:22:23.014] Commit new sealing work                  number=4069 sealhash=4048ec..7aa090 txs=0    gas=0          fees=0        elapsed="64.407µs"
+INFO [02-17|18:22:25.007] Successfully sealed new block            number=4069 sealhash=4048ec..7aa090 hash=1edaa2..af5617 elapsed=1.993s
+INFO [02-17|18:22:25.008] Commit new sealing work                  number=4070 sealhash=4ce3ba..ced98f txs=0    gas=0          fees=0        elapsed="209.914µs"
+WARN [02-17|18:22:25.008] Block sealing failed                     err="signed recently, must wait for others"
+INFO [02-17|18:22:27.014] Imported new chain segment               number=4070 hash=13a1bc..61cddc blocks=1 txs=0    mgas=0.000 elapsed=6.237ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:22:27.014] Commit new sealing work                  number=4071 sealhash=de1d40..c00e3c txs=0    gas=0          fees=0        elapsed="114.877µs"
+INFO [02-17|18:22:29.015] Imported new chain segment               number=4071 hash=53f411..2bb4f9 blocks=1 txs=0    mgas=0.000 elapsed=7.705ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:22:29.015] Commit new sealing work                  number=4072 sealhash=a504d0..2cac28 txs=0    gas=0          fees=0        elapsed="54.444µs"
+INFO [02-17|18:22:29.070] Looking for peers                        peercount=2 tried=55  static=0
+INFO [02-17|18:22:31.007] Successfully sealed new block            number=4072 sealhash=a504d0..2cac28 hash=5b312f..acda0f elapsed=1.992s
+INFO [02-17|18:22:31.008] Commit new sealing work                  number=4073 sealhash=95079c..cb75a1 txs=0    gas=0          fees=0        elapsed="201.135µs"
+WARN [02-17|18:22:31.008] Block sealing failed                     err="signed recently, must wait for others"
+INFO [02-17|18:22:33.014] Imported new chain segment               number=4073 hash=42c26d..f59264 blocks=1 txs=0    mgas=0.000 elapsed=6.288ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:22:33.014] Commit new sealing work                  number=4074 sealhash=2c12b1..0687ec txs=0    gas=0          fees=0        elapsed="82.915µs"
+INFO [02-17|18:22:35.014] Imported new chain segment               number=4074 hash=5b6cb4..d67132 blocks=1 txs=0    mgas=0.000 elapsed=6.182ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:22:35.014] Commit new sealing work                  number=4075 sealhash=2b31dc..096a14 txs=0    gas=0          fees=0        elapsed="139.492µs"
+INFO [02-17|18:22:37.007] Successfully sealed new block            number=4075 sealhash=2b31dc..096a14 hash=6e70e4..f2738a elapsed=1.993s
+INFO [02-17|18:22:37.008] Commit new sealing work                  number=4076 sealhash=fa5589..78f1ad txs=0    gas=0          fees=0        elapsed="150.862µs"
+WARN [02-17|18:22:37.008] Block sealing failed                     err="signed recently, must wait for others"
+INFO [02-17|18:22:39.013] Imported new chain segment               number=4076 hash=5615cd..b66380 blocks=1 txs=0    mgas=0.000 elapsed=6.056ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:22:39.014] Commit new sealing work                  number=4077 sealhash=c0e0b4..65da12 txs=0    gas=0          fees=0        elapsed="117.512µs"
+INFO [02-17|18:22:39.214] Looking for peers                        peercount=2 tried=68  static=0
+INFO [02-17|18:22:41.015] Imported new chain segment               number=4077 hash=b7cdd1..b4e669 blocks=1 txs=0    mgas=0.000 elapsed=6.198ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:22:41.015] Commit new sealing work                  number=4078 sealhash=61783a..9b0115 txs=0    gas=0          fees=0        elapsed="77.757µs"
+INFO [02-17|18:22:43.007] Successfully sealed new block            number=4078 sealhash=61783a..9b0115 hash=4bfe7a..cd1f84 elapsed=1.992s
+INFO [02-17|18:22:43.007] Commit new sealing work                  number=4079 sealhash=4a1144..61db32 txs=0    gas=0          fees=0        elapsed="177.18µs"
+WARN [02-17|18:22:43.007] Block sealing failed                     err="signed recently, must wait for others"
+INFO [02-17|18:22:45.015] Imported new chain segment               number=4079 hash=444ec8..caedda blocks=1 txs=0    mgas=0.000 elapsed=7.497ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:22:45.015] Commit new sealing work                  number=4080 sealhash=161e6e..744d4b txs=0    gas=0          fees=0        elapsed="107.407µs"
+INFO [02-17|18:22:45.024] Imported new chain segment               number=4079 hash=2cd4a8..5e7138 blocks=1 txs=0    mgas=0.000 elapsed=3.800ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:22:47.013] Imported new chain segment               number=4080 hash=7a84df..7ba73f blocks=1 txs=0    mgas=0.000 elapsed=6.185ms     mgasps=0.000 snapdiffs=197.91KiB triedirty=1.51MiB
+INFO [02-17|18:22:47.014] Commit new sealing work                  number=4081 sealhash=81c171..880f0b txs=0    gas=0          fees=0        elapsed="51.482µs"
