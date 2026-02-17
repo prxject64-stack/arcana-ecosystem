@@ -1,0 +1,18 @@
+[Eth]
+NetworkId = 136
+NoPruning = true
+
+[Eth.Miner]
+Etherbase = "0x8d11448f255863E8E4023549297052C4a11dAf13"
+GasLimit = 100000000
+
+[Node]
+DataDir = "peer_1"
+HTTPHost = "0.0.0.0"
+HTTPPort = 8545
+HTTPCors = ["*"]
+HTTPVirtualHosts = ["*"]
+HTTPModules = ["eth", "net", "web3", "miner", "admin", "txpool", "clique", "personal"]
+
+[Node.P2P]
+ListenAddr = ":30303"
