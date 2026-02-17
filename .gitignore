@@ -9,3 +9,4 @@ peer_2/
 peer_3/
 *.sst
 *.ldb
+password.txt
