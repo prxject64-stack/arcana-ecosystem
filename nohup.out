@@ -1,0 +1,219 @@
+INFO [02-17|00:56:37.151] Maximum peer count                       ETH=50 total=50
+INFO [02-17|00:56:37.152] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
+INFO [02-17|00:56:37.154] Set global gas cap                       cap=50,000,000
+INFO [02-17|00:56:37.154] Initializing the KZG library             backend=gokzg
+INFO [02-17|00:56:37.167] Allocated trie memory caches             clean=154.00MiB dirty=256.00MiB
+INFO [02-17|00:56:37.167] Using pebble as the backing database
+INFO [02-17|00:56:37.167] Allocated cache and file handles         database=/home/ubuntu/arcana-ecosystem/peer_1/geth/chaindata cache=512.00MiB handles=524,288
+INFO [02-17|00:56:37.189] Opened ancient database                  database=/home/ubuntu/arcana-ecosystem/peer_1/geth/chaindata/ancient/chain readonly=false
+INFO [02-17|00:56:37.189] State scheme set to already existing     scheme=hash
+INFO [02-17|00:56:37.190] Initialising Ethereum protocol           network=136 dbversion=8
+INFO [02-17|00:56:37.191] 
+INFO [02-17|00:56:37.191] ---------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO [02-17|00:56:37.191] Chain ID:  1 (mainnet)
+INFO [02-17|00:56:37.191] Consensus: Beacon (proof-of-stake), merged from Ethash (proof-of-work)
+INFO [02-17|00:56:37.191] 
+INFO [02-17|00:56:37.191] Pre-Merge hard forks (block based):
+INFO [02-17|00:56:37.191]  - Homestead:                   #1150000  (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/homestead.md)
+INFO [02-17|00:56:37.191]  - DAO Fork:                    #1920000  (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/dao-fork.md)
+INFO [02-17|00:56:37.191]  - Tangerine Whistle (EIP 150): #2463000  (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/tangerine-whistle.md)
+INFO [02-17|00:56:37.191]  - Spurious Dragon/1 (EIP 155): #2675000  (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/spurious-dragon.md)
+INFO [02-17|00:56:37.191]  - Spurious Dragon/2 (EIP 158): #2675000  (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/spurious-dragon.md)
+INFO [02-17|00:56:37.191]  - Byzantium:                   #4370000  (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/byzantium.md)
+INFO [02-17|00:56:37.191]  - Constantinople:              #7280000  (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/constantinople.md)
+INFO [02-17|00:56:37.191]  - Petersburg:                  #7280000  (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/petersburg.md)
+INFO [02-17|00:56:37.191]  - Istanbul:                    #9069000  (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/istanbul.md)
+INFO [02-17|00:56:37.191]  - Muir Glacier:                #9200000  (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/muir-glacier.md)
+INFO [02-17|00:56:37.191]  - Berlin:                      #12244000 (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/berlin.md)
+INFO [02-17|00:56:37.191]  - London:                      #12965000 (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/london.md)
+INFO [02-17|00:56:37.191]  - Arrow Glacier:               #13773000 (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/arrow-glacier.md)
+INFO [02-17|00:56:37.191]  - Gray Glacier:                #15050000 (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/gray-glacier.md)
+INFO [02-17|00:56:37.191] 
+INFO [02-17|00:56:37.191] Merge configured:
+INFO [02-17|00:56:37.191]  - Hard-fork specification:    https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/paris.md
+INFO [02-17|00:56:37.191]  - Network known to be merged: true
+INFO [02-17|00:56:37.191]  - Total terminal difficulty:  58750000000000000000000
+INFO [02-17|00:56:37.191] 
+INFO [02-17|00:56:37.191] Post-Merge hard forks (timestamp based):
+INFO [02-17|00:56:37.191]  - Shanghai:                    @1681338455 (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/shanghai.md)
+INFO [02-17|00:56:37.191]  - Cancun:                      @1710338135 (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/cancun.md)
+INFO [02-17|00:56:37.191] 
+INFO [02-17|00:56:37.191] ---------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO [02-17|00:56:37.191] 
+INFO [02-17|00:56:37.191] Loaded most recent local block           number=0 hash=d4e567..cb8fa3 td=17,179,869,184 age=56y11mo1w
+WARN [02-17|00:56:37.191] Loaded snapshot journal                  diffs=missing
+INFO [02-17|00:56:37.191] Initialized transaction indexer          range="last 2350000 blocks"
+INFO [02-17|00:56:37.191] Loaded local transaction journal         transactions=0 dropped=0
+INFO [02-17|00:56:37.199] Enabled snap sync                        head=0 hash=d4e567..cb8fa3
+INFO [02-17|00:56:37.199] Chain post-merge, sync via beacon client
+INFO [02-17|00:56:37.199] Gasprice oracle is ignoring threshold set threshold=2
+WARN [02-17|00:56:37.202] Old unclean shutdowns found              count=880
+WARN [02-17|00:56:37.202] Unclean shutdown detected                booted=2026-02-17T00:55:42+0000 age=55s
+WARN [02-17|00:56:37.202] Unclean shutdown detected                booted=2026-02-17T00:55:48+0000 age=49s
+WARN [02-17|00:56:37.202] Unclean shutdown detected                booted=2026-02-17T00:55:53+0000 age=44s
+WARN [02-17|00:56:37.202] Unclean shutdown detected                booted=2026-02-17T00:55:58+0000 age=39s
+WARN [02-17|00:56:37.202] Unclean shutdown detected                booted=2026-02-17T00:56:03+0000 age=34s
+WARN [02-17|00:56:37.202] Unclean shutdown detected                booted=2026-02-17T00:56:09+0000 age=28s
+WARN [02-17|00:56:37.202] Unclean shutdown detected                booted=2026-02-17T00:56:14+0000 age=23s
+WARN [02-17|00:56:37.202] Unclean shutdown detected                booted=2026-02-17T00:56:19+0000 age=18s
+WARN [02-17|00:56:37.202] Unclean shutdown detected                booted=2026-02-17T00:56:24+0000 age=13s
+WARN [02-17|00:56:37.202] Unclean shutdown detected                booted=2026-02-17T00:56:30+0000 age=7s
+WARN [02-17|00:56:37.202] Unclean shutdown detected                booted=2026-02-17T00:56:35+0000 age=2s
+WARN [02-17|00:56:37.202] Engine API enabled                       protocol=eth
+INFO [02-17|00:56:37.202] Starting peer-to-peer node               instance=Geth/v1.13.14-stable-2bd6bd01/linux-amd64/go1.21.6
+INFO [02-17|00:56:37.224] New local node record                    seq=1,771,285,118,602 id=54605e24b0325b77 ip=127.0.0.1 udp=30303 tcp=30303
+INFO [02-17|00:56:37.225] Started P2P networking                   self=enode://0af6fbcafc0f0b8f0b5c03963536cd21df8ea0ad6fa01dd56838ef49bff043ded0f3966e8c95021848b4a7f05b2954a4d6a616a9376ecbdd2b07b076b74e4000@127.0.0.1:30303
+INFO [02-17|00:56:37.226] IPC endpoint opened                      url=/home/ubuntu/arcana-ecosystem/peer_1/geth.ipc
+INFO [02-17|00:56:37.226] Loaded JWT secret file                   path=/home/ubuntu/arcana-ecosystem/peer_1/geth/jwtsecret crc32=0xf58995de
+INFO [02-17|00:56:37.226] HTTP server started                      endpoint=127.0.0.1:8545 auth=false prefix= cors= vhosts=localhost
+INFO [02-17|00:56:37.227] WebSocket enabled                        url=ws://127.0.0.1:8551
+INFO [02-17|00:56:37.227] HTTP server started                      endpoint=127.0.0.1:8551 auth=true  prefix= cors=localhost vhosts=localhost
+INFO [02-17|00:56:38.688] New local node record                    seq=1,771,285,118,603 id=54605e24b0325b77 ip=18.221.3.50 udp=30303 tcp=30303
+INFO [02-17|00:56:47.523] Looking for peers                        peercount=0 tried=110 static=0
+INFO [02-17|00:56:57.556] Looking for peers                        peercount=0 tried=44  static=0
+INFO [02-17|00:57:07.614] Looking for peers                        peercount=0 tried=52  static=0
+WARN [02-17|00:57:12.203] Post-merge network, but no beacon client seen. Please launch one to follow the chain!
+INFO [02-17|00:57:17.652] Looking for peers                        peercount=1 tried=105 static=0
+INFO [02-17|00:57:27.661] Looking for peers                        peercount=1 tried=44  static=0
+INFO [02-17|00:57:37.673] Looking for peers                        peercount=0 tried=44  static=0
+INFO [02-17|00:57:47.715] Looking for peers                        peercount=0 tried=54  static=0
+INFO [02-17|00:57:57.771] Looking for peers                        peercount=0 tried=44  static=0
+INFO [02-17|00:58:08.319] Looking for peers                        peercount=0 tried=34  static=0
+INFO [02-17|00:58:19.194] Looking for peers                        peercount=0 tried=61  static=0
+INFO [02-17|00:58:29.571] Looking for peers                        peercount=0 tried=73  static=0
+INFO [02-17|00:58:39.625] Looking for peers                        peercount=0 tried=36  static=0
+INFO [02-17|00:58:49.799] Looking for peers                        peercount=0 tried=52  static=0
+INFO [02-17|00:58:59.861] Looking for peers                        peercount=0 tried=43  static=0
+INFO [02-17|00:59:09.947] Looking for peers                        peercount=1 tried=30  static=0
+INFO [02-17|00:59:20.302] Looking for peers                        peercount=0 tried=106 static=0
+INFO [02-17|00:59:30.364] Looking for peers                        peercount=0 tried=48  static=0
+INFO [02-17|00:59:40.464] Looking for peers                        peercount=0 tried=36  static=0
+INFO [02-17|00:59:50.643] Looking for peers                        peercount=0 tried=65  static=0
+INFO [02-17|01:00:00.649] Looking for peers                        peercount=0 tried=53  static=0
+INFO [02-17|01:00:10.686] Looking for peers                        peercount=1 tried=57  static=0
+INFO [02-17|01:00:20.740] Looking for peers                        peercount=0 tried=56  static=0
+INFO [02-17|01:00:30.766] Looking for peers                        peercount=0 tried=43  static=0
+INFO [02-17|01:00:40.773] Looking for peers                        peercount=0 tried=63  static=0
+INFO [02-17|01:00:50.922] Looking for peers                        peercount=0 tried=60  static=0
+INFO [02-17|01:01:01.084] Looking for peers                        peercount=0 tried=97  static=0
+INFO [02-17|01:01:11.175] Looking for peers                        peercount=0 tried=47  static=0
+INFO [02-17|01:01:21.249] Looking for peers                        peercount=0 tried=38  static=0
+INFO [02-17|01:01:31.269] Looking for peers                        peercount=0 tried=42  static=0
+INFO [02-17|01:01:41.745] Looking for peers                        peercount=0 tried=47  static=0
+INFO [02-17|01:01:51.794] Looking for peers                        peercount=0 tried=52  static=0
+INFO [02-17|01:02:01.890] Looking for peers                        peercount=0 tried=24  static=0
+INFO [02-17|01:02:11.980] Looking for peers                        peercount=0 tried=38  static=0
+WARN [02-17|01:02:12.236] Post-merge network, but no beacon client seen. Please launch one to follow the chain!
+INFO [02-17|01:02:22.485] Looking for peers                        peercount=0 tried=59  static=0
+INFO [02-17|01:02:32.560] Looking for peers                        peercount=0 tried=42  static=0
+INFO [02-17|01:02:42.594] Looking for peers                        peercount=1 tried=47  static=0
+INFO [02-17|01:02:52.628] Looking for peers                        peercount=1 tried=73  static=0
+INFO [02-17|01:03:02.875] Looking for peers                        peercount=0 tried=58  static=0
+INFO [02-17|01:03:12.944] Looking for peers                        peercount=0 tried=66  static=0
+INFO [02-17|01:03:22.993] Looking for peers                        peercount=0 tried=31  static=0
+INFO [02-17|01:03:33.088] Looking for peers                        peercount=0 tried=71  static=0
+INFO [02-17|01:03:43.128] Looking for peers                        peercount=0 tried=40  static=0
+INFO [02-17|01:03:53.143] Looking for peers                        peercount=0 tried=75  static=0
+INFO [02-17|01:04:03.144] Looking for peers                        peercount=1 tried=47  static=0
+INFO [02-17|01:04:13.181] Looking for peers                        peercount=0 tried=107 static=0
+INFO [02-17|01:04:23.230] Looking for peers                        peercount=1 tried=48  static=0
+INFO [02-17|01:04:33.886] Looking for peers                        peercount=0 tried=66  static=0
+INFO [02-17|01:04:43.905] Looking for peers                        peercount=0 tried=34  static=0
+INFO [02-17|01:04:53.910] Looking for peers                        peercount=0 tried=62  static=0
+INFO [02-17|01:05:03.911] Looking for peers                        peercount=0 tried=40  static=0
+INFO [02-17|01:05:14.131] Looking for peers                        peercount=0 tried=55  static=0
+INFO [02-17|01:05:24.139] Looking for peers                        peercount=0 tried=68  static=0
+INFO [02-17|01:05:34.189] Looking for peers                        peercount=0 tried=33  static=0
+INFO [02-17|01:05:44.377] Looking for peers                        peercount=0 tried=71  static=0
+INFO [02-17|01:05:54.450] Looking for peers                        peercount=0 tried=68  static=0
+INFO [02-17|01:06:04.560] Looking for peers                        peercount=0 tried=64  static=0
+INFO [02-17|01:06:14.766] Looking for peers                        peercount=0 tried=36  static=0
+INFO [02-17|01:06:24.900] Looking for peers                        peercount=0 tried=41  static=0
+INFO [02-17|01:06:34.989] Looking for peers                        peercount=0 tried=62  static=0
+INFO [02-17|01:06:45.147] Looking for peers                        peercount=0 tried=73  static=0
+INFO [02-17|01:06:55.750] Looking for peers                        peercount=0 tried=42  static=0
+INFO [02-17|01:07:05.842] Looking for peers                        peercount=0 tried=60  static=0
+WARN [02-17|01:07:12.268] Post-merge network, but no beacon client seen. Please launch one to follow the chain!
+INFO [02-17|01:07:16.154] Looking for peers                        peercount=0 tried=46  static=0
+INFO [02-17|01:07:26.244] Looking for peers                        peercount=0 tried=40  static=0
+INFO [02-17|01:07:36.285] Looking for peers                        peercount=0 tried=52  static=0
+INFO [02-17|01:07:46.427] Looking for peers                        peercount=0 tried=34  static=0
+INFO [02-17|01:07:56.466] Looking for peers                        peercount=0 tried=55  static=0
+INFO [02-17|01:08:06.572] Looking for peers                        peercount=0 tried=45  static=0
+INFO [02-17|01:08:16.623] Looking for peers                        peercount=0 tried=40  static=0
+INFO [02-17|01:08:26.657] Looking for peers                        peercount=0 tried=44  static=0
+INFO [02-17|01:08:36.784] Looking for peers                        peercount=0 tried=48  static=0
+INFO [02-17|01:08:46.804] Looking for peers                        peercount=1 tried=70  static=0
+INFO [02-17|01:08:56.883] Looking for peers                        peercount=0 tried=71  static=0
+INFO [02-17|01:09:07.287] Looking for peers                        peercount=0 tried=48  static=0
+INFO [02-17|01:09:17.360] Looking for peers                        peercount=0 tried=78  static=0
+INFO [02-17|01:09:27.369] Looking for peers                        peercount=0 tried=14  static=0
+INFO [02-17|01:09:37.520] Looking for peers                        peercount=0 tried=73  static=0
+INFO [02-17|01:09:47.961] Looking for peers                        peercount=0 tried=29  static=0
+INFO [02-17|01:09:57.973] Looking for peers                        peercount=1 tried=79  static=0
+INFO [02-17|01:10:07.985] Looking for peers                        peercount=0 tried=53  static=0
+INFO [02-17|01:10:18.032] Looking for peers                        peercount=0 tried=53  static=0
+INFO [02-17|01:10:28.046] Looking for peers                        peercount=0 tried=62  static=0
+INFO [02-17|01:10:38.205] Looking for peers                        peercount=0 tried=35  static=0
+INFO [02-17|01:10:48.327] Looking for peers                        peercount=0 tried=39  static=0
+INFO [02-17|01:10:58.659] Looking for peers                        peercount=0 tried=49  static=0
+INFO [02-17|01:11:08.812] Looking for peers                        peercount=0 tried=62  static=0
+INFO [02-17|01:11:19.169] Looking for peers                        peercount=0 tried=50  static=0
+INFO [02-17|01:11:29.662] Looking for peers                        peercount=0 tried=54  static=0
+INFO [02-17|01:11:39.682] Looking for peers                        peercount=0 tried=64  static=0
+INFO [02-17|01:11:49.757] Looking for peers                        peercount=0 tried=67  static=0
+INFO [02-17|01:11:59.820] Looking for peers                        peercount=0 tried=68  static=0
+INFO [02-17|01:12:10.333] Looking for peers                        peercount=0 tried=24  static=0
+WARN [02-17|01:12:12.303] Post-merge network, but no beacon client seen. Please launch one to follow the chain!
+INFO [02-17|01:12:20.398] Looking for peers                        peercount=0 tried=45  static=0
+INFO [02-17|01:12:30.581] Looking for peers                        peercount=0 tried=33  static=0
+INFO [02-17|01:12:40.593] Looking for peers                        peercount=0 tried=92  static=0
+INFO [02-17|01:12:50.895] Looking for peers                        peercount=0 tried=59  static=0
+INFO [02-17|01:13:00.987] Looking for peers                        peercount=0 tried=49  static=0
+INFO [02-17|01:13:11.010] Looking for peers                        peercount=0 tried=51  static=0
+INFO [02-17|01:13:21.534] Looking for peers                        peercount=0 tried=59  static=0
+INFO [02-17|01:13:31.666] Looking for peers                        peercount=0 tried=108 static=0
+INFO [02-17|01:13:41.725] Looking for peers                        peercount=1 tried=47  static=0
+INFO [02-17|01:13:51.924] Looking for peers                        peercount=1 tried=73  static=0
+INFO [02-17|01:14:01.960] Looking for peers                        peercount=0 tried=55  static=0
+INFO [02-17|01:14:12.069] Looking for peers                        peercount=0 tried=38  static=0
+INFO [02-17|01:14:22.122] Looking for peers                        peercount=0 tried=55  static=0
+INFO [02-17|01:14:32.138] Looking for peers                        peercount=0 tried=33  static=0
+INFO [02-17|01:14:42.700] Looking for peers                        peercount=0 tried=58  static=0
+INFO [02-17|01:14:52.828] Looking for peers                        peercount=0 tried=26  static=0
+INFO [02-17|01:15:02.934] Looking for peers                        peercount=0 tried=32  static=0
+INFO [02-17|01:15:12.940] Looking for peers                        peercount=0 tried=36  static=0
+INFO [02-17|01:15:23.108] Looking for peers                        peercount=0 tried=41  static=0
+INFO [02-17|01:15:33.147] Looking for peers                        peercount=0 tried=57  static=0
+INFO [02-17|01:15:43.177] Looking for peers                        peercount=0 tried=45  static=0
+INFO [02-17|01:15:53.259] Looking for peers                        peercount=1 tried=60  static=0
+INFO [02-17|01:16:03.270] Looking for peers                        peercount=0 tried=50  static=0
+INFO [02-17|01:16:13.310] Looking for peers                        peercount=0 tried=89  static=0
+INFO [02-17|01:16:23.344] Looking for peers                        peercount=0 tried=62  static=0
+WARN [02-17|01:16:28.672] Served eth_coinbase                      reqid=3 duration="33.967µs" err="etherbase must be explicitly specified"
+INFO [02-17|01:16:33.924] Looking for peers                        peercount=0 tried=61  static=0
+INFO [02-17|01:16:43.929] Looking for peers                        peercount=0 tried=39  static=0
+INFO [02-17|01:16:53.932] Looking for peers                        peercount=0 tried=79  static=0
+INFO [02-17|01:17:03.967] Looking for peers                        peercount=0 tried=49  static=0
+WARN [02-17|01:17:12.335] Post-merge network, but no beacon client seen. Please launch one to follow the chain!
+INFO [02-17|01:17:13.990] Looking for peers                        peercount=0 tried=33  static=0
+INFO [02-17|01:17:24.024] Looking for peers                        peercount=0 tried=63  static=0
+INFO [02-17|01:17:34.035] Looking for peers                        peercount=0 tried=25  static=0
+INFO [02-17|01:17:44.036] Looking for peers                        peercount=0 tried=55  static=0
+INFO [02-17|01:17:54.093] Looking for peers                        peercount=0 tried=48  static=0
+INFO [02-17|01:18:04.167] Looking for peers                        peercount=0 tried=64  static=0
+INFO [02-17|01:18:14.187] Looking for peers                        peercount=0 tried=73  static=0
+INFO [02-17|01:18:24.817] Looking for peers                        peercount=0 tried=41  static=0
+INFO [02-17|01:18:35.377] Looking for peers                        peercount=0 tried=52  static=0
+INFO [02-17|01:18:45.382] Looking for peers                        peercount=0 tried=49  static=0
+INFO [02-17|01:18:55.939] Looking for peers                        peercount=0 tried=43  static=0
+INFO [02-17|01:19:05.955] Looking for peers                        peercount=0 tried=59  static=0
+INFO [02-17|01:19:10.527] Got interrupt, shutting down...
+INFO [02-17|01:19:10.527] HTTP server stopped                      endpoint=127.0.0.1:8545
+INFO [02-17|01:19:10.527] HTTP server stopped                      endpoint=127.0.0.1:8551
+INFO [02-17|01:19:10.527] IPC endpoint closed                      url=/home/ubuntu/arcana-ecosystem/peer_1/geth.ipc
+INFO [02-17|01:19:10.527] Ethereum protocol stopped
+INFO [02-17|01:19:10.527] Transaction pool stopped
+INFO [02-17|01:19:10.535] Writing snapshot state to disk           root=d7f897..0f0544
+INFO [02-17|01:19:10.535] Persisted trie from memory database      nodes=0 size=0.00B time="2.97µs" gcnodes=0 gcsize=0.00B gctime=0s livenodes=0 livesize=0.00B
+INFO [02-17|01:19:10.535] Blockchain stopped
