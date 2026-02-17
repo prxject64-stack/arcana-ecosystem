@@ -4,3 +4,8 @@ __pycache__/
 data/
 geth.ipc
 *.log
+peer_1/
+peer_2/
+peer_3/
+*.sst
+*.ldb
