@@ -1,19 +1,6 @@
-# Blockchain Data
-data/geth/
-data/keystore/
-*.log
-*.ipc
-nohup.out
-password.txt
-
-# Python Bloat
 .local/
 __pycache__/
-*.py[cod]
-*.class
-venv/
-.venv/
-.env
-
-# OS Trash
-.DS_Store
+*.pyc
+data/
+geth.ipc
+*.log
