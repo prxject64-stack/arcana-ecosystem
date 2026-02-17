@@ -217,3 +217,52 @@ INFO [02-17|01:19:10.527] Transaction pool stopped
 INFO [02-17|01:19:10.535] Writing snapshot state to disk           root=d7f897..0f0544
 INFO [02-17|01:19:10.535] Persisted trie from memory database      nodes=0 size=0.00B time="2.97µs" gcnodes=0 gcsize=0.00B gctime=0s livenodes=0 livesize=0.00B
 INFO [02-17|01:19:10.535] Blockchain stopped
+INFO [02-17|18:13:48.791] Starting Geth on Ethereum mainnet...
+INFO [02-17|18:13:48.791] Bumping default cache on mainnet         provided=1024 updated=4096
+INFO [02-17|18:13:48.792] Maximum peer count                       ETH=50 total=50
+INFO [02-17|18:13:48.793] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
+INFO [02-17|18:13:48.795] Set global gas cap                       cap=50,000,000
+INFO [02-17|18:13:48.795] Initializing the KZG library             backend=gokzg
+INFO [02-17|18:13:48.814] Allocated trie memory caches             clean=614.00MiB dirty=1024.00MiB
+INFO [02-17|18:13:48.814] Using pebble as the backing database
+INFO [02-17|18:13:48.814] Allocated cache and file handles         database=/home/ubuntu/arcana-ecosystem/peer_3/geth/chaindata cache=2.00GiB handles=524,288
+INFO [02-17|18:13:48.831] Opened ancient database                  database=/home/ubuntu/arcana-ecosystem/peer_3/geth/chaindata/ancient/chain readonly=false
+INFO [02-17|18:13:48.832] State scheme set to already existing     scheme=hash
+INFO [02-17|18:13:48.832] Initialising Ethereum protocol           network=136 dbversion=<nil>
+INFO [02-17|18:13:48.836] 
+INFO [02-17|18:13:48.836] ---------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO [02-17|18:13:48.836] Chain ID:  136 (unknown)
+INFO [02-17|18:13:48.836] Consensus: Clique (proof-of-authority)
+INFO [02-17|18:13:48.836] 
+INFO [02-17|18:13:48.836] Pre-Merge hard forks (block based):
+INFO [02-17|18:13:48.836]  - Homestead:                   #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/homestead.md)
+INFO [02-17|18:13:48.836]  - Tangerine Whistle (EIP 150): #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/tangerine-whistle.md)
+INFO [02-17|18:13:48.836]  - Spurious Dragon/1 (EIP 155): #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/spurious-dragon.md)
+INFO [02-17|18:13:48.836]  - Spurious Dragon/2 (EIP 158): #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/spurious-dragon.md)
+INFO [02-17|18:13:48.836]  - Byzantium:                   #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/byzantium.md)
+INFO [02-17|18:13:48.836]  - Constantinople:              #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/constantinople.md)
+INFO [02-17|18:13:48.836]  - Petersburg:                  #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/petersburg.md)
+INFO [02-17|18:13:48.836]  - Istanbul:                    #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/istanbul.md)
+INFO [02-17|18:13:48.836]  - Berlin:                      #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/berlin.md)
+INFO [02-17|18:13:48.836]  - London:                      #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/london.md)
+INFO [02-17|18:13:48.836] 
+INFO [02-17|18:13:48.836] The Merge is not yet available for this network!
+INFO [02-17|18:13:48.836]  - Hard-fork specification: https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/paris.md
+INFO [02-17|18:13:48.836] 
+INFO [02-17|18:13:48.836] Post-Merge hard forks (timestamp based):
+INFO [02-17|18:13:48.836] 
+INFO [02-17|18:13:48.836] ---------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO [02-17|18:13:48.836] 
+INFO [02-17|18:13:48.837] Loaded most recent local block           number=0 hash=93e29c..77a963 td=1 age=56y11mo1w
+WARN [02-17|18:13:48.837] Failed to load snapshot                  err="missing or corrupted snapshot"
+INFO [02-17|18:13:48.844] Rebuilding state snapshot
+INFO [02-17|18:13:48.848] Initialized transaction indexer          range="last 2350000 blocks"
+INFO [02-17|18:13:48.848] Resuming state snapshot generation       root=6d0be5..cf3f57 accounts=0 slots=0 storage=0.00B dangling=0 elapsed=3.658ms
+INFO [02-17|18:13:48.851] Generated state snapshot                 accounts=1 slots=0 storage=51.00B dangling=0 elapsed=7.112ms
+INFO [02-17|18:13:48.957] Enabled snap sync                        head=0 hash=93e29c..77a963
+INFO [02-17|18:13:48.957] Gasprice oracle is ignoring threshold set threshold=2
+WARN [02-17|18:13:48.961] Engine API enabled                       protocol=eth
+WARN [02-17|18:13:48.961] Engine API started but chain not configured for merge yet
+INFO [02-17|18:13:48.961] Starting peer-to-peer node               instance=Geth/v1.13.14-stable-2bd6bd01/linux-amd64/go1.21.6
+INFO [02-17|18:13:48.964] Stored checkpoint snapshot to disk       number=0 hash=93e29c..77a963
+Fatal: Error starting protocol stack: listen tcp :30303: bind: address already in use
