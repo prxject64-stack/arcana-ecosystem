@@ -1,0 +1,9 @@
+{
+  "claim_type": "Legacy Treasury Redemption",
+  "request_date": "2026-02-18",
+  "asset": "sUSD",
+  "amount": "10000000.00",
+  "oracle_price_lock": "1.00",
+  "proof_of_legacy_status": "TX_HASH_FROM_JAN_2026",
+  "whale_signature": "0x7a2b...9d4e"
+}
