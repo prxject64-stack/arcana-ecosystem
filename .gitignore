@@ -4,3 +4,11 @@ artifacts/
 cache/
 *.cjs
 extract_key.cjs
+bootnode.log
+minerkey.pem
+password.txt
+peer_2/
+node_modules/
+artifacts/
+cache/
+.env
