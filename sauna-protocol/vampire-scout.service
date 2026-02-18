@@ -1,0 +1,15 @@
+[Unit]
+Description=Arcana Vampire Scout Bot
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/arcana-ecosystem/sauna-protocol
+Environment=DISCORD_TOKEN=${DISCORD_TOKEN}
+ExecStart=/usr/bin/python3 scripts/shadow_bot.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
