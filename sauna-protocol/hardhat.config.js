@@ -16,7 +16,8 @@ task('dashboard').setAction(async(a,hre)=>{
 
 task('balance').addParam('account').setAction(async(a,h)=>{
   const t=await h.ethers.getContractAt('contracts/IERC20.sol:IERC20','0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512');
-  console.log(h.ethers.formatUnits(await t.balanceOf(a.account),18));
+  const b=await t.balanceOf(a.account);
+  console.log('Balance of ' + a.account + ': ' + h.ethers.formatUnits(b, 18) + ' CC');
 });
 
 module.exports={solidity:'0.8.33',networks:{localhost:{url:'http://127.0.0.1:8545'}}};
