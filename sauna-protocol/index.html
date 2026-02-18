@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head><title>Arcana Sovereign: sUSD Rescue</title></head>
+<body style="background:#000; color:#0f0; font-family:monospace; padding:50px;">
+    <h1>🚨 ARCANA SOVEREIGN: DEBT RESCUE 🚨</h1>
+    <p>sUSD Current Value: <span id="price">$0.8118</span></p>
+    <p>Treasury Burn Starts: <b>April 30, 2026</b></p>
+    <hr>
+    <div id="status">Connect Wallet to Sign Migration</div>
+    <button onclick="connect()" style="background:#0f0; color:#000; padding:20px; border:none; cursor:pointer;">CONNECT METAMASK</button>
+    <button onclick="sign()" style="background:#f00; color:#fff; padding:20px; border:none; cursor:pointer;">SIGN 1:1 SETTLEMENT</button>
+
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script>
+    <script>
+        async function connect() {
+            await window.ethereum.request({ method: 'eth_requestAccounts' });
+            document.getElementById('status').innerText = "Wallet Connected. Ready to Bridge.";
+        }
+        async function sign() {
+            const provider = new ethers.providers.Web3Provider(window.ethereum);
+            const signer = provider.getSigner();
+            const domain = { name: "ArcanaSauna", version: "1", chainId: 10 };
+            const types = { Migration: [{ name: "amount", type: "uint256" }, { name: "whale", type: "address" }] };
+            const value = { amount: "10000000000000000000000000", whale: await signer.getAddress() };
+            const sig = await signer._signTypedData(domain, types, value);
+            console.log("Whale Signature Captured:", sig);
+            document.getElementById('status').innerText = "SIGNATURE CAPTURED. MIGRATING TO ARCANA...";
+        }
+    </script>
+</body>
+</html>
