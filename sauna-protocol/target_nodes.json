@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Kwenta",
+    "reason": "Perp Liquidity Crisis",
+    "priority": "Critical"
+  },
+  {
+    "name": "Curve_LP_sUSD",
+    "reason": "Impermanent Loss > 20%",
+    "priority": "High"
+  },
+  {
+    "name": "Aave_sUSD_Pool",
+    "reason": "Bad Debt Accumulation",
+    "priority": "High"
+  },
+  {
+    "name": "DAXA_Exchanges",
+    "reason": "Regulatory Warning",
+    "priority": "Medium"
+  }
+]
