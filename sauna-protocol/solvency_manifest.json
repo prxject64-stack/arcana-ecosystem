@@ -1,0 +1,9 @@
+{
+  "protocol": "Arcana Sovereign",
+  "timestamp": "2026-02-18T17:45:00Z",
+  "reserve_asset": "CC-P",
+  "reserve_amount": 136000000000,
+  "target_debt_intake": 10000000,
+  "coverage_ratio": "13600:1",
+  "status": "SOLVENT"
+}
