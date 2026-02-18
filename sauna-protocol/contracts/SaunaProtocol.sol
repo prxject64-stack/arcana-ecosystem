@@ -2,36 +2,31 @@
 pragma solidity ^0.8.33;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract SaunaProtocol {
-    address public ccToken;
-    bool public systemPaused;
-    uint256 public constant MAX_BATCH_SIZE = 5000;
-    uint256 public totalVaultLiquidity;
-    mapping(uint256 => uint256) public blockVolume;
+contract SaunaProtocol is Ownable {
+    mapping(address => mapping(address => uint256)) public rates; // base => quote => rate
 
-    constructor(address _ccToken) {
-        ccToken = _ccToken;
-        totalVaultLiquidity = 136000000000 * 10**18; // Sync with 136B CC
+    event RateUpdated(address base, address quote, uint256 rate);
+    event SwapExecuted(address indexed user, address indexed fromToken, address indexed toToken, uint256 amountIn, uint256 amountOut);
+
+    constructor() Ownable(msg.sender) {}
+
+    function setExchangeRate(address base, address quote, uint256 rate) external onlyOwner {
+        rates[base][quote] = rate;
+        emit RateUpdated(base, quote, rate);
     }
 
-    function processMassSwaps(address[] calldata recipients, uint256 amount) external {
-        require(!systemPaused, "SEC: System Paused");
-        require(recipients.length <= MAX_BATCH_SIZE, "SEC: Batch too large");
+    function swap(address fromToken, address toToken, uint256 amountIn) external {
+        uint256 rate = rates[fromToken][toToken];
+        require(rate > 0, "Sauna: Pair not supported");
         
-        uint256 totalValue = recipients.length * amount;
-        
-        // FIX: Check CC Token balance, not ETH balance
-        uint256 currentBalance = IERC20(ccToken).balanceOf(address(this));
-        require(totalValue <= currentBalance, "SEC: Insufficient Liquidity");
+        uint256 amountOut = amountIn / rate; // Simplistic rate logic for 200:1
+        if (rate == 1) amountOut = amountIn; // 1:1 case
 
-        uint256 limit = (totalVaultLiquidity * 10) / 100;
-        require(blockVolume[block.number] + totalValue <= limit, "SEC: Circuit Breaker Tripped");
+        IERC20(fromToken).transferFrom(msg.sender, address(this), amountIn);
+        IERC20(toToken).transfer(msg.sender, amountOut);
 
-        blockVolume[block.number] += totalValue;
-
-        for (uint256 i = 0; i < recipients.length; i++) {
-            require(IERC20(ccToken).transfer(recipients[i], amount), "SEC: Transfer Failed");
-        }
+        emit SwapExecuted(msg.sender, fromToken, toToken, amountIn, amountOut);
     }
 }
