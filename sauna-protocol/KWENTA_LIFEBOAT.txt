@@ -1,0 +1,6 @@
+--- KWENTA EMERGENCY LIQUIDITY PROOF ---
+Liquidity: 1B CC-P
+Bridge: 0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0
+Status: Active
+
+KWENTA DEVS: Your traders are paying 12.5% monthly to exit sUSD. We offer a 1:1 migration to saUSD. Zero slippage. Fixed peg. Open the gate.
