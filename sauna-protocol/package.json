@@ -1,14 +1,10 @@
 {
   "name": "sauna-protocol",
   "version": "1.0.0",
-  "description": "Arcana Sovereign CC Management",
-  "main": "index.js",
   "scripts": {
     "start": "npx hardhat node",
-    "resume": "npx hardhat run scripts/phoenix_resume.js --network localhost",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "resume": "npx hardhat run scripts/phoenix_resume.js --network localhost"
   },
-  "dependencies": {},
   "devDependencies": {
     "hardhat": "^2.22.0"
   }
