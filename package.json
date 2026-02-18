@@ -1,6 +1,5 @@
 {
   "name": "arcana-ecosystem",
-  "type": "module",
   "version": "1.0.0",
   "description": "**The First Sovereign Micro-Nation on-Chain**   *Governance (Private) | Speculation (Public)*",
   "main": "index.js",
@@ -22,11 +21,21 @@
   },
   "homepage": "https://github.com/prxject64-stack/arcana-ecosystem#readme",
   "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.1.0",
     "@nomicfoundation/hardhat-ethers": "^4.0.4",
+    "@nomicfoundation/hardhat-ignition-ethers": "^3.0.7",
+    "@nomicfoundation/hardhat-network-helpers": "^3.0.3",
     "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "@nomicfoundation/hardhat-verify": "^3.0.10",
     "@openzeppelin/contracts": "^5.4.0",
+    "@typechain/ethers-v6": "^0.5.1",
+    "@typechain/hardhat": "^9.1.0",
+    "chai": "^6.2.2",
     "ethers": "^6.16.0",
-    "hardhat": "^3.1.8"
+    "hardhat": "^3.1.8",
+    "hardhat-gas-reporter": "^2.3.0",
+    "solidity-coverage": "^0.8.17",
+    "typechain": "^8.3.2"
   },
   "dependencies": {
     "adm-zip": "^0.4.16",
