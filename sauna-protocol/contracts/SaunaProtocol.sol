@@ -5,7 +5,7 @@ import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract SaunaProtocol is Ownable {
-    mapping(address => mapping(address => uint256)) public rates; // base => quote => rate
+    mapping(address => mapping(address => uint256)) public rates;
 
     event RateUpdated(address base, address quote, uint256 rate);
     event SwapExecuted(address indexed user, address indexed fromToken, address indexed toToken, uint256 amountIn, uint256 amountOut);
@@ -21,10 +21,15 @@ contract SaunaProtocol is Ownable {
         uint256 rate = rates[fromToken][toToken];
         require(rate > 0, "Sauna: Pair not supported");
         
-        uint256 amountOut = amountIn / rate; // Simplistic rate logic for 200:1
-        if (rate == 1) amountOut = amountIn; // 1:1 case
+        uint256 amountOut = amountIn / rate;
 
-        IERC20(fromToken).transferFrom(msg.sender, address(this), amountIn);
+        // CRITICAL FIX: Ensure the CC is actually taken from the user
+        bool success = IERC20(fromToken).transferFrom(msg.sender, address(this), amountIn);
+        require(success, "Sauna: Transfer failed - check allowance");
+        
+        // Ensure the Vault has enough sUSD to pay out
+        require(IERC20(toToken).balanceOf(address(this)) >= amountOut, "Sauna: Insufficient liquidity");
+        
         IERC20(toToken).transfer(msg.sender, amountOut);
 
         emit SwapExecuted(msg.sender, fromToken, toToken, amountIn, amountOut);
