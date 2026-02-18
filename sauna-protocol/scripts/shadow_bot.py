@@ -1,31 +1,29 @@
 import discord
 import os
 
-TOKEN = os.getenv('DISCORD_TOKEN')
-KEYWORDS = ['susd', 'sip-420', 'jubilee', 'debt trap', 'depeg']
+TOKEN = os.getenv("DISCORD_TOKEN")
+MANIFESTO_LINK = "https://github.com/prxject64-stack/arcana-ecosystem/blob/main/sauna-protocol/MANIFESTO.md"
+SOLVENCY_LINK = "https://github.com/prxject64-stack/arcana-ecosystem/blob/main/sauna-protocol/solvency_manifest.json"
 
 class VampireScout(discord.Client):
     async def on_ready(self):
-        print(f'Vampire Scout active: Monitoring for trapped liquidity...')
+        print(f'Vampire Scout active as {self.user}')
 
     async def on_message(self, message):
         if message.author == self.user:
             return
-
-        content = message.content.lower()
-        if any(word in content for word in KEYWORDS):
-            user_id = message.author.id
-            report = (
-                f"🚨 **LIQUIDITY RESCUE OPPORTUNITY** 🚨\n"
-                f"User <@{user_id}> is discussing trapped assets.\n"
-                "**The Math:** sUSD @ $0.81 | April 30th Discount: 12.5%\n"
-                "**Arcana Solution:** saUSD 1:1 Bridge + ARC Bonus.\n"
-                "Safeguard your principal: `0x0165...` (Arcana Sovereign)"
+        
+        keywords = ["sUSD", "SIP-420", "depeg", "trapped"]
+        if any(word in message.content for word in keywords):
+            response = (
+                f"🚨 **LIQUIDITY ALERT** 🚨\n"
+                f"The sUSD Treasury Cliff (April 30) is approaching. Your assets are scheduled for a 12.5% monthly burn.\n\n"
+                f"**Arcana Sovereign** offers 1:1 Settlement via the 136B CC-P Reserve.\n"
+                f"📄 [Read the Manifesto]({MANIFESTO_LINK})\n"
+                f"⚖️ [Verify Solvency]({SOLVENCY_LINK})\n"
+                f"Status: RESCUE BRIDGE ACTIVE."
             )
-            await message.channel.send(report)
-            print(f"[LOG] Flagged user {message.author} for migration.")
+            await message.channel.send(response)
 
-intents = discord.Intents.default()
-intents.message_content = True
-client = VampireScout(intents=intents)
+client = VampireScout(intents=discord.Intents.all())
 client.run(TOKEN)
