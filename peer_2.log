@@ -1,0 +1,55 @@
+nohup: ignoring input
+INFO [02-17|23:27:13.936] Maximum peer count                       ETH=50 total=50
+INFO [02-17|23:27:13.937] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
+INFO [02-17|23:27:13.940] Set global gas cap                       cap=50,000,000
+INFO [02-17|23:27:13.940] Initializing the KZG library             backend=gokzg
+INFO [02-17|23:27:13.952] Allocated trie memory caches             clean=154.00MiB dirty=256.00MiB
+INFO [02-17|23:27:13.952] Using pebble as the backing database
+INFO [02-17|23:27:13.952] Allocated cache and file handles         database=/root/arcana-ecosystem/peer_2/geth/chaindata cache=512.00MiB handles=524,288
+INFO [02-17|23:27:13.959] Opened ancient database                  database=/root/arcana-ecosystem/peer_2/geth/chaindata/ancient/chain readonly=false
+INFO [02-17|23:27:13.960] State scheme set to already existing     scheme=hash
+INFO [02-17|23:27:13.960] Initialising Ethereum protocol           network=136 dbversion=<nil>
+INFO [02-17|23:27:13.961] 
+INFO [02-17|23:27:13.961] ---------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO [02-17|23:27:13.961] Chain ID:  136 (unknown)
+INFO [02-17|23:27:13.961] Consensus: Clique (proof-of-authority)
+INFO [02-17|23:27:13.961] 
+INFO [02-17|23:27:13.961] Pre-Merge hard forks (block based):
+INFO [02-17|23:27:13.961]  - Homestead:                   #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/homestead.md)
+INFO [02-17|23:27:13.961]  - Tangerine Whistle (EIP 150): #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/tangerine-whistle.md)
+INFO [02-17|23:27:13.961]  - Spurious Dragon/1 (EIP 155): #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/spurious-dragon.md)
+INFO [02-17|23:27:13.961]  - Spurious Dragon/2 (EIP 158): #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/spurious-dragon.md)
+INFO [02-17|23:27:13.961]  - Byzantium:                   #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/byzantium.md)
+INFO [02-17|23:27:13.961]  - Constantinople:              #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/constantinople.md)
+INFO [02-17|23:27:13.961]  - Petersburg:                  #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/petersburg.md)
+INFO [02-17|23:27:13.961]  - Istanbul:                    #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/istanbul.md)
+INFO [02-17|23:27:13.961]  - Berlin:                      #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/berlin.md)
+INFO [02-17|23:27:13.961]  - London:                      #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/london.md)
+INFO [02-17|23:27:13.961] 
+INFO [02-17|23:27:13.961] The Merge is not yet available for this network!
+INFO [02-17|23:27:13.961]  - Hard-fork specification: https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/paris.md
+INFO [02-17|23:27:13.961] 
+INFO [02-17|23:27:13.961] Post-Merge hard forks (timestamp based):
+INFO [02-17|23:27:13.961] 
+INFO [02-17|23:27:13.961] ---------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO [02-17|23:27:13.961] 
+INFO [02-17|23:27:13.961] Loaded most recent local block           number=0 hash=93e29c..77a963 td=1 age=56y11mo1w
+WARN [02-17|23:27:13.961] Failed to load snapshot                  err="missing or corrupted snapshot"
+INFO [02-17|23:27:13.962] Rebuilding state snapshot
+INFO [02-17|23:27:13.962] Initialized transaction indexer          range="last 2350000 blocks"
+INFO [02-17|23:27:13.962] Resuming state snapshot generation       root=6d0be5..cf3f57 accounts=0 slots=0 storage=0.00B dangling=0 elapsed="558.889µs"
+INFO [02-17|23:27:13.963] Generated state snapshot                 accounts=1 slots=0 storage=51.00B dangling=0 elapsed=1.234ms
+INFO [02-17|23:27:13.981] Enabled snap sync                        head=0 hash=93e29c..77a963
+INFO [02-17|23:27:13.981] Gasprice oracle is ignoring threshold set threshold=2
+WARN [02-17|23:27:13.982] Engine API enabled                       protocol=eth
+WARN [02-17|23:27:13.982] Engine API started but chain not configured for merge yet
+INFO [02-17|23:27:13.982] Starting peer-to-peer node               instance=Geth/v1.13.14-stable-2bd6bd01/linux-amd64/go1.22.2
+INFO [02-17|23:27:13.982] Stored checkpoint snapshot to disk       number=0 hash=93e29c..77a963
+INFO [02-17|23:27:13.987] IPC endpoint opened                      url=/root/arcana-ecosystem/peer_2/geth.ipc
+INFO [02-17|23:27:13.987] Generated JWT secret                     path=/root/arcana-ecosystem/peer_2/geth/jwtsecret
+INFO [02-17|23:27:13.987] New local node record                    seq=1,771,370,833,987 id=4bd5a268ab65f04a ip=127.0.0.1 udp=0 tcp=30303
+INFO [02-17|23:27:13.987] HTTP server started                      endpoint=[::]:8545 auth=false prefix= cors= vhosts=localhost
+INFO [02-17|23:27:13.987] Started P2P networking                   self="enode://04c1d4ca1e92bb016448321569005f8b9bf440b49b042464c1a756bef99508c15261ff6313d33d2923fc2ca4242d15b445d4802dd2f28af09fc3139b1cade3a5@127.0.0.1:30303?discport=0"
+INFO [02-17|23:27:13.987] WebSocket enabled                        url=ws://127.0.0.1:8551
+INFO [02-17|23:27:13.987] HTTP server started                      endpoint=127.0.0.1:8551 auth=true  prefix= cors=localhost vhosts=localhost
+INFO [02-17|23:27:14.570] Unlocked account                         address=0x3BDa2C9D146Cf23B6EE1AE51bEEc6308B309b690
