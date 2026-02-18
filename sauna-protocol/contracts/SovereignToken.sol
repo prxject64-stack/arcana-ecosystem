@@ -14,6 +14,7 @@ contract SovereignToken {
     }
 
     function transfer(address to, uint256 amount) public returns (bool) {
+        require(balanceOf[msg.sender] >= amount, "Balance too low");
         balanceOf[msg.sender] -= amount;
         balanceOf[to] += amount;
         return true;
