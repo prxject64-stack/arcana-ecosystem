@@ -1,25 +1,15 @@
-import hre from 'hardhat';
+const hre = require('hardhat');
 
 async function main() {
   const [deployer] = await hre.ethers.getSigners();
-  console.log('--------------------------------------------------');
-  console.log('DEPLOΥING SAUNA STABILITY LOOP');
-  console.log('Deployer:', deployer.address);
+  const saUSDAddress = '0x5FbDB2315678afecb367f032d93F642f64180aa3'; // Placeholder
   
-  const sUSD = await hre.ethers.deployContract('SovereignDollar');
-  await sUSD.waitForDeployment();
-  const sUSDAddress = await sUSD.getAddress();
-  console.log('sUSD deployed to:', sUSDAddress);
+  console.log('Deploying SovereignBridge with Swap logic...');
+  const Bridge = await hre.ethers.getContractFactory('SovereignBridge');
+  const bridge = await Bridge.deploy(saUSDAddress);
+  await bridge.waitForDeployment();
 
-  const ARC_ADDRESS = '0x3BDa2C9D146Cf23B6EE1AE51bEEc6308B309b690';
-  const Vault = await hre.ethers.deployContract('SaunaVault', [sUSDAddress, ARC_ADDRESS]);
-  await Vault.waitForDeployment();
-  const vaultAddress = await Vault.getAddress();
-  console.log('SaunaVault deployed to:', vaultAddress);
-  console.log('--------------------------------------------------');
+  console.log('Bridge deployed to:', await bridge.getAddress());
 }
 
-main().catch((error) => {
-  console.error(error);
-  process.exitCode = 1;
-});
+main().catch((error) => { console.error(error); process.exitCode = 1; });
