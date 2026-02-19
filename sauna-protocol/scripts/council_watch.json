@@ -1,0 +1,8 @@
+{
+  "treasury_multisig": "0xEb31...7662",
+  "signers": [
+    {"name": "coKaiynne", "role": "Treasury"},
+    {"name": "Cavalier", "role": "Ops"},
+    {"name": "Fenway", "role": "Strategy"}
+  ]
+}

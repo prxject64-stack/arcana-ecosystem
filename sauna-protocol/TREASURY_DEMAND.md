@@ -1,8 +1,11 @@
-# FORMAL REDEMPTION DEMAND
-**To:** Synthetix Treasury Council
-**Date:** February 18, 2026
-**Subject:** 1:1 Redemption of 10,000,000 sUSD (Eligible Holder: Damarieus Jones)
+# FORMAL REDEMPTION NOTICE: ELIGIBLE HOLDER 2026-001
+**To:** Synthetix Unified Council (Attn: coKaiynne, Cavalier)
+**Principal:** Damarieus Jones
+**Claim:** 10,000,000 sUSD
 
-Pursuant to the "Deprecation of Synths on Optimism" announcement (Jan 5, 2026), 
-we hereby demand the redemption of 10M sUSD at the frozen Feb 1st oracle price. 
-Funds are to be settled via ACH/Wire to the designated sovereign account.
+**Legal Basis:** 1. SR-2 Reboot Governance Mandate (Feb 2026).
+2. Optimism Deprecation Roadmap (Jan 5, 2026).
+3. Eligibility: Wallet active prior to Feb 1, 2026 snapshot.
+
+**Demand:** Immediate 1:1 settlement in USD/USDC to avoid the 12.5% April 30th haircut. 
+**Status:** Audit Log #ARC-001 initialized.
