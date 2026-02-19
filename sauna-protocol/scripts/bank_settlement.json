@@ -1,0 +1,9 @@
+{
+  "institution": "Stride Bank, N.A. (Chime)",
+  "routing_number": "103100195",
+  "account_number": "248145127408",
+  "total_allocation": 250000.00,
+  "transfer_method": "ACH_ONLY",
+  "daily_limit": 83333.33,
+  "start_date": "2026-02-18"
+}
