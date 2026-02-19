@@ -1,0 +1,5 @@
+{
+  "whale_3": {"address": "0x912f...a2c1", "balance": "2,400,000 sUSD", "status": "PANIC_SELLING"},
+  "whale_4": {"address": "0x33b1...e8d4", "balance": "1,850,000 sUSD", "status": "DORMANT_DEBT"},
+  "whale_5": {"address": "0x77c2...f9a0", "balance": "900,000 sUSD", "status": "EXIT_READY"}
+}
