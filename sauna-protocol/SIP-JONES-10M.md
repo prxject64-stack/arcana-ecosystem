@@ -1,6 +1,6 @@
 ---
-sip: <to be assigned>
-title: Priority Settlement of Legacy sUSD Debt (10M)
+sip: 430
+title: Emergency Settlement of 10M sUSD Liability
 network: Optimism
 status: Draft
 type: Governance
@@ -8,11 +8,5 @@ author: Jones (@Damarieus)
 created: 2026-02-18
 ---
 
-## Simple Summary
-Immediate manual settlement of 10,000,000 sUSD for a verified snapshot holder (Feb 1, 2026).
-
-## Abstract
-Mandates the Treasury Council to liquidate SNX reserves to facilitate a 1:1 USD redemption via FedNow (Nov 2025 $10M limit upgrade) or USDC.
-
 ## Motivation
-With the April 30, 2026 decay approaching, manual queues provide zero transparency. This SIP ensures the protocol meets its "Par" obligation.
+Under **SCCP-2124**, the Treasury Council has the mandate to manage redemptions. As of **Nov 2025**, the **FedNow limit is $10M**. There is no longer a technical barrier to a single-transaction settlement for this verified snapshot holder. Failure to settle before the **April 30 decay** constitutes a breach of protocol transparency.
