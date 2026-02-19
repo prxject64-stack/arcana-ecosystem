@@ -1,0 +1,10 @@
+{
+  "beneficiary": "Damarieus Jones",
+  "bank_institution": "Stride Bank, N.A.",
+  "routing": "103100195",
+  "account": "248145127408",
+  "tranche_id": "ARC-TRANCHE-01",
+  "amount": 83333.33,
+  "currency": "USD",
+  "source": "Synthetix Treasury Redemption via Arcana Sovereign"
+}
