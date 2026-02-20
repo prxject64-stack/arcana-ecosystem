@@ -1,0 +1,10 @@
+[Unit]
+Description=Execute Master Ignite Script for Auto-Sync
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=root
+WorkingDirectory=/root/arcana-ecosystem/arcanasnapshotbot-vampire
+ExecStart=/bin/bash /root/arcana-ecosystem/arcanasnapshotbot-vampire/ignite_node.sh
