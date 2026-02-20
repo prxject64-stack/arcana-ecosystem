@@ -1,10 +1,12 @@
+import urllib3
+urllib3.util.ssl_.DEFAULT_CIPHERS = "DEFAULT@SECLEVEL=2"
 import os
 import requests
 import time
 
 # Treasury Wallet: coKaiynne / Unified Council
 TREASURY_ADDRESS = "0x99f4176ee457afedffcb1839c7ab7a030a5e4a92"
-ETHERSCAN_API = "YOUR_API_KEY"
+ETHERSCAN_API = "5S4V...HIDDEN_KEY"
 
 def check_treasury():
     url = f"https://api.optimistic.etherscan.io/api?module=account&action=tokentx&address={TREASURY_ADDRESS}&apikey={ETHERSCAN_API}"
