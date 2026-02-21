@@ -1,19 +1,22 @@
 version: '3'
 services:
   node:
-    image: ethereum/client-go:latest
+    image: ethereum/client-go:v1.13.15
     container_name: arcana_bank_alpha
     volumes:
       - ./data:/root/.ethereum
+      - ./password.txt:/root/password.txt
     ports:
       - "8546:8545"
-      - "30304:30303"
     command:
       - --networkid=777
       - --http
       - --http.addr=0.0.0.0
       - --http.vhosts=*
-      - --http.api=eth,net,web3,personal,miner
+      - --http.api=eth,net,web3,admin,clique,miner
       - --mine
+      - --miner.etherbase=0x1f0A8947BD2bFaaa0BAA8De3844D53C71A58Df89
+      - --unlock=0x1f0A8947BD2bFaaa0BAA8De3844D53C71A58Df89
+      - --password=/root/password.txt
       - --allow-insecure-unlock
-      - --miner.etherbase=0x70997970C51812dc3A010C7d01b50e0d17dc79ee
+      - --nodiscover

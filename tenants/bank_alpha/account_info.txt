@@ -1,0 +1,11 @@
+
+Your new key was generated
+
+Public address of the key:   0x1f0A8947BD2bFaaa0BAA8De3844D53C71A58Df89
+Path of the secret key file: data/keystore/UTC--2026-02-21T01-31-59.247846059Z--1f0a8947bd2bfaaa0baa8de3844d53c71a58df89
+
+- You can share your public address with anyone. Others need it to interact with you.
+- You must NEVER share the secret key with anyone! The key controls access to your funds!
+- You must BACKUP your key file! Without the key, it's impossible to access account funds!
+- You must REMEMBER your password! Without the password, it's impossible to decrypt the key!
+

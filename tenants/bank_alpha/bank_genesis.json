@@ -11,13 +11,12 @@
     "istanbulBlock": 0,
     "berlinBlock": 0,
     "londonBlock": 0,
-    "terminalTotalDifficulty": 0,
-    "terminalTotalDifficultyPassed": true,
-    "ethash": {}
+    "clique": { "period": 5, "epoch": 30000 }
   },
-  "difficulty": "0x400",
+  "difficulty": "0x1",
   "gasLimit": "0x8000000",
+  "extraData": "0x00000000000000000000000000000000000000000000000000000000000000001f0A8947BD2bFaaa0BAA8De3844D53C71A58Df890000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
   "alloc": {
-    "0x70997970C51812dc3A010C7d01b50e0d17dc79ee": { "balance": "1000000000000000000000000" }
+    "0x1f0A8947BD2bFaaa0BAA8De3844D53C71A58Df89": { "balance": "1000000000000000000000000" }
   }
 }
