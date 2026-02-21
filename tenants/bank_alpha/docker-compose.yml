@@ -5,10 +5,15 @@ services:
     container_name: arcana_bank_alpha
     volumes:
       - ./data:/root/.ethereum
-      - ./bank_genesis.json:/root/genesis.json
     ports:
       - "8546:8545"
       - "30304:30303"
-    command: >
-      sh -c "if [ ! -d /root/.ethereum/geth ]; then geth init /root/genesis.json; fi; 
-      geth --networkid 777 --http --http.addr '0.0.0.0' --http.vhosts '*' --http.api 'eth,net,web3,personal,miner' --mine --allow-insecure-unlock"
+    command:
+      - --networkid=777
+      - --http
+      - --http.addr=0.0.0.0
+      - --http.vhosts=*
+      - --http.api=eth,net,web3,personal,miner
+      - --mine
+      - --allow-insecure-unlock
+      - --miner.etherbase=0x70997970C51812dc3A010C7d01b50e0d17dc79ee
