@@ -1,0 +1,7 @@
+/root/arcana-ecosystem/ironclaw_core/target/release/deps/js_sys-509b0bb474322150.d: /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/js-sys-0.3.88/src/lib.rs
+
+/root/arcana-ecosystem/ironclaw_core/target/release/deps/libjs_sys-509b0bb474322150.rlib: /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/js-sys-0.3.88/src/lib.rs
+
+/root/arcana-ecosystem/ironclaw_core/target/release/deps/libjs_sys-509b0bb474322150.rmeta: /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/js-sys-0.3.88/src/lib.rs
+
+/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/js-sys-0.3.88/src/lib.rs:

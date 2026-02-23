@@ -1,0 +1,12 @@
+/root/arcana-ecosystem/ironclaw_core/target/release/deps/coins_core-f95aa9a3127899d5.d: /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/coins-core-0.8.7/src/lib.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/coins-core-0.8.7/src/macros.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/coins-core-0.8.7/src/enc.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/coins-core-0.8.7/src/hashes.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/coins-core-0.8.7/src/prelude.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/coins-core-0.8.7/src/ser.rs
+
+/root/arcana-ecosystem/ironclaw_core/target/release/deps/libcoins_core-f95aa9a3127899d5.rlib: /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/coins-core-0.8.7/src/lib.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/coins-core-0.8.7/src/macros.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/coins-core-0.8.7/src/enc.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/coins-core-0.8.7/src/hashes.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/coins-core-0.8.7/src/prelude.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/coins-core-0.8.7/src/ser.rs
+
+/root/arcana-ecosystem/ironclaw_core/target/release/deps/libcoins_core-f95aa9a3127899d5.rmeta: /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/coins-core-0.8.7/src/lib.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/coins-core-0.8.7/src/macros.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/coins-core-0.8.7/src/enc.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/coins-core-0.8.7/src/hashes.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/coins-core-0.8.7/src/prelude.rs /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/coins-core-0.8.7/src/ser.rs
+
+/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/coins-core-0.8.7/src/lib.rs:
+/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/coins-core-0.8.7/src/macros.rs:
+/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/coins-core-0.8.7/src/enc.rs:
+/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/coins-core-0.8.7/src/hashes.rs:
+/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/coins-core-0.8.7/src/prelude.rs:
+/root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/coins-core-0.8.7/src/ser.rs:

@@ -1,0 +1,9 @@
+[capabilities]
+network_egress = ["api.coingecko.com", "127.0.0.1"]
+vault_access = true
+sandbox_mode = "wasm"
+
+[vault]
+collateral = "CC-P"
+peg = "saUSD"
+rate = 2.0
