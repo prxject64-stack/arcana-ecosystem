@@ -1,0 +1,14 @@
+[package]
+name = "ironclaw_core"
+version = "1.0.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.35", features = ["full"] }
+ethers = "2.0"
+serde = { version = "1.0", features = ["derive"] }
+# Custom safety layer for Feb 2026 SSRF protection
+ironclaw-safety = { git = "https://github.com/arcana-internal/ironclaw-safety-lib", optional = true }
+
+[features]
+osaka_evm = []
