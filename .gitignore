@@ -13,3 +13,9 @@ artifacts/
 cache/
 .env
 out/
+arcana_data/
+arcanasnapshotbot-vampire/venv/
+*.log
+keystore/
+nodekey
+new_password.txt
