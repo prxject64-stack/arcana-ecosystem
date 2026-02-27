@@ -1,6 +1,1 @@
-#!/bin/bash
-nohup geth --datadir /root/arcana-ecosystem/arcana_data \
---networkid 136 \
---http --http.api eth,net,web3,miner,admin \
---cache 4096 \
---allow-insecure-unlock > g8_osaka_reboot.log 2>&1 &
+nohup /usr/local/bin/geth --datadir /root/arcana-ecosystem/peer_2 --networkid 136 --http --http.addr 0.0.0.0 --http.port 8545 --http.api 'eth,net,web3,miner,admin,personal,clique' --unlock 0x4654cfdd1a9eaeaa43c985d5dfda6b4297a1e688 --password /root/arcana-ecosystem/password.txt --allow-insecure-unlock --miner.etherbase 0x4654cfdd1a9eaeaa43c985d5dfda6b4297a1e688 --mine --authrpc.port 8552 > /root/arcana-ecosystem/peer_2.log 2>&1 &
