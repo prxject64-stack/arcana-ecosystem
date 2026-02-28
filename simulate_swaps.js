@@ -1,16 +1,36 @@
-var count = 4500;
-var vault = "0xe7B7B6cC21D01e6120197f0413d224923243B69c";
-var destination = "0x000000000000000000000000000000000000dead"; // Burn address for testing
+const { ethers } = require('ethers');
 
-console.log("Commencing " + count + " simultaneous CC-P swaps...");
+async function main() {
+    const provider = new ethers.JsonRpcProvider('http://127.0.0.1:8545');
+    // Using your unlocked account from the node logs
+    const signer = await provider.getSigner('0x4654cfdd1a9eaeaa43c985d5dfda6b4297a1e688');
+    const contractAddress = '0x9a7D8Bd48D046F5D1d4A49c68B89e529eb7587c4';
 
-for (var i = 0; i < count; i++) {
-    eth.sendTransaction({
-        from: vault,
-        to: destination,
-        value: web3.toWei(0.001, "ether"), // Swap increments
-        gas: 21000,
-        nonce: eth.getTransactionCount(vault) + i
-    });
+    console.log('Commencing 4500 CC-P swaps on Arcana Sovereign...');
+    
+    // Fetch nonce once and handle increments locally for speed
+    let nonce = await provider.getTransactionCount(signer.address);
+
+    for (let i = 0; i < 4500; i++) {
+        const tx = {
+            to: contractAddress,
+            value: 0,
+            gasLimit: 60000, 
+            gasPrice: ethers.parseUnits('20', 'gwei'),
+            nonce: nonce++,
+            data: '0x' 
+        };
+
+        // Fire-and-forget to maximize throughput
+        signer.sendTransaction(tx).catch(err => {
+            if (!err.message.includes('already known')) {
+                console.error('Tx ' + i + ' Error:', err.message);
+            }
+        });
+
+        if (i % 500 === 0) console.log('Dispatched ' + i + ' swaps...');
+    }
+    console.log('All 4500 transactions dispatched to the pool.');
 }
-console.log("Swaps Broadcasted to Xeon Transaction Pool.");
+
+main().catch(console.error);
