@@ -9,3 +9,4 @@ password.txt
 genesis.json
 keystore/
 node_data/
+venv/
