@@ -1,0 +1,7 @@
+{
+  "rateLimit": 5000,
+  "burstLimit": 10000,
+  "priorityAccounts": ["0x218e8c79F8a12472a4bA48dd76B55A3e39e40cc8"],
+  "stablecoinCollateral": "0x4AC1B117e2713a1d8C5A3aCa5B8EfEA139b99640",
+  "vaultAddress": "0x1791E91733E32eDFd2f98ff772a64335EE3E2d0D"
+}
