@@ -11,18 +11,16 @@
     "istanbulBlock": 0,
     "berlinBlock": 0,
     "londonBlock": 0,
-    "terminalTotalDifficulty": 1000000000000000000000000000000,
+    "terminalTotalDifficulty": 0,
+    "terminalTotalDifficultyPassed": true,
     "clique": {
       "period": 5,
       "epoch": 30000
     }
   },
   "difficulty": "1",
-  "gasLimit": "2000000000",
-  "extradata": "0x00000000000000000000000000000000000000000000000000000000000000004654cfdd1a9eaeaa43c985d5dfda6b4297a1e6880000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+  "gasLimit": "8000000",
   "alloc": {
-    "4654cFdD1A9EaeaA43c985D5DFDA6B4297a1e688": {
-      "balance": "136000000000000000000000000000"
-    }
+    "0x4654cfdd1a9eaeaa43c985d5dfda6b4297a1e688": { "balance": "136000000000000000000000000000" }
   }
 }
