@@ -1,4 +1,4 @@
-k{
+{
   "config": {
     "chainId": 136,
     "homesteadBlock": 0,
@@ -11,8 +11,6 @@ k{
     "istanbulBlock": 0,
     "berlinBlock": 0,
     "londonBlock": 0,
-    "terminalTotalDifficulty": 0,
-    "terminalTotalDifficultyPassed": true,
     "clique": {
       "period": 5,
       "epoch": 30000
