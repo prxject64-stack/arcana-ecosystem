@@ -1,0 +1,2 @@
+#!/bin/bash
+nohup geth --datadir /home/prxject64/arcana-ecosystem/peer_6   --networkid 1337   --port 30308   --http --http.port 8550   --authrpc.port 8556   --bootnodes "enode://4d947a11ff5561283245cea64e10f59ee6468dd2508a71c4585ce15e7c5b5b7faaf080eb103840a5a3a376aa42f0fc306f241441a1cc78fc690d8cfad6ae26e8@127.0.0.1:30303?discport=0"   --ipcdisable --nodiscover   --allow-insecure-unlock > /home/prxject64/arcana-ecosystem/peer_6.log 2>&1 &
