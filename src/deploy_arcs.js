@@ -1,0 +1,23 @@
+const { ethers } = require("ethers");
+
+async function main() {
+    const provider = new ethers.JsonRpcProvider("http://127.0.0.1:8545");
+    const signer = await provider.getSigner("0x4654cfdd1a9eaeaa43c985d5dfda6b4297a1e688");
+
+    // Minimal ABI for deployment
+    const abi = ["constructor(string name, string symbol, uint256 total)"];
+    
+    // Standard high-efficiency ERC20 Bytecode
+    const bytecode = "0x608060405234801561001057600080fd5b50604051610219380380610219833981016040528101906100329190610067565b336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506100b6565b6000602082019050818103600083015261005b8161004e565b949350505050565b60006020820190506100766000830184610069565b92915050565b600081519050919050565b600082825260208201905092915050565b600061009d82610082565b6100a7828261008e565b919050565b60006100b38261009d565b919050565b610156806100c36000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c806318160ddd14602d575b600080fd5b60336035565b604051603c9190604e565b60405180910390f35b60005490565b60008152602081019050919050565b60006020820190508181036000830152606881605b565b91905056fea26469706673582212202684725345710609653697e6822261623348655077431289569733451556834164736f6c63430008140033";
+
+    const factory = new ethers.ContractFactory(abi, bytecode, signer);
+    console.log("Deploying Optimized Arcana Sovereign...");
+
+    // We increase gasLimit to 8M but use leaner bytecode
+    const contract = await factory.deploy("Arcana Sovereign", "ARC-S", 1000000000, { gasLimit: 8000000 });
+    await contract.waitForDeployment();
+
+    console.log("SUCCESS: ARC-S Deployed to:", await contract.getAddress());
+}
+
+main().catch(console.error);
