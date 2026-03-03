@@ -1,19 +1,21 @@
+import '@nomicfoundation/hardhat-toolbox';
+
 export default {
   solidity: {
-    version: "0.8.20",
+    version: '0.8.24',
     settings: {
-      evmVersion: "paris", 
       optimizer: {
         enabled: true,
-        runs: 200
-      }
-    }
-  },
-  networks: {
-    arcana: {
-      type: "http",
-      url: "http://127.0.0.1:8545",
-      accounts: "remote", 
+        runs: 200,
+      },
+      viaIR: true,
     },
   },
+  networks: {
+    localhost: {
+      url: 'http://127.0.0.1:8545',
+      gas: 2100000,
+      gasPrice: 0,
+    }
+  }
 };

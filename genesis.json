@@ -12,8 +12,9 @@
     "berlinBlock": 0,
     "londonBlock": 0,
     "shanghaiBlock": 0,
-    "cancunBlock": 0,
-    "pragueBlock": 0,
+    "shanghaiTime": 0,
+    "terminalTotalDifficulty": 0,
+    "terminalTotalDifficultyPassed": true,
     "clique": {
       "period": 1,
       "epoch": 30000
@@ -23,7 +24,6 @@
   "gasLimit": "1000000000",
   "extradata": "0x000000000000000000000000000000000000000000000000000000000000000014a3256052c02f9d87fe1cc3b712d4530061b25c0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
   "alloc": {
-    "14a3256052c02f9d87fe1cc3b712d4530061b25c": { "balance": "200000000000000000000000000000" }
-  },
-  "timestamp": "0x65000000"
+    "14a3256052c02f9d87fe1cc3b712d4530061b25c": { "balance": "1000000000000000000000000" }
+  }
 }
