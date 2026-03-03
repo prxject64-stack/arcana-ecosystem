@@ -1,16 +1,50 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
-import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
-import "@openzeppelin/contracts/access/Ownable.sol";
+contract SaunaUSD {
+    string public name = "Sauna USD";
+    string public symbol = "saUSD";
+    uint8 public decimals = 18;
+    uint256 public totalSupply;
+    address public owner;
 
-contract SaunaUSD is ERC20, Ownable {
-    constructor() ERC20("Sauna USD", "saUSD") Ownable(msg.sender) {
-        // Mint initial supply to the Sovereign Master
-        _mint(msg.sender, 1000000000 * 10**decimals()); // 1B saUSD
+    mapping(address => uint256) public balanceOf;
+    mapping(address => mapping(address => uint256)) public allowance;
+    mapping(address => bool) public minters;
+
+    event Transfer(address indexed from, address indexed to, uint256 value);
+    event Approval(address indexed owner, address indexed spender, uint256 value);
+
+    constructor() {
+        owner = msg.sender;
+        minters[msg.sender] = true;
     }
 
-    function mint(address to, uint256 amount) public onlyOwner {
-        _mint(to, amount);
+    modifier onlyOwner() {
+        require(msg.sender == owner, "Not Owner");
+        _;
+    }
+
+    modifier onlyMinter() {
+        require(minters[msg.sender], "Not Minter");
+        _;
+    }
+
+    function addMinter(address _minter) external onlyOwner {
+        minters[_minter] = true;
+    }
+
+    function transfer(address _to, uint256 _value) external returns (bool success) {
+        require(balanceOf[msg.sender] >= _value, "Low Balance");
+        balanceOf[msg.sender] -= _value;
+        balanceOf[_to] += _value;
+        emit Transfer(msg.sender, _to, _value);
+        return true;
+    }
+
+    function mint(address _to, uint256 _value) external onlyMinter {
+        totalSupply += _value;
+        balanceOf[_to] += _value;
+        emit Transfer(address(0), _to, _value);
     }
 }
