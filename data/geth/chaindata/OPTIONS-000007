@@ -3,7 +3,7 @@
 
 [Options]
   bytes_per_sync=524288
-  cache_size=268435456
+  cache_size=479199232
   cleaner=delete
   compaction_debt_concurrency=1073741824
   comparer=leveldb.BytewiseComparator
@@ -20,7 +20,7 @@
   max_concurrent_compactions=2
   max_manifest_file_size=134217728
   max_open_files=524288
-  mem_table_size=67108864
+  mem_table_size=119799808
   mem_table_stop_writes_threshold=2
   min_deletion_rate=0
   merger=pebble.concatenate
