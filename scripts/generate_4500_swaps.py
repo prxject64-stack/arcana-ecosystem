@@ -1,49 +1,36 @@
 import os
-import sys
-from web3 import Web3
+import requests
+import json
 
-w3 = Web3(Web3.HTTPProvider('http://127.0.0.1:8545'))
+# Sovereign Configuration
+RPC_URL = 'http://127.0.0.1:8545'
+VAULT_ADDR = '0x5FbDB2315678afecb367f032d93F642f64180aa3'
+FROM_ADDR = '0x14A3256052c02f9d87FE1Cc3b712D4530061b25c'
+# Selector for deposit(uint256,address)
+SELECTOR = '0x6e553570'
 
-sausd_addr = os.getenv('SAUSD_ADDR')
-vault_addr = os.getenv('VAULT_ADDR')
-master_signer = '0x14A3256052c02f9d87FE1Cc3b712D4530061b25c'
-
-if not w3.is_connected():
-    print('CRITICAL: Anvil node not found')
-    sys.exit(1)
-
-print(f'Initiating Phase 1 Stress Test...')
-
-NUM_SWAPS = 4500
-AMOUNT = 100 * 10**18 
-
-def run_stress_test():
-    selector = '0xb6b55f25'
-    encoded_amount = hex(int(AMOUNT))[2:].zfill(64)
-    nonce = w3.eth.get_transaction_count(master_signer)
+def dispatch_swaps(count):
+    # assets = 100 * 10^18
+    assets = '0000000000000000000000000000000000000000000000056bc75e2d63100000'
+    # receiver = FROM_ADDR padded
+    receiver = '00000000000000000000000014a3256052c02f9d87fe1cc3b712d4530061b25c'
+    data = SELECTOR + assets + receiver
     
-    for i in range(NUM_SWAPS):
-        tx = {
-            'from': master_signer,
-            'to': vault_addr,
-            'data': f'{selector}{encoded_amount}',
-            'gas': 150000,
-            'nonce': nonce + i,
-            'gasPrice': w3.eth.gas_price,
-            'chainId': 31337
+    for i in range(count):
+        payload = {
+            'jsonrpc': '2.0',
+            'method': 'eth_sendTransaction',
+            'params': [{
+                'from': FROM_ADDR,
+                'to': VAULT_ADDR,
+                'data': data,
+                'gas': '0x186A0'
+            }],
+            'id': i
         }
-        
-        try:
-            w3.provider.make_request('eth_sendTransaction', [tx])
-            if i % 500 == 0 and i > 0:
-                print(f'Dispatched {i} / {NUM_SWAPS} swaps...')
-        except Exception as e:
-            print(f'Batch Failure at {i}: {e}')
-            break
+        requests.post(RPC_URL, json=payload)
+        if i % 500 == 0:
+            print(f'Dispatched {i} / {count} swaps...')
 
-if __name__ == '__main__':
-    if not vault_addr:
-        print('ERROR: VAULT_ADDR not set.')
-    else:
-        run_stress_test()
-        print('Success: 4,500 Transactions dispatched.')
+dispatch_swaps(4500)
+print('Success: 4,500 ERC-4626 Transactions dispatched.')
