@@ -1,0 +1,13 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+import "forge-std/Script.sol";
+import "../src/Sentinel.sol";
+
+contract DeploySentinel is Script {
+    function run() external {
+        address vault = 0x1613beB3B2C4f22Ee086B2b38C1476A3cE7f78E8;
+        vm.startBroadcast();
+        new Sentinel(vault);
+        vm.stopBroadcast();
+    }
+}
