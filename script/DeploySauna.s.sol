@@ -1,25 +1,14 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.28;
-
+pragma solidity ^0.8.20;
 import "forge-std/Script.sol";
 import "../src/SaunaVault.sol";
+import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
 contract DeploySauna is Script {
     function run() external {
-        uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
-        address deployerAddress = vm.addr(deployerPrivateKey);
-
-        vm.startBroadcast(deployerPrivateKey);
-
-        // Replace with your actual saUSD token address
-        address saUSDAddress = 0x71C7656EC7ab88b098defB751B7401B5f6d8976F; 
-
-        // Deploying SaunaVault with EXACTLY 2 arguments: (token, initialOwner)
-        new SaunaVault(
-            saUSDAddress,
-            deployerAddress
-        );
-
+        address sausd = vm.envAddress("SAUSD_ADDR");
+        vm.startBroadcast();
+        new SaunaVault(IERC20(sausd));
         vm.stopBroadcast();
     }
 }
