@@ -11,7 +11,7 @@ contract StressTest is Script {
         
         // Simulating the 4,500 swap blast logic
         // For testing connectivity, we do a simple static call or minor tx
-        SaunaVault(vaultAddress).deposit(0); 
+        SaunaVault(vaultAddress).deposit(0, msg.sender); 
         
         vm.stopBroadcast();
     }
