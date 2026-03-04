@@ -20,7 +20,15 @@ contract ArcanaAMM is AccessControl, ReentrancyGuard {
         arcS = IERC20(_arcS);
     }
 
+    function addLiquidity(uint256 _amountSaUSD, uint256 _amountCCP) external onlyRole(DEFAULT_ADMIN_ROLE) {
+        saUSD.transferFrom(msg.sender, address(this), _amountSaUSD);
+        ccP.transferFrom(msg.sender, address(this), _amountCCP);
+        reserveSaUSD += _amountSaUSD;
+        reserveCCP += _amountCCP;
+    }
+
     function swap(uint256 _amountIn) external nonReentrant returns (uint256 amountOut) {
+        require(reserveCCP > 0 && reserveSaUSD > 0, "No Liquidity");
         amountOut = (reserveSaUSD * _amountIn) / (reserveCCP + _amountIn);
         ccP.transferFrom(msg.sender, address(this), _amountIn);
         saUSD.transfer(msg.sender, amountOut);
