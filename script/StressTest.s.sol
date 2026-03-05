@@ -1,18 +1,24 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.28;
-
+pragma solidity ^0.8.19;
 import "forge-std/Script.sol";
-import "../src/SaunaVault.sol";
 
 contract StressTest is Script {
-    function run(address saUSDAddress, address vaultAddress) external {
-        uint256 pk = vm.envUint("PRIVATE_KEY");
-        vm.startBroadcast(pk);
+    function run() external {
+        address amm = vm.envAddress("AMM_V2");
+        address deployer = 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266;
         
-        // Simulating the 4,500 swap blast logic
-        // For testing connectivity, we do a simple static call or minor tx
-        SaunaVault(vaultAddress).deposit(0, msg.sender); 
+        // Use the specific unlocked address for the broadcast
+        vm.startBroadcast(deployer);
         
+        for (uint i = 0; i < 4500; i++) {
+            // Raw call to the swap function: 0xf959f8c3
+            (bool success, ) = amm.call(abi.encodeWithSelector(0xf959f8c3, 1 ether));
+            if (!success) {
+                // If one fails, we need to know why. 
+                // Using console.log will slow it down but provide the raw data.
+                revert("Swap failed at iteration");
+            }
+        }
         vm.stopBroadcast();
     }
 }
