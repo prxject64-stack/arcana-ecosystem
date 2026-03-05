@@ -1,0 +1,9 @@
+{
+  "Provider": "Arcana Sovereign",
+  "Infrastructure": "Clique PoA (Private Banking Partition)",
+  "Throughput_Validated": "4,500 TPS (Atomic DvP)",
+  "Liquidity_Buffer": "136,000,000,000 CC-P",
+  "Settlement_Asset": "saUSD (USD-Pegged Stablecoin)",
+  "Compliance": "DORA / ECB March 30 Collateral Ready",
+  "Security": "Sentinel-ASS (Arcana Security System)"
+}

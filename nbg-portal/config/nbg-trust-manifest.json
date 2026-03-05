@@ -1,0 +1,8 @@
+{
+  "protocol": "Arcana Sovereign (ARC-S)",
+  "compliance_framework": "DORA-2026-ICT",
+  "liquidity_buffer": "136B CC-P",
+  "settlement_rail": "Atomic DvP",
+  "security_logic": "Sentinel-Sentinel-V2",
+  "authorized_validators": ["Node-01-AWS", "Node-02-Sovereign"]
+}
